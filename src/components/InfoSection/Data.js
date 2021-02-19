@@ -10,7 +10,6 @@ export const homeObjOne = {
    description: 'I\'m Yusuke Yoshihiro, Japanese Front-End Developer, based in Vancouver. I\'m passionate about cooking, travel, hockey, watching films, skiing, Kayaking. As well as Coding and Programming. Specifically, expert in React, React-Redux, styled-components. Constantly, learning up-to-date technologies, especially Typescript and MERN stacks. Please reach out with me.',
    buttonLabel: 'Resume',
    imgStart: true,
-   // img: require(../../images/about_img.svg),
    alt: 'AboutMe',
    dark: true,
    primary: true,
