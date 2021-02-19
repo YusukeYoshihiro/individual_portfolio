@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Icon1 from '../../assets/images/Cricket_Logo.png';
 import Icon2 from '../../assets/images/Lacrosse_works.png';
 import Icon3 from '../../assets/images/Y\'sFilm_logo.png';
@@ -16,23 +16,15 @@ import {
   Link,
 } from './WorksElements'
 
-// import {
-//   Button
-// } from '../ButtonElement';
-
 AOS.init();
 
 const Works = () => {
-  const [click, setClick] = useState(false);
-
-  const handleClick = () => setClick(!click);
-
 
   return (
     <WorksContainer name="works" basename="works">
       <WorksH1>My Projects</WorksH1>
       <WorksWrapper>
-        <Link to={'/cricket'} onClick={handleClick} >
+        <Link to={'/cricket'}>
           <WorksCard data-aos="zoom-in" data-aos-duration="1000">
             <WorksIcon src={Icon1} />
             <WorksH2>Cricket Project</WorksH2>
@@ -41,7 +33,7 @@ const Works = () => {
           </WorksCard>
         </Link>
 
-        <Link to={'/lacrosse'} onClick={handleClick}>
+        <Link to={'/lacrosse'}>
           <WorksCard data-aos="zoom-in" data-aos-duration="1000">
             <WorksIcon src={Icon2} />
             <WorksH2>Lacrosse Project</WorksH2>
@@ -51,7 +43,7 @@ const Works = () => {
           </WorksCard>
         </Link>
 
-        <Link to={'/movieApp'} onClick={handleClick}>
+        <Link to={'/movieApp'}>
           <WorksCard data-aos="zoom-in" data-aos-duration="1000" >
             <WorksIcon src={Icon3} />
             <WorksH2>Movie App Project</WorksH2>
@@ -59,7 +51,7 @@ const Works = () => {
           </WorksCard>
         </Link>
 
-        <Link to={'/ecommerce'} onClick={handleClick}>
+        <Link to={'/ecommerce'}>
           <WorksCard data-aos="zoom-in" data-aos-duration="1000"  >
             <WorksIcon src={Icon4} />
             <WorksH2>E-commerce App Project</WorksH2>
