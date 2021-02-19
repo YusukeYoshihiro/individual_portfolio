@@ -18,7 +18,7 @@ import {
 } from  './WorkDescElements';
 
 const visitWeb = () => {
-  window.open('http://www.procaliberlacrosse.com/', '_blank')
+  window.open('https://yusukeyoshihiro.github.io/lacrosseproject', '_blank')
 }
 
 const showCertification = () => {
