@@ -25,6 +25,9 @@ const showCertification = () => {
   window.open('https://drive.google.com/file/d/1tjpMVCE-7F7Lqho8FFHXVW2wSxfdRpS8/view?usp=sharing', '_blank')
 }
 
+const backToWorks = () => {
+  window.history.back();
+}
 
 const lacrosseImg = workImg;
 
@@ -41,6 +44,7 @@ const WorkDesc2 = () => {
     description,
     buttonLabel,
     buttonLabel2,
+    buttonLabel3,
     alt,
     primary,
     dark,
@@ -100,8 +104,23 @@ const WorkDesc2 = () => {
               <ImgWrap>
                 <Img src={lacrosseImg} alt={alt} />
               </ImgWrap>
-            </Column2>
+              <br/><br/>
+              <Button 
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                    onClick={backToWorks}
+                  > 
+                    {buttonLabel3}
+                  </Button>
 
+            </Column2>
+           
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>

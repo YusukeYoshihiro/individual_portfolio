@@ -11,7 +11,7 @@ import {
 } from './SidebarElements';
 
 const showResume = () => {
-  window.open('https://www.linkedin.com/in/yusuke-yoshihiro-ab46491b2/', '_blank')
+  window.open('https://drive.google.com/file/d/1y5OVbcVS_L1X_2dGZTIsjZ5zCTebZWxW/view?usp=sharing', '_blank')
 }
 
 const Sidebar = ({ isOpen, toggle }) => {

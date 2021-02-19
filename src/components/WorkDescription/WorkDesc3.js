@@ -19,7 +19,11 @@ import {
 } from  './WorkDescElements';
 
 const visitWeb = () => {
-  window.open('https://yusukeyoshihiro.github.io/netfim_projects/', '_blank')
+  window.open('https://netfim-projects.yusukeyoshihiro.vercel.app', '_blank')
+}
+
+const backToWorks = () => {
+  window.history.back();
 }
 
 const movieAppImg = workImg;
@@ -35,6 +39,7 @@ const WorkDesc3 = () => {
     darkText,
     description,
     buttonLabel,
+    buttonLabel3,
     alt,
     primary,
     dark,
@@ -81,6 +86,20 @@ const WorkDesc3 = () => {
               <ImgWrap>
                 <Img src={movieAppImg} alt={alt} />
               </ImgWrap>
+              <br/><br/>
+              <Button 
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                    onClick={backToWorks}
+                  > 
+                    {buttonLabel3}
+                  </Button>
             </Column2>
 
           </InfoRow>

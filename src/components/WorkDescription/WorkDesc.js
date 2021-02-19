@@ -26,6 +26,10 @@ const showCertification = () => {
   window.open('https://drive.google.com/file/d/1HcZlGWoMhLvcl0cKtIVffq-RMd_1pEqY/view?usp=sharing', '_blank')
 }
 
+const backToWorks = () => {
+   window.history.back();
+}
+
 const cricketImg = workImg;
 
 const WorkDesc = () => {
@@ -40,6 +44,7 @@ const WorkDesc = () => {
     description,
     buttonLabel,
     buttonLabel2,
+    buttonLabel3,
     alt,
     primary,
     dark,
@@ -100,6 +105,20 @@ const WorkDesc = () => {
               <ImgWrap>
                 <Img src={cricketImg} alt={alt} />
               </ImgWrap>
+              <br/><br/>
+              <Button 
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                    onClick={backToWorks}
+                  > 
+                    {buttonLabel3}
+                  </Button>
             </Column2>
 
           </InfoRow>

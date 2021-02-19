@@ -15,7 +15,7 @@ import {
 } from './HeroElements'
 
 const showResume = () => {
-  window.open('https://drive.google.com/file/d/1hXQznkNbsymE7Vab0k1hGdONqySp5IG9/view?usp=sharing', '_blank')
+  window.open('https://drive.google.com/file/d/1y5OVbcVS_L1X_2dGZTIsjZ5zCTebZWxW/view?usp=sharing', '_blank')
 }
 
 const HeroSection = () => {

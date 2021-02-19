@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
    color : #fff;
-   background-color: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+   background-color: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 
-   @media screen and (max-width: 768px) {
+   @media screen and (max-width: 780px) {
      padding: 100px 0;
    }
 `;
@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
    display: grid;
    z-index: 1;
-   height: 860px;
+   min-height: 100vh;
    width: 100%;
    max-width: 1100px;
    margin-right: auto;
@@ -25,15 +25,15 @@ export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'`:`'col1 col2' `)};
+  grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2' `)};
 
   @media screen and (max-width: 768px) {
-     grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'`: `'col1 col1' 'col2 col2'`)};
+     grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
   }
 `;
 
 export const Column1 = styled.div`
- background: ${({objStyle}) => (objStyle)};
+ background: ${({ objStyle }) => (objStyle)};
  margin-bottom: 15px;
  padding: 0 15px;
  grid-area: col1;
@@ -44,13 +44,6 @@ export const Column2 = styled.div`
  padding: 0 15px;
  grid-area: col2;
 `;
-
-// export const Column2_active = styled.div`
-//  margin-bottom: 15px;
-//  padding: 0 15px;
-//  grid-area: col2;
-//  transform: translate(-500px, 0);
-// `;
 
 export const TextWrapper = styled.div`
  max-width: 540px;
@@ -73,7 +66,7 @@ export const Heading = styled.h1`
    font-size: 48px;
    line-height: 1.1;
    font-weight: 600;
-   color: ${({lightText})=> (lightText ? '#f7f8fa' : '#010606')};
+   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
 
    @media screen and (max-width: 480px) {
      font-size: 32px;
@@ -85,7 +78,7 @@ export const Subtitle = styled.div`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({darkText})=> (darkText ? '#010606': '#fff')};
+  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
 `;
 
 export const Subtitle3 = styled.div`
@@ -93,12 +86,12 @@ export const Subtitle3 = styled.div`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({darkText})=> (darkText ? '#fff': '#010606')};
+  color: ${({ darkText }) => (darkText ? '#fff' : '#010606')};
 `;
 
 // For infoSec_2.js
 export const SkillsWrap = styled.div`
-  color: ${({darkText})=> (darkText ? '#010606': '#fff')};
+  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
 `;
 
 
@@ -124,10 +117,10 @@ export const Img4 = styled.img`
   margin: 0 0 10px 0;
   padding-right: 0;
 
-  @media screen and (max-width: 780px){
-    width: 250px;
-    height: 250px;
-  }
+   @media screen and (max-width: 780px){
+    width: 250px; 
+    height: 200px; 
+   }
 `;
 
 
