@@ -2,8 +2,9 @@
 import React, { useState, useEffect } from 'react';
 import HeroSection from '../components/HeroSection';
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data'
-// import Navbar from '../components/Navbar';
-// import Sidebar from '../components/Sidebar';
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
 import InfoSec from '../components/InfoSection/InfoSec';
 import InfoSec_2 from '../components/InfoSection/InfoSec_2';
 import InfoSec_3 from '../components/InfoSection/InfoSec_3';
@@ -14,6 +15,11 @@ import Works  from '../components/Works/index';
 
 const Home = () =>{
   //  const [isOpen, setIsOpen]  = useState(false);
+  const [isOpen, setIsOpen]  = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  }
 
    const [scrollNav, setScrollNav] = useState(false);
 
@@ -34,12 +40,15 @@ const Home = () =>{
 
   return (
     <>
+      <Sidebar isOpen={isOpen} toggle={toggle}/>
+      <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSec {...homeObjOne} scroll={scrollNav}/>
       <InfoSec_2 {...homeObjTwo} />
       <Works />
       {/* <WorkDescription /> */}
       <InfoSec_3 {...homeObjThree}/> 
+      <Footer />
     </>
   )
 }

@@ -15,11 +15,15 @@ import {
   Subtitle, 
   BtnWrap, 
   ImgWrap, 
-  Img4,
+  Img,
 } from  './WorkDescElements';
 
 const visitWeb = () => {
   window.open('', '_blank')
+}
+
+const backToWorks = () => {
+  window.history.back();
 }
 
 const ecommerceImg = workImg;
@@ -35,6 +39,7 @@ const WorkDesc4 = () => {
     darkText,
     description,
     buttonLabel,
+    buttonLabel3,
     alt,
     primary,
     dark,
@@ -79,8 +84,21 @@ const WorkDesc4 = () => {
 
             <Column2 >
               <ImgWrap>
-                <Img4 src={ecommerceImg} alt={alt} />
+                <Img src={ecommerceImg} alt={alt} />
               </ImgWrap>
+              <Button 
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                    onClick={backToWorks}
+                  > 
+                    {buttonLabel3}
+                  </Button>
             </Column2>
 
           </InfoRow>
