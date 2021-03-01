@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../ButtonScrollStyles';
-import  workImg from '../../assets/images/MovieApp.png';
-import { workDescThree } from '../../components/InfoSection/Data';
+import workImg from '../../assets/images/MockImgCricket.png';
+import { extraInfo } from '../../components/InfoSection/Data';
 
 import {
   InfoContainer, 
@@ -13,22 +13,17 @@ import {
   TopLine, 
   Heading, 
   Subtitle, 
-  BtnWrap, 
   ImgWrap, 
   Img,
-} from  './WorkDescElements';
-
-const visitWeb = () => {
-  window.open('https://netfim-projects.yusukeyoshihiro.vercel.app', '_blank')
-}
+} from  './ExtrainfoElement';
 
 const backToWorks = () => {
-  window.history.back();
+   window.history.back();
 }
 
-const movieAppImg = workImg;
+const cricketImg = workImg;
 
-const WorkDesc3 = () => {
+const ExtraInfo = () => {
   const {
     lightBg,
     id,
@@ -38,13 +33,13 @@ const WorkDesc3 = () => {
     headline,
     darkText,
     description,
-    buttonLabel,
     buttonLabel3,
     alt,
     primary,
     dark,
     dark2,
-    } = workDescThree;
+    } = extraInfo;
+
   return (
     <>
        <InfoContainer lightBg={lightBg} id={id} >
@@ -56,35 +51,19 @@ const WorkDesc3 = () => {
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>
                   {description}
-                  <br/><br/>
+                  {/* <br/><br/>
                   <h3>&lt; Languages /&gt;</h3><br/>
-                   <p> React.js, Compound-Components, Styled-Components, Json/Data</p><br/>
+                   <p> HTML, CSS, ES6, JQuery, JAVA</p><br/>
 
                    <h3>&lt; Database ＆ Tools /&gt;</h3><br/>
-                   <p> Firebase, Diagrams.net, XD</p>
+                   <p> mySQL, Figma, Google-Form</p> */}
                 </Subtitle>
-                <BtnWrap>
-                  <Button 
-                    to='home'
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                    onClick={visitWeb}
-                  > 
-                    {buttonLabel}
-                  </Button>
-                </BtnWrap>
               </TextWrapper>
             </Column1>
 
             <Column2 >
               <ImgWrap>
-                <Img src={movieAppImg} alt={alt} />
+                <Img src={cricketImg} alt={alt} />
               </ImgWrap>
               <br/><br/>
               <Button 
@@ -109,4 +88,4 @@ const WorkDesc3 = () => {
   )
 }
 
-export default WorkDesc3;
+export default ExtraInfo;

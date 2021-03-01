@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../../components/ButtonElement';
+import { Button } from '../ButtonScrollStyles';
 import  workImg from '../../assets/images/MockImgLacrosse.png';
 import { workDescTwo } from '../../components/InfoSection/Data';
 import {
@@ -70,7 +70,7 @@ const WorkDesc2 = () => {
                    <p> mySQL, Figma, Google-Form</p>
                 </Subtitle>
                 <BtnWrap>
-                  <Button 
+                  <Button
                     smooth={true}
                     duration={500}
                     spy={true}

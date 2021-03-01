@@ -1,8 +1,8 @@
 import React from 'react'
-import { Button } from '../ButtonElement'
-import AboutMeImg from '../../assets/images/green_main_photo.png';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'; 
+// import styled from 'styled-components';
+// import { Link } from 'react-router-dom'
+import { Button } from '../ButtonScrollStyles'
+import AboutMeImg from '../../assets/images/about_meImg.png';
 import {
   InfoContainer,
   InfoWrapper,
@@ -13,19 +13,15 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
   ImgWrap,
   Img,
 } from './InfoElements';
 
-// AOS.init();
-
 const  myImg  = AboutMeImg;
 
 const showResume = () => {
-  window.open('https://drive.google.com/file/d/12ZGrJmZt_yAVGlKJQqdgZqY5UyNePvVq/view?usp=sharing', '_blank')
+  window.open('https://drive.google.com/file/d/1Op4PlybKeO4Ua02NUODwH0zWBiQts-Tx/view?usp=sharing', '_blank')
 }
-
 
 const InfoSec = ({
   lightBg,
@@ -36,12 +32,10 @@ const InfoSec = ({
   headline,
   darkText,
   description,
-  buttonLabel,
-  // img,
   alt,
   primary,
   dark,
-  dark2,
+  buttonLabel,
 }) => {
 
   return (
@@ -54,7 +48,11 @@ const InfoSec = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
+                  {/* <LinkToExtraInfo
+                    to={'/extraInfo'}
+                  > 
+                    More
+                  </LinkToExtraInfo> */}
                   <Button
                     onClick={showResume}
                     smooth={true}
@@ -64,11 +62,9 @@ const InfoSec = ({
                     offset={-80}
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
                   > 
                     {buttonLabel}
                   </Button>
-                </BtnWrap>
               </TextWrapper>
             </Column1>
 
@@ -86,3 +82,29 @@ const InfoSec = ({
 }
 
 export default InfoSec;
+
+//        ***** Styles for LinkToExtraInfo(Button)
+// export const LinkToExtraInfo = styled(Link)`
+//   text-decoration: none;
+//   border-radius: 50px;
+//   background: #01BF71;
+//   white-space: nowrap;
+//   padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+//   color: #fff;
+//   font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+//   outline: none;
+//   border: none;
+//   cursor: pointer;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transition: all 0.2s ease-in-out;
+//   margin-top: 15px;
+//   width: 200px;
+
+//   &:hover {
+//     transition: all 0.2s ease-in-out;
+//     background: #fff ;
+//     color: #010606;
+//   }
+// `;

@@ -2,6 +2,7 @@ import GlobalStyle from './globalStyles';
 import React from 'react';
 import { Switch, Route} from 'react-router-dom';
 import Home from './pages';
+import ExtraInfo from './components/MoreAboutMe/ExtraInfo'
 import WorkDesc from './components/WorkDescription/WorkDesc';
 import WorkDesc2 from './components/WorkDescription/WorkDesc2';
 import WorkDesc3 from './components/WorkDescription/WorkDesc3';
@@ -19,6 +20,7 @@ function App() {
       <GlobalStyle />
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/extraInfo" component={ExtraInfo} />
         <Route path="/cricket" component={WorkDesc} />
         <Route path="/lacrosse" component={WorkDesc2} />
         <Route path="/movieApp" component={WorkDesc3}  />

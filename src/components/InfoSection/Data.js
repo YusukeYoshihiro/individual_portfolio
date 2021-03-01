@@ -7,14 +7,13 @@ export const homeObjOne = {
    lightTextDesc: true,
    topLine: 'About me',
    headline: 'Who am I ?',
-   description: 'I\'m Yusuke Yoshihiro, Japanese Front-End Developer, based in Vancouver. I\'m passionate about cooking, travel, hockey, watching films, skiing, Kayaking. As well as Coding and Programming. Specifically, expert in React, React-Redux, styled-components. Constantly, learning up-to-date technologies, especially Typescript and MERN stacks. Please reach out with me.',
+   description: 'I\'m Yusuke Yoshihiro, Japanese Front-End Developer, based in Vancouver. I\'m passionate about cooking, travel, hockey, watching films. As well as Coding and Programming. Specifically, expert in React, React-Redux, React-Hooks, SCSS/SASS, styled-components. Constantly, learning up-to-date technologies, especially Typescript and MERN stacks. Please reach out with me.',
    buttonLabel: 'Resume',
    imgStart: true,
    alt: 'AboutMe',
    dark: true,
    primary: true,
    darkText: false,
-   objStyle: ' #000'
 };
 
 
@@ -118,5 +117,22 @@ export const workDescFour = {
    primary: true,
    darkText: false
 };
+
+export const extraInfo = {
+   id:'extraInfo',
+   lightBg: false,
+   lightText: true,
+   lightTextDesc: true,
+   topLine: 'My History',
+   headline: 'Who am I',
+   description: 'I am in search of a Staff developer position to join in a computer software company. And since I have chosen CadMakers to work at.I’m really inspired by the latest products and sophisticated website of your company.I have strong proficiency in JavaScript thorough understanding of Data Structure, React.js/React-Redux/Hooks, Node.js and its core principles as well as HTML, CSS using with SCSS/SASS. I also have ongoing Typescript, MERN stacks projects based on Agile and Scrum methodologies, version control with Git and data APIs. I am willing to constantly learn and experiment to deliver the best possible product to clients. I can bring my technical skillset to your team. Allow me the opportunity, to present you in person, in an interview, how I may best fit CadMakers. Sincerely Yusuke Yoshihiro',
+   buttonLabel3: 'Back To Page',
+   imgStart: true,
+   alt: 'extraInfo_img',
+   dark: true,
+   primary: true,
+   darkText: false
+};
+
 
 

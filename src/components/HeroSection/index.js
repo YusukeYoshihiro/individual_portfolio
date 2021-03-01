@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Video from '../../videos/video.mp4';
-import { Button } from '../ButtonElement';
+import { Button } from '../ButtonScrollStyles';
 
 import {
   HeroContainer,
@@ -15,7 +15,7 @@ import {
 } from './HeroElements'
 
 const showResume = () => {
-  window.open('https://drive.google.com/file/d/12ZGrJmZt_yAVGlKJQqdgZqY5UyNePvVq/view?usp=sharing', '_blank')
+  window.open('https://drive.google.com/file/d/1Op4PlybKeO4Ua02NUODwH0zWBiQts-Tx/view?usp=sharing', '_blank')
 }
 
 const HeroSection = () => {

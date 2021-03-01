@@ -1,6 +1,6 @@
 // Contact Pert
 import React from 'react'
-import { Button } from '../ButtonElement'
+import { Button } from '../ButtonScrollStyles'
 import AboutMeImg from '../../assets/images/about_me.svg';
 import { SocialIconLink, SocialIcons } from '../Footer/FooterElements';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaSpotify, FaTwitter } from 'react-icons/fa';

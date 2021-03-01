@@ -89,7 +89,6 @@ export const ColumnContact2 = styled.div`
 `;
 
 
-
 export const TextWrapper = styled.div`
  max-width: 540px;
  padding-top: 0;
@@ -139,13 +138,15 @@ export const SkillsWrap = styled.div`
   color: ${({darkText})=> (darkText ? '#010606': '#fff')};
 
   @media screen and (max-width: 378px){
+    h3{
+      font-size: 1rem;
+    }
     p{
-      font-size: 15px;
+      font-size: 0.8rem;
       white-space: nowrap;
     }
   }
 `;
-
 
 export const BtnWrap = styled.div`
    display: flex;
@@ -169,7 +170,7 @@ export const ImgWrapSkill = styled.div`
 
 
 export const Img = styled.img`
-  width: 100%;
+  width: 80%;
   margin: 0 0 10px 0;
   padding-right: 0;
 `;
