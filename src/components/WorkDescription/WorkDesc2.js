@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Button } from '../ButtonScrollStyles';
 import  workImg from '../../assets/images/MockImgLacrosse.png';
-import { workDescTwo } from '../../components/InfoSection/Data';
+import { workDescTwo } from '../../Data/data';
+import BackToPages from '../../Features/BackToPages';
 import {
   InfoContainer, 
   InfoWrapper, 
@@ -17,11 +18,6 @@ import {
   Img,
 } from  './WorkDescElements';
 
-import {
-  ArrowBack,
-  ArrowLeft,
-} from '../ArrowIcon/ArrowIconStyles';
-
 const visitWeb = () => {
   window.open('https://yusukeyoshihiro.github.io/lacrosseproject', '_blank')
 }
@@ -30,19 +26,9 @@ const showCertification = () => {
   window.open('https://drive.google.com/file/d/1tjpMVCE-7F7Lqho8FFHXVW2wSxfdRpS8/view?usp=sharing', '_blank')
 }
 
-const backToWorks = () => {
-  window.history.back();
-}
-
 const lacrosseImg = workImg;
 
 const WorkDesc2 = () => {
-  const [hover, setHover] = useState(false);
-
-  const onHover = () => {
-    setHover(!hover)
-  }
-
   const {
     lightBg,
     id,
@@ -114,22 +100,7 @@ const WorkDesc2 = () => {
                 <Img src={lacrosseImg} alt={alt} />
               </ImgWrap>
               <br/><br/>
-              <Button
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-                primary={primary ? 1 : 0}
-                dark={dark ? 1 : 0}
-                dark2={dark2 ? 1 : 0}
-                onClick={backToWorks}
-                onMouseEnter={onHover}
-                onMouseLeave={onHover}
-              >
-                {hover ? <ArrowBack /> : <ArrowLeft />} &nbsp; Go Back
-              </Button>
-
+              <BackToPages />
             </Column2>
            
           </InfoRow>
