@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '../ButtonScrollStyles';
 import workImg from '../../assets/images/FABE_LOGO.png';
-import { workDescFour } from '../../components/InfoSection/Data';
+import { workDescFour } from '../../Data/data';
+import BackToPages from '../../Features/BackToPages'
 
 import {
   InfoContainer,
@@ -18,27 +19,14 @@ import {
   Img,
 } from './WorkDescElements';
 
-import {
-  ArrowBack,
-  ArrowLeft,
-} from '../ArrowIcon/ArrowIconStyles';
-
 const visitWeb = () => {
   window.open('', '_blank')
-}
-
-const backToWorks = () => {
-  window.history.back();
 }
 
 const ecommerceImg = workImg;
 
 const WorkDesc4 = () => {
-  const [hover, setHover] = useState(false);
-
-  const onHover = () => {
-    setHover(!hover)
-  }
+  
   const {
     lightBg,
     id,
@@ -96,21 +84,7 @@ const WorkDesc4 = () => {
                 <Img src={ecommerceImg} alt={alt} />
               </ImgWrap>
               <br /><br />
-              <Button
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-                primary={primary ? 1 : 0}
-                dark={dark ? 1 : 0}
-                dark2={dark2 ? 1 : 0}
-                onClick={backToWorks}
-                onMouseEnter={onHover}
-                onMouseLeave={onHover}
-              >
-                {hover ? <ArrowBack /> : <ArrowLeft />} &nbsp; Go Back
-              </Button>
+              <BackToPages />
             </Column2>
 
           </InfoRow>

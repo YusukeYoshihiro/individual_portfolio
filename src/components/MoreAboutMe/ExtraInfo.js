@@ -1,7 +1,7 @@
 import React from 'react'
 // import { Button } from '../ButtonScrollStyles';
 import workImg from '../../assets/images/MockImgCricket.png';
-import { extraInfo } from '../../components/InfoSection/Data';
+import { extraInfo } from '../../Data/data';
 
 import {
   InfoContainer, 
@@ -16,6 +16,7 @@ import {
   ImgWrap, 
   Img,
 } from  './ExtrainfoElement';
+
 
 // const backToWorks = () => {
 //    window.history.back();
