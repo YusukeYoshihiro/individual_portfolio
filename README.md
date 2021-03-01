@@ -1,6 +1,6 @@
 # Portfolio 
 I built my individual portfolio website using React.js
-- [Site](https://individual-portfolio-git-develop-yusukeyoshihiro.vercel.app)
+- [Website](https://individual-portfolio-git-develop-yusukeyoshihiro.vercel.app)
 ### Summery
   - Tech Stacks
     -  JavaScript
