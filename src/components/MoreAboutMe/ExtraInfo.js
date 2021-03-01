@@ -1,5 +1,5 @@
-import React,{ useState } from 'react'
-import { Button } from '../ButtonScrollStyles';
+import React from 'react'
+// import { Button } from '../ButtonScrollStyles';
 import workImg from '../../assets/images/MockImgCricket.png';
 import { extraInfo } from '../../components/InfoSection/Data';
 
@@ -15,13 +15,11 @@ import {
   Subtitle, 
   ImgWrap, 
   Img,
-  ArrowForward,
-  ArrowRight
 } from  './ExtrainfoElement';
 
-const backToWorks = () => {
-   window.history.back();
-}
+// const backToWorks = () => {
+//    window.history.back();
+// }
 
 const cricketImg = workImg;
 
@@ -41,11 +39,10 @@ const ExtraInfo = () => {
     headline,
     darkText,
     description,
-    buttonLabel3,
     alt,
-    primary,
-    dark,
-    dark2,
+    // primary,
+    // dark,
+    // dark2,
     } = extraInfo;
 
   return (

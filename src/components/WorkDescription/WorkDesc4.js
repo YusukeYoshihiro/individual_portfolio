@@ -49,7 +49,6 @@ const WorkDesc4 = () => {
     darkText,
     description,
     buttonLabel,
-    buttonLabel3,
     alt,
     primary,
     dark,
