@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../../components/ButtonElement';
+import { Button } from '../ButtonScrollStyles';
 import  workImg from '../../assets/images/FABE_LOGO.png';
 import { workDescFour } from '../../components/InfoSection/Data';
 

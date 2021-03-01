@@ -1,9 +1,7 @@
 // Skills Part
 import React from 'react'
-// import { Button } from '../ButtonElement'
-import SkillsImg from '../../assets/images/SkillImg.png';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css'; 
+import StyledIcon from '../StyledIcon/StyledIcon'
+
 import {
   InfoContainer,
   InfoWrapper,
@@ -15,18 +13,8 @@ import {
   Heading,
   Subtitle,
   SkillsWrap,
-  // BtnWrap,
   ImgWrapSkill,
-  Img,
 } from './InfoElements';
-
-// AOS.init();
-
-const  skills  = SkillsImg;
-
-// const showCertifications = () => {
-//   window.open('https://drive.google.com/file/d/19Y8pxOCzbDm0EsCGIM9lQmQma269hAJD/view?usp=sharing', '_blank')
-// }
 
 const InfoSec2 = ({
   lightBg,
@@ -36,56 +24,42 @@ const InfoSec2 = ({
   lightText,
   headline,
   darkText,
-  // description,
-  buttonLabel,
-  // img,
-  alt,
-  // primary,
-  // dark,
-  // dark2,
 }) => {
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id} >
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
-            <ColumnSkill data-aos="fade-right">
+            
+            <ColumnSkill data-aos="fade-right" data-aos-duration="1000">
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>
-                 <SkillsWrap darkText={darkText}> 
-                   <h3>&lt; Languages /&gt;</h3><br/>
-                   <p> HTML, CSS, Sass, ES6, JQuery, Node.js</p><br/>
+                  <SkillsWrap darkText={darkText}>
+                    <div data-aos="zoom-in">
+                      <h3>&lt; Languages /&gt;</h3><br />
+                      <p> HTML, CSS, SCSS/SASS, <br />JavaScript(ES6), JQuery, TypeScript,</p><br />
+                    </div>
 
-                   <h3>&lt; Frameworks /&gt;</h3><br/>
-                   <p> React, React-Redux, styled-components </p><br/>
+                    <div data-aos="zoom-in" data-aos-delay="100">
+                      <h3>&lt; Frameworks ＆ Libraries /&gt;</h3><br />
+                      <p> React, React-Redux, React-Hooks, <br />styled-components, Chart.js </p><br />
+                    </div>
 
-                   <h3>&lt; Databese ＆ Tools /&gt;</h3><br/>
-                   <p> MongoDB, Firebase, Git, mySQL, Figma, <br/> Photoshop, illustrator, XD</p>
-                 </SkillsWrap>
+                    <div data-aos="zoom-in" data-aos-delay="300" id="trigger-left">
+                      <h3>&lt; Databese ＆ Tools /&gt;</h3><br />
+                      <p> Git, Figma, XD, Photoshop, <br />MongoDB, Firebase, Heroku, Postman</p>
+                    </div>
+                  </SkillsWrap>
                 </Subtitle>
-                {/* <BtnWrap onClick={()=> showCertifications}>
-                  <Button 
-                    onClick={showCertifications}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  >
-                    {buttonLabel}
-                  </Button>
-                </BtnWrap> */}
               </TextWrapper>
             </ColumnSkill>
 
-            <ColumnSkill2 data-aos="fade-left">
-              <ImgWrapSkill>
-                <Img src={skills} alt={alt} />
+            <ColumnSkill2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50">
+              <ImgWrapSkill >
+                {/* Styled Icon Part */}
+                <StyledIcon />
               </ImgWrapSkill>
             </ColumnSkill2>
 
@@ -97,3 +71,5 @@ const InfoSec2 = ({
 }
 
 export default InfoSec2;
+
+
