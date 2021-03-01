@@ -10,9 +10,14 @@ import {
   HeroH1,
   HeroP,
   HeroBtnWrapper,
+} from './HeroElements';
+
+import {
   ArrowForward,
   ArrowRight
-} from './HeroElements'
+} from '../ArrowIcon/ArrowIconStyles';
+
+
 
 const showResume = () => {
   window.open('https://drive.google.com/file/d/1Op4PlybKeO4Ua02NUODwH0zWBiQts-Tx/view?usp=sharing', '_blank')

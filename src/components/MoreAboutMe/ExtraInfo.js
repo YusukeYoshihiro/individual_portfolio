@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import { Button } from '../ButtonScrollStyles';
 import workImg from '../../assets/images/MockImgCricket.png';
 import { extraInfo } from '../../components/InfoSection/Data';
@@ -15,6 +15,8 @@ import {
   Subtitle, 
   ImgWrap, 
   Img,
+  ArrowForward,
+  ArrowRight
 } from  './ExtrainfoElement';
 
 const backToWorks = () => {
@@ -24,6 +26,12 @@ const backToWorks = () => {
 const cricketImg = workImg;
 
 const ExtraInfo = () => {
+  // const [hover, setHover] = useState(false);
+
+  // const onHover = () => {
+  //   setHover(!hover)
+  // }
+
   const {
     lightBg,
     id,
@@ -66,19 +74,21 @@ const ExtraInfo = () => {
                 <Img src={cricketImg} alt={alt} />
               </ImgWrap>
               <br/><br/>
-              <Button 
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                    onClick={backToWorks}
-                  > 
-                    {buttonLabel3}
-                  </Button>
+              {/* <Button
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+                primary={primary ? 1 : 0}
+                dark={dark ? 1 : 0}
+                dark2={dark2 ? 1 : 0}
+                onClick={backToWorks}
+                onMouseEnter={onHover}
+                onMouseLeave={onHover}
+              >
+                {hover ? <ArrowBack /> : <ArrowLeft />} &nbsp; Go Back
+              </Button> */}
             </Column2>
 
           </InfoRow>

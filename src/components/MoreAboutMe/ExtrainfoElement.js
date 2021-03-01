@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
+
 
 export const InfoContainer = styled.div`
    color : #fff;
@@ -112,6 +114,15 @@ export const Img = styled.img`
   padding-right: 0;
 `;
 
+export const ArrowForward = styled(MdArrowForward)`
+   margin-left: 8px;
+   font-style: 20px;
+`;
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+   margin-left: 8px;
+   font-style: 20px;
+`;
 
 
 

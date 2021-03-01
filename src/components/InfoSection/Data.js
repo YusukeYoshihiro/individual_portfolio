@@ -30,6 +30,7 @@ export const homeObjTwo = {
    dark: false,
    primary: false,
    darkText: true
+   
 };
 
 export const homeObjThree = {
@@ -58,7 +59,6 @@ export const workDescOne = {
    description: ' Built actual website for local cricket organization in college program.',
    buttonLabel: 'Visit Website',
    buttonLabel2: 'Reference',
-   buttonLabel3: 'Back To Projects',
    imgStart: true,
    alt: 'Cricket_img',
    dark: true,
@@ -76,7 +76,6 @@ export const workDescTwo = {
    description: ' Built actual website for Pro Lacrosse Caliber with real client.',
    buttonLabel: 'Visit Website',
    buttonLabel2: 'Reference',
-   buttonLabel3: 'Back To Projects',
    imgStart: true,
    alt: 'Lacrosse_img',
    dark: true,
@@ -93,7 +92,6 @@ export const workDescThree = {
    headline: 'Movie App Project',
    description: 'Built Movie App as own project with React.js, Styled-components, Compound-Components, Firebase(Authentication/GET DATA)',
    buttonLabel: 'Visit App',
-   buttonLabel3: 'Back To Projects',
    imgStart: true,
    alt: 'movieApp_img',
    dark: true,
@@ -110,7 +108,6 @@ export const workDescFour = {
    headline: 'Ecommerce MERN Stack Project Comming Soon!!',
    description: 'Comming Soon !!!!',
    buttonLabel: 'Visit App',
-   buttonLabel3: 'Back To Projects',
    imgStart: true,
    alt: 'ecommerce_img',
    dark: true,
@@ -126,7 +123,6 @@ export const extraInfo = {
    topLine: 'My History',
    headline: 'Who am I',
    description: 'I am in search of a Staff developer position to join in a computer software company. And since I have chosen CadMakers to work at.I’m really inspired by the latest products and sophisticated website of your company.I have strong proficiency in JavaScript thorough understanding of Data Structure, React.js/React-Redux/Hooks, Node.js and its core principles as well as HTML, CSS using with SCSS/SASS. I also have ongoing Typescript, MERN stacks projects based on Agile and Scrum methodologies, version control with Git and data APIs. I am willing to constantly learn and experiment to deliver the best possible product to clients. I can bring my technical skillset to your team. Allow me the opportunity, to present you in person, in an interview, how I may best fit CadMakers. Sincerely Yusuke Yoshihiro',
-   buttonLabel3: 'Back To Page',
    imgStart: true,
    alt: 'extraInfo_img',
    dark: true,
