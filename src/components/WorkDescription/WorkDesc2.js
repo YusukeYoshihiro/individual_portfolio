@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button } from '../ButtonScrollStyles';
 import  workImg from '../../assets/images/MockImgLacrosse.png';
 import { workDescTwo } from '../../components/InfoSection/Data';
@@ -17,6 +17,11 @@ import {
   Img,
 } from  './WorkDescElements';
 
+import {
+  ArrowBack,
+  ArrowLeft,
+} from '../ArrowIcon/ArrowIconStyles';
+
 const visitWeb = () => {
   window.open('https://yusukeyoshihiro.github.io/lacrosseproject', '_blank')
 }
@@ -32,6 +37,11 @@ const backToWorks = () => {
 const lacrosseImg = workImg;
 
 const WorkDesc2 = () => {
+  const [hover, setHover] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover)
+  }
 
   const {
     lightBg,
@@ -44,7 +54,6 @@ const WorkDesc2 = () => {
     description,
     buttonLabel,
     buttonLabel2,
-    buttonLabel3,
     alt,
     primary,
     dark,
@@ -105,19 +114,21 @@ const WorkDesc2 = () => {
                 <Img src={lacrosseImg} alt={alt} />
               </ImgWrap>
               <br/><br/>
-              <Button 
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                    onClick={backToWorks}
-                  > 
-                    {buttonLabel3}
-                  </Button>
+              <Button
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+                primary={primary ? 1 : 0}
+                dark={dark ? 1 : 0}
+                dark2={dark2 ? 1 : 0}
+                onClick={backToWorks}
+                onMouseEnter={onHover}
+                onMouseLeave={onHover}
+              >
+                {hover ? <ArrowBack /> : <ArrowLeft />} &nbsp; Go Back
+              </Button>
 
             </Column2>
            

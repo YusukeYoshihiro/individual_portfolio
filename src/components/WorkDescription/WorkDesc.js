@@ -1,22 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button } from '../ButtonScrollStyles';
 import workImg from '../../assets/images/MockImgCricket.png';
 import { workDescOne } from '../../components/InfoSection/Data';
 
 import {
-  InfoContainer, 
-  InfoWrapper, 
-  InfoRow, 
-  Column1, 
-  Column2, 
-  TextWrapper, 
-  TopLine, 
-  Heading, 
-  Subtitle, 
-  BtnWrap, 
-  ImgWrap, 
+  InfoContainer,
+  InfoWrapper,
+  InfoRow,
+  Column1,
+  Column2,
+  TextWrapper,
+  TopLine,
+  Heading,
+  Subtitle,
+  BtnWrap,
+  ImgWrap,
   Img,
-} from  './WorkDescElements';
+} from './WorkDescElements';
+
+import {
+  ArrowBack,
+  ArrowLeft,
+} from '../ArrowIcon/ArrowIconStyles';
 
 const visitWeb = () => {
   window.open('https://yusukeyoshihiro.github.io/Cricket_Club_Website/index.html', '_blank')
@@ -27,12 +32,18 @@ const showCertification = () => {
 }
 
 const backToWorks = () => {
-   window.history.back();
+  window.history.back();
 }
 
 const cricketImg = workImg;
 
 const WorkDesc = () => {
+  const [hover, setHover] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover)
+  }
+
   const {
     lightBg,
     id,
@@ -44,16 +55,15 @@ const WorkDesc = () => {
     description,
     buttonLabel,
     buttonLabel2,
-    buttonLabel3,
     alt,
     primary,
     dark,
     dark2,
-    } = workDescOne;
+  } = workDescOne;
 
   return (
     <>
-       <InfoContainer lightBg={lightBg} id={id} >
+      <InfoContainer lightBg={lightBg} id={id} >
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1 >
@@ -62,15 +72,15 @@ const WorkDesc = () => {
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>
                   {description}
-                  <br/><br/>
-                  <h3>&lt; Languages /&gt;</h3><br/>
-                   <p> HTML, CSS, ES6, JQuery, JAVA</p><br/>
+                  <br /><br />
+                  <h3>&lt; Languages /&gt;</h3><br />
+                  <p> HTML, CSS, ES6, JQuery, JAVA</p><br />
 
-                   <h3>&lt; Database ＆ Tools /&gt;</h3><br/>
-                   <p> mySQL, Figma, Google-Form</p>
+                  <h3>&lt; Database ＆ Tools /&gt;</h3><br />
+                  <p> mySQL, Figma, Google-Form</p>
                 </Subtitle>
                 <BtnWrap>
-                  <Button 
+                  <Button
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -80,11 +90,11 @@ const WorkDesc = () => {
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
                     onClick={visitWeb}
-                  > 
+                  >
                     {buttonLabel}
                   </Button>
                   <div></div>
-                  <Button 
+                  <Button
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -94,7 +104,7 @@ const WorkDesc = () => {
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
                     onClick={showCertification}
-                  > 
+                  >
                     {buttonLabel2}
                   </Button>
                 </BtnWrap>
@@ -105,22 +115,23 @@ const WorkDesc = () => {
               <ImgWrap>
                 <Img src={cricketImg} alt={alt} />
               </ImgWrap>
-              <br/><br/>
-              <Button 
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                    onClick={backToWorks}
-                  > 
-                    {buttonLabel3}
-                  </Button>
+              <br /><br />
+              <Button
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+                primary={primary ? 1 : 0}
+                dark={dark ? 1 : 0}
+                dark2={dark2 ? 1 : 0}
+                onClick={backToWorks}
+                onMouseEnter={onHover}
+                onMouseLeave={onHover}
+              >
+                {hover ? <ArrowBack /> : <ArrowLeft />} &nbsp; Go Back
+              </Button>
             </Column2>
-
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>

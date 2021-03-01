@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Button } from '../ButtonScrollStyles';
 import  workImg from '../../assets/images/MovieApp.png';
 import { workDescThree } from '../../components/InfoSection/Data';
@@ -18,6 +18,11 @@ import {
   Img,
 } from  './WorkDescElements';
 
+import {
+  ArrowBack,
+  ArrowLeft
+} from  '../ArrowIcon/ArrowIconStyles';
+
 const visitWeb = () => {
   window.open('https://netfim-projects.yusukeyoshihiro.vercel.app', '_blank')
 }
@@ -29,6 +34,11 @@ const backToWorks = () => {
 const movieAppImg = workImg;
 
 const WorkDesc3 = () => {
+  const [hover, setHover] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover)
+  }
   const {
     lightBg,
     id,
@@ -39,7 +49,6 @@ const WorkDesc3 = () => {
     darkText,
     description,
     buttonLabel,
-    buttonLabel3,
     alt,
     primary,
     dark,
@@ -87,21 +96,23 @@ const WorkDesc3 = () => {
                 <Img src={movieAppImg} alt={alt} />
               </ImgWrap>
               <br/><br/>
-              <Button 
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                    onClick={backToWorks}
-                  > 
-                    {buttonLabel3}
-                  </Button>
+              <Button
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+                primary={primary ? 1 : 0}
+                dark={dark ? 1 : 0}
+                dark2={dark2 ? 1 : 0}
+                onClick={backToWorks}
+                onMouseEnter={onHover}
+                onMouseLeave={onHover}
+              >
+                {hover ? <ArrowBack /> : <ArrowLeft />} &nbsp; Go Back
+              </Button>
             </Column2>
-
+              
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>
