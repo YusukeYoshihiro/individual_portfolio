@@ -113,6 +113,22 @@ export const workDescFour = {
   darkText: false
 };
 
+export const workDescFive = {
+  id:'covid',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Project Description',
+  headline: 'COVID-19 Live Dashboard',
+  description: 'Built COVID-19 Live Dashboard with Typescript with React-Hooks, Redux-Toolkit',
+  buttonLabel: 'Visit App',
+  imgStart: true,
+  alt: 'covid_img',
+  dark: true,
+  primary: true,
+  darkText: false
+};
+
 export const extraInfo = {
   id:'extraInfo',
   lightBg: false,
