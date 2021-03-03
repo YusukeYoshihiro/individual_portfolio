@@ -20,7 +20,7 @@ import {
 } from './WorkDescElements';
 
 const visitWeb = () => {
-  window.open('https://covid-19-dashboard-rlfikvc5z-yusukeyoshihiro.vercel.app/', '_blank')
+  window.open('https://covid-19-dashboard-git-main-yusukeyoshihiro.vercel.app/', '_blank')
 }
 
 const covidImg = workImg;
