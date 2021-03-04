@@ -1,7 +1,7 @@
 import React from 'react';
-import { Button } from '../../Features/ButtonScrollStyles';
-import workImg from '../../assets/images/FABE_LOGO.png';
-import { workDescFour } from '../../Data/data';
+// import { Button } from '../ButtonScrollStyles';
+import workImg from '../../assets/images/portfolioImg.png';
+import { workDescSix } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages'
 
 import {
@@ -14,16 +14,12 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
+  // BtnWrap,
   ImgWrap,
   Img,
 } from './WorkDescElements';
 
-const visitWeb = () => {
-  window.open('', '_blank')
-}
-
-const ecommerceImg = workImg;
+const portfolioImg = workImg;
 
 const WorkDesc4 = () => {
   
@@ -36,12 +32,12 @@ const WorkDesc4 = () => {
     headline,
     darkText,
     description,
-    buttonLabel,
+    // buttonLabel,
     alt,
-    primary,
-    dark,
-    dark2,
-  } = workDescFour;
+    // primary,
+    // dark,
+    // dark2,
+  } = workDescSix;
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id} >
@@ -55,33 +51,17 @@ const WorkDesc4 = () => {
                   {description}
                   <br /><br />
                   <h3>&lt; Languages /&gt;</h3><br />
-                  <p> React, React-Redux, Styled-Components, compound components</p><br />
+                  <p>ES6, React.js, React-Hooks, Styled-Components</p><br />
 
-                  <h3>&lt; Database ＆ Tools /&gt;</h3><br />
-                  <p> Firebase, Apple-Pay system, Figma</p>
-                </Subtitle>
-                <BtnWrap>
-                  <Button
-                    to='home'
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                    onClick={visitWeb}
-                  >
-                    {buttonLabel}
-                  </Button>
-                </BtnWrap>
+                  <h3>&lt; Tools /&gt;</h3><br />
+                  <p>AOS, Material-UI, Styled Icon</p>
+                </Subtitle> 
               </TextWrapper>
             </Column1>
 
             <Column2 >
               <ImgWrap>
-                <Img src={ecommerceImg} alt={alt} />
+                <Img src={portfolioImg} alt={alt} />
               </ImgWrap>
               <br /><br />
               <BackToPages />

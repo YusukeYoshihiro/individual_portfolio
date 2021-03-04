@@ -1,7 +1,7 @@
 // Contact Pert
 import React from 'react'
-import { Button } from '../ButtonScrollStyles'
-import AboutMeImg from '../../assets/images/about_me.svg';
+import { Button } from '../../Features/ButtonScrollStyles'
+import AboutMeImg from '../../assets/images/about_me.png';
 import { SocialIconLink, SocialIcons } from '../Footer/FooterElements';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaSpotify, FaTwitter } from 'react-icons/fa';
 
@@ -16,7 +16,7 @@ import {
   Heading,
   Subtitle3,
   BtnWrap,
-  ImgWrap,
+  ContactImgWrap,
   Img,
 } from './InfoElements';
 
@@ -93,9 +93,9 @@ const InfoSec_3 = ({
             </ColumnContact >
 
             <ColumnContact2 data-aos="fade-down" data-aos-duration="1000">
-              <ImgWrap>
+              <ContactImgWrap>
                 <Img src={myImg} alt={alt} />
-              </ImgWrap>
+              </ContactImgWrap>
             </ColumnContact2>
 
           </InfoRow>

@@ -1,7 +1,7 @@
 import React from 'react'
 // import styled from 'styled-components';
 // import { Link } from 'react-router-dom'
-import { Button } from '../ButtonScrollStyles'
+import { Button } from '../../Features/ButtonScrollStyles'
 import AboutMeImg from '../../assets/images/about_meImg.png';
 import {
   InfoContainer,
@@ -87,7 +87,7 @@ export default InfoSec;
 // export const LinkToExtraInfo = styled(Link)`
 //   text-decoration: none;
 //   border-radius: 50px;
-//   background: #01BF71;
+//   background: #86c232;
 //   white-space: nowrap;
 //   padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
 //   color: #fff;
@@ -105,6 +105,6 @@ export default InfoSec;
 //   &:hover {
 //     transition: all 0.2s ease-in-out;
 //     background: #fff ;
-//     color: #010606;
+//     color: #222629;
 //   }
 // `;

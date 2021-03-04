@@ -25,7 +25,7 @@ const Home = () =>{
   }, [])
   
   const changeNav = () => {
-    console.log(window.scrollY)
+    // console.log(window.scrollY)
     if (window.scrollY >= 280) {
       setScrollNav(true)
     } else {
@@ -33,7 +33,7 @@ const Home = () =>{
     }
   };
 
-  console.log(scrollNav);
+  // console.log(scrollNav);
 
   return (
     <>

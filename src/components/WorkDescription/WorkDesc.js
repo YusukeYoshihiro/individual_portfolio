@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../ButtonScrollStyles';
+import { Button } from '../../Features/ButtonScrollStyles';
 import workImg from '../../assets/images/MockImgCricket.png';
 import { workDescOne } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages'

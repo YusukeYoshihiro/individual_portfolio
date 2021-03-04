@@ -59,7 +59,7 @@ export const HeroH1 = styled.h1`
   text-align: center;
 
   span{
-    color: #01bf71;
+    color:#86c232;
   }
 
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
    color : #fff;
-   background-color: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+   background-color: ${({ lightBg }) => (lightBg ? '#fff' : '#222629')};
 
    @media screen and (max-width: 780px) {
      padding: 100px 0;
@@ -52,7 +52,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: #86c232;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -66,7 +66,7 @@ export const Heading = styled.h1`
    font-size: 48px;
    line-height: 1.1;
    font-weight: 600;
-   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#222629')};
 
    @media screen and (max-width: 480px) {
      font-size: 32px;
@@ -78,7 +78,7 @@ export const Subtitle = styled.div`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+  color: ${({ darkText }) => (darkText ? '#222629' : '#fff')};
 `;
 
 export const Subtitle3 = styled.div`
@@ -86,12 +86,12 @@ export const Subtitle3 = styled.div`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? '#fff' : '#010606')};
+  color: ${({ darkText }) => (darkText ? '#fff' : '#222629')};
 `;
 
 // For infoSec_2.js
 export const SkillsWrap = styled.div`
-  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+  color: ${({ darkText }) => (darkText ? '#222629' : '#fff')};
 `;
 
 

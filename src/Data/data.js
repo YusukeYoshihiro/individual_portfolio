@@ -129,6 +129,22 @@ export const workDescFive = {
   darkText: false
 };
 
+export const workDescSix = {
+  id:'portfolio',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Project Description',
+  headline: 'Portfolio',
+  description: 'Built a portfolio website with React, React-Hooks, Styled-Components, AOS, Material-UI',
+  buttonLabel: 'Visit App',
+  imgStart: true,
+  alt: 'portfolio_img',
+  dark: true,
+  primary: true,
+  darkText: false
+};
+
 export const extraInfo = {
   id:'extraInfo',
   lightBg: false,
@@ -150,6 +166,13 @@ export const ButtonData = {
   dark: true,
   primary: true,
   darkText: false
+};
+
+export const ButtonLinkData = {
+  id:'ButtonLink',
+  dark: false,
+  primary: false,
+  darkText: true
 };
 
 

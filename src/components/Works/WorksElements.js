@@ -5,12 +5,12 @@ var Scroll   = require('react-scroll');
 var Element  = Scroll.Element;
 
 export const WorksContainer = styled(Element)`
-   height: 800px;
+   height: 1100px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background: #010606;
+   background: #222629;
 
    @media screen and (max-width: 768px){
     padding: 100px 0;
@@ -24,12 +24,12 @@ export const WorksContainer = styled(Element)`
 `;
 
 export const WorksWrapper = styled.div`
-  max-width: 1500px;
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  grid-gap: 16px;
+  grid-gap: 32px;
   padding: 0 50px;
 
   @media screen and (max-width: 1000px){
@@ -44,7 +44,7 @@ export const WorksWrapper = styled.div`
 
 export const Link = styled(LinkD)`
   text-decoration: none;
-  color:#010606;
+  color:#222629;
 `;
 
 export const WorksCard = styled.div`

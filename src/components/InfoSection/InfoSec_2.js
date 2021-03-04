@@ -49,7 +49,7 @@ const InfoSec2 = ({
 
                     <div data-aos="zoom-in" data-aos-delay="300" id="trigger-left">
                       <h3>&lt; Databese ＆ Tools /&gt;</h3><br />
-                      <p> Git, Figma, XD, Photoshop, <br />MongoDB, Firebase, Heroku, Postman</p>
+                      <p> Git, Figma, XD, Photoshop, <br />MongoDB, Firebase, Heroku, Postman, Slack</p>
                     </div>
                   </SkillsWrap>
                 </Subtitle>
