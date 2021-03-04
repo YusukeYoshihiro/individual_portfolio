@@ -20,21 +20,8 @@ import {
   NavLinks,
 } from './NavbarElements';
 
-// var Scroll   = require('react-scroll');
-
-
-
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
-  // var scroller = Scroll.scroller;
-
-
-  // let  = use();
-
-  // function handleClick() {
-  //   .push("/")
-  // }
-  
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setScrollNav(true)
@@ -47,12 +34,6 @@ const Navbar = ({ toggle }) => {
     window.addEventListener('scroll', changeNav)
   }, [])
 
-  // useEffect(() => {
-  //   console.log(.location.path)
-  //   scroller.scrollTo('banadai');
-  // }, [.location.path])
-  
-  // https://www.npmjs.com/package/react-scroll
   const toggleHome = () => {
     scroll.scrollToTop();
   }
@@ -71,7 +52,6 @@ const Navbar = ({ toggle }) => {
               <NavItem>  {/* li element */}
                 <NavLinks 
                   to="about"
-                  // onClick={handleClick}
                   smooth={true}
                   duration={500}
                   spy={true}

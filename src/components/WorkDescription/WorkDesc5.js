@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../ButtonScrollStyles';
+import { Button } from '../../Features/ButtonScrollStyles';
 import workImg from '../../assets/images/Covid19_mockup.png';
 import { workDescFive } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages'
@@ -25,7 +25,7 @@ const visitWeb = () => {
 
 const covidImg = workImg;
 
-const WorkDesc4 = () => {
+const WorkDesc5 = () => {
   
   const {
     lightBg,
@@ -94,4 +94,4 @@ const WorkDesc4 = () => {
   )
 }
 
-export default WorkDesc4;
+export default WorkDesc5;

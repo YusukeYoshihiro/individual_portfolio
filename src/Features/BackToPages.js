@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-import { Button } from '../components/ButtonScrollStyles'
+import { Button } from './ButtonScrollStyles'
 import {ButtonData} from '../Data/data';
 
 import {

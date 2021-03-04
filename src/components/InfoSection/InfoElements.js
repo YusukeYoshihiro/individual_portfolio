@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
+// #222629
+// #222629
 export const InfoContainer = styled.div`
    color : #fff;
-   background-color: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+   background-color: ${({lightBg}) => (lightBg ? '#fff' : '#222629')};
 
    @media screen and (max-width: 768px) {
      padding: 100px 0;
@@ -37,38 +39,25 @@ export const Column1 = styled.div`
  margin-bottom: 15px;
  padding: 0 15px;
  grid-area: col1;
- /* transform: ${({scroll}) => (scroll ? `translate(0, 0)` : `translate(500px, 0)`)};
- transition: transform .4s ease-out; */
 
- /* @media screen and (max-width: 768px){
-  transform: ${({scroll}) => (scroll ? `translate(0, 0)` : `translate(500px, 0)`)};
- transition: transform .4s ease-out;
- } */
 `;
 
 export const Column2 = styled.div`
  margin-bottom: 15px;
  padding: 0 15px;
  grid-area: col2;
- /* transform: ${({scroll}) => (scroll ? `translate(0,0)` : `translate(-500px,0)`)}; */
- /* transition: transform .4s ease-out; */
 `;
 
 export const ColumnSkill = styled.div`
  background: ${({objStyle}) => (objStyle)};
  margin-bottom: 15px;
- padding: 0 15px;
  grid-area: col1;
- /* transform: ${({scroll}) => (scroll ? `translate(0, 0)` : `translate(500px, 0)`)}; 
- transition: transform .4s ease-out;  */
 `;
 
 export const ColumnSkill2 = styled.div`
  margin-bottom: 15px;
  padding: 0 15px;
  grid-area: col2;
- /* transform: ${({scroll}) => (scroll ? `translate(0, 0)` : `translate(500px, 0)`)};
- transition: transform .4s ease-out; */
 `;
 
 export const ColumnContact = styled.div`
@@ -76,16 +65,12 @@ export const ColumnContact = styled.div`
  margin-bottom: 15px;
  padding: 0 15px;
  grid-area: col1;
- /* transform: ${({scroll}) => (scroll ? `translate(0, 0)` : `translate(500px, 0)`)}; 
- transition: transform .4s ease-out;  */
 `;
 
 export const ColumnContact2 = styled.div`
  margin-bottom: 15px;
  padding: 0 15px;
  grid-area: col2;
- /* transform: ${({scroll}) => (scroll ? `translate(0, 0)` : `translate(500px, 0)`)};
- transition: transform .4s ease-out; */
 `;
 
 
@@ -93,10 +78,11 @@ export const TextWrapper = styled.div`
  max-width: 540px;
  padding-top: 0;
  padding-bottom: 60px;
+ padding: 0px 30px;
 `;
 
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: #86c232;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -110,7 +96,7 @@ export const Heading = styled.h1`
    font-size: 48px;
    line-height: 1.1;
    font-weight: 600;
-   color: ${({lightText})=> (lightText ? '#f7f8fa' : '#010606')};
+   color: ${({lightText})=> (lightText ? '#f7f8fa' : '#222629')};
 
    @media screen and (max-width: 480px) {
      font-size: 32px;
@@ -122,7 +108,7 @@ export const Subtitle = styled.div`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({darkText})=> (darkText ? '#010606': '#fff')};
+  color: ${({darkText})=> (darkText ? '#222629': '#fff')};
 `;
 
 export const Subtitle3 = styled.div`
@@ -130,12 +116,12 @@ export const Subtitle3 = styled.div`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({darkText})=> (darkText ? '#fff': '#010606')};
+  color: ${({darkText})=> (darkText ? '#fff': '#222629')};
 `;
 
 // For infoSec_2.js
 export const SkillsWrap = styled.div`
-  color: ${({darkText})=> (darkText ? '#010606': '#fff')};
+  color: ${({darkText})=> (darkText ? '#222629': '#fff')};
 
   @media screen and (max-width: 378px){
     h3{
@@ -156,13 +142,27 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
    max-width: 555px;
    height: 100%;
+
+   @media screen and (max-width: 768px) {
+    width: 350px;
+    height: 350px;
+   }
+`;
+
+export const ContactImgWrap = styled.div`
+   max-width: 555px;
+   height: 100%;
+
+   @media screen and (max-width: 376px) {
+    /* width: 380px; */
+   }
 `;
 
 export const ImgWrapSkill = styled.div`
    max-width: 555px;
    height: 100%;
 
-   @media screen and (max-width: 768px) {
+   @media screen and (max-width: 376px) {
     width: 300px;
     height: 350px;
    }
@@ -170,8 +170,9 @@ export const ImgWrapSkill = styled.div`
 
 
 export const Img = styled.img`
+  display: block;
+  margin: auto;
   width: 80%;
-  margin: 0 0 10px 0;
   padding-right: 0;
 `;
 
