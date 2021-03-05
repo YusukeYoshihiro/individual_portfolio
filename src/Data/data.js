@@ -137,7 +137,7 @@ export const workDescSix = {
   topLine: 'Project Description',
   headline: 'Portfolio',
   description: 'Built a portfolio website with React, React-Hooks, Styled-Components, AOS, Material-UI',
-  buttonLabel: 'Visit App',
+  buttonLabel: 'Visit WebSite',
   imgStart: true,
   alt: 'portfolio_img',
   dark: true,
