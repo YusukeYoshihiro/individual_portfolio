@@ -121,7 +121,7 @@ export const workDescFive = {
   topLine: 'Project Description',
   headline: 'COVID-19 Live Dashboard',
   description: 'Built COVID-19 Live Dashboard with Typescript with React-Hooks, Redux-Toolkit',
-  buttonLabel: 'Visit App',
+  buttonLabel: 'Visit WebSite',
   imgStart: true,
   alt: 'covid_img',
   dark: true,
