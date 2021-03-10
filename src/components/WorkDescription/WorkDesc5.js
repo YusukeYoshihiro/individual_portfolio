@@ -20,8 +20,9 @@ import {
 } from './WorkDescElements';
 
 const visitWeb = () => {
-  window.open('https://covid-19-dashboard-git-main-yusukeyoshihiro.vercel.app/', '_blank')
+  window.open('https://covid-19-api-dash-board-yusukeyoshihiro.vercel.app/', '_blank')
 }
+
 
 const covidImg = workImg;
 
@@ -58,7 +59,7 @@ const WorkDesc5 = () => {
                   <p>Typescript, React.js, React-Hooks, Chart.js</p><br />
 
                   <h3>&lt; Tools /&gt;</h3><br />
-                  <p>API-Covid19 Mathdro.id, Redux-Toolkit, <br/>Material-UI</p>
+                  <p>A free API for data on the Coronavirus,<br/> Redux-Toolkit, Material-UI</p>
                 </Subtitle>
                 <BtnWrap>
                   <Button
