@@ -4,7 +4,7 @@ import Icon2 from '../../assets/images/Lacrosse_works.png';
 import Icon3 from '../../assets/images/Y\'sFilm_logo.png';
 import Icon4 from '../../assets/images/workDescFour.png';
 import Icon5 from '../../assets/images/covidDash_logo.png';
-import Icon6 from '../../assets/images/FABE_LOGO_2.png';
+import Icon6 from '../../assets/images/FABE_LOGO_3.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {
