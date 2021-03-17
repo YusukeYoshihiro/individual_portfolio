@@ -43,10 +43,7 @@ const Navbar = ({ toggle }) => {
         value={{ color: '#fff' }}
       >
         <Nav scrollNav={scrollNav}>
-          <NavbarContainer
-            data-aos="fade-down"
-            data-aos-delay="1200"
-          >
+          <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
               <Img src={img} alt="main_logo" />
             </NavLogo>
