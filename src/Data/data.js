@@ -21,7 +21,7 @@ export const homeObjTwo = {
   lightText: false,
   lightTextDesc: false,
   topLine: 'Skills',
-  headline: 'Professional Skills',
+  headline: 'Proficiency',
   buttonLabel: 'Certifications Here!',
   imgStart: false,
   alt: 'skills',

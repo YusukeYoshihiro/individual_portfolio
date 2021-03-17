@@ -39,18 +39,23 @@ const Navbar = ({ toggle }) => {
   }
   return (
     <>
-      <IconContext.Provider value={{ color: '#fff' }}>
+      <IconContext.Provider
+        value={{ color: '#fff' }}
+      >
         <Nav scrollNav={scrollNav}>
-          <NavbarContainer>
+          <NavbarContainer
+            data-aos="fade-down"
+            data-aos-delay="1200"
+          >
             <NavLogo to="/" onClick={toggleHome}>
-              <Img  src={img} alt="main_logo"/>
+              <Img src={img} alt="main_logo" />
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>
             <NavMenu> {/* ul element */}
               <NavItem>  {/* li element */}
-                <NavLinks 
+                <NavLinks
                   to="about"
                   smooth={true}
                   duration={500}
@@ -60,33 +65,33 @@ const Navbar = ({ toggle }) => {
                 >About</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks 
-                to='skills'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-80}
+                <NavLinks
+                  to='skills'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
                 >Skills</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks 
-                to='works'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-80}
+                <NavLinks
+                  to='works'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
                 >Projects</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks 
-                to='contact'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-80}
+                <NavLinks
+                  to='contact'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
                 >Contact</NavLinks>
               </NavItem>
             </NavMenu>
