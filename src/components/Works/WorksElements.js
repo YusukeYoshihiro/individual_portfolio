@@ -57,7 +57,25 @@ export const WorksCard = styled.div`
    min-height: 320px;
    padding: 30px;
    transition: all 0.2s ease-in-out;
+   opacity: 0;
 
+  /* animation: mymove 3s;
+  animation-fill-mode: both;
+
+  :hover{
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+
+   @keyframes mymove { 
+    100%{
+      opacity: 1;
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+   } */
+   
+   
    position: relative;
 	 overflow: hidden;
 
@@ -67,9 +85,23 @@ export const WorksCard = styled.div`
     }
   }
 
-   &:hover{
+  /* [data-aos="example-anim1"] {
+  transform: skewX(45deg);
+  opacity: 0;
+  transition-property: transform, opacity;
+  :hover{
     transform: scale(1.02);
-    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+  &.aos-animate {
+    transform: scale(1.02);
+  }
+}
+} */
+
+   :hover{
+    transform: scale(2); 
+    transition: all 0.2s ease-in-out; 
     cursor: pointer;
 
     &::before {
@@ -80,13 +112,17 @@ export const WorksCard = styled.div`
 		top: -50%;
 		width: 200%;
 		height: 200%;
-		background-color: #399953;
+		background-color: #37570a;
 		background-repeat: no-repeat;
 		background-size: 50% 50%, 50% 50%;
 		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-		background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
-    animation: rotate 4s linear infinite;
-  }
+		background-image: 
+    linear-gradient(#d8c94d, #d8c94d), 
+    linear-gradient(#adbe5f, #adbe5f), 
+    linear-gradient(#81b46d, #81b46d), 
+    linear-gradient(#51a97a, #51a97a);
+    animation: rotate 4s linear infinite; 
+    }
     
     &::after {
 		content: '';
@@ -98,13 +134,12 @@ export const WorksCard = styled.div`
 		height: calc(100% - 12px);
 		background: white;
     border-radius: 5px;
-  }
+  } 
+}
 
   @media screen and (max-width: 780px) {
     min-height: 280px;
   }
-}
-	
 `;
 
 export const WorksIcon = styled.img`
@@ -132,6 +167,7 @@ export const WorksP = styled.p`
   font-size: 1rem;
   text-align: center;
 `;
+
 
 
 

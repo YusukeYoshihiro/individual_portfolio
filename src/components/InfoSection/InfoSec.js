@@ -48,11 +48,6 @@ const InfoSec = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                  {/* <LinkToExtraInfo
-                    to={'/extraInfo'}
-                  > 
-                    More
-                  </LinkToExtraInfo> */}
                   <Button
                     onClick={showResume}
                     smooth={true}
