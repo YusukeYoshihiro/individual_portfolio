@@ -44,7 +44,7 @@ const InfoSec2 = ({
 
                     <div data-aos="zoom-in" data-aos-delay="100">
                       <h3>&lt; Frameworks ＆ Libraries /&gt;</h3><br />
-                      <p> React, React-Redux, React-Hooks, <br />styled-components, Chart.js JQuery, <br />Node.js, Express.js</p><br />
+                      <p> React, React-Redux, React-Hooks, <br />styled-components, Chart.js, JQuery, <br />Node.js, Express.js</p><br />
                     </div>
 
                     <div data-aos="zoom-in" data-aos-delay="300" id="trigger-left">
