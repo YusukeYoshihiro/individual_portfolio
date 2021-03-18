@@ -46,7 +46,7 @@ const HeroSection = () => {
           onMouseLeave={onHover}
           primary='true'
           dark='true'
-          data-aos="zoom-in" data-aos-delay="900"
+          // data-aos="zoom-in" data-aos-delay="900"
           >
             Check it Out ! {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
