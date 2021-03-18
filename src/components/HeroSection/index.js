@@ -37,7 +37,7 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent >
-        <HeroH1 data-aos="zoom-in" data-aos-delay="500"> I'm <span>Yusuke</span> , <br/>Front-End-Developer,<br/>based in Vancouver. </HeroH1>
+        <HeroH1 data-aos="zoom-in" data-aos-delay="500"> I'm <span>Yusuke</span> Yoshihiro, <br/>Front-End-Developer,<br/>based in Vancouver. </HeroH1>
         <HeroP data-aos="zoom-in" data-aos-delay="700"> Love Code, Cook and Hockey</HeroP>
         <HeroBtnWrapper>
           <Button
