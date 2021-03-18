@@ -1,8 +1,6 @@
 import styled from 'styled-components';
-import { Link as LinkD } from 'react-router-dom';
-// import { Scroll } from 'react-scroll'\
-var Scroll   = require('react-scroll');
-var Element  = Scroll.Element;
+var Scroll = require('react-scroll');
+var Element = Scroll.Element;
 
 export const WorksContainer = styled(Element)`
    height: 1100px;
@@ -42,110 +40,31 @@ export const WorksWrapper = styled.div`
    }
 `;
 
-export const Link = styled(LinkD)`
-  text-decoration: none;
-  color:#222629;
-`;
-
 export const WorksCard = styled.div`
    background: #fff;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
    align-items: center;
    border-radius: 10px;
    min-height: 320px;
-   padding: 30px;
    transition: all 0.2s ease-in-out;
-   opacity: 0;
-
-  /* animation: mymove 3s;
-  animation-fill-mode: both;
-
-  :hover{
-    transform: scale(1.2);
-    cursor: pointer;
-  }
-
-
-   @keyframes mymove { 
-    100%{
-      opacity: 1;
-      transform: translate3d(0, 0, 0) scale(1);
-    }
-   } */
-   
-   
+   opacity: 0; 
    position: relative;
 	 overflow: hidden;
-
-   @keyframes rotate {
-	  100% {
-		 transform: rotate(1turn);
-    }
-  }
-
-  /* [data-aos="example-anim1"] {
-  transform: skewX(45deg);
-  opacity: 0;
-  transition-property: transform, opacity;
-  :hover{
-    transform: scale(1.02);
-    cursor: pointer;
-
-  &.aos-animate {
-    transform: scale(1.02);
-  }
-}
-} */
-
-   :hover{
-    transform: scale(2); 
-    transition: all 0.2s ease-in-out; 
-    cursor: pointer;
-
-    &::before {
-		content: '';
-		position: absolute;
-		z-index: -2;
-		left: -50%;
-		top: -50%;
-		width: 200%;
-		height: 200%;
-		background-color: #37570a;
-		background-repeat: no-repeat;
-		background-size: 50% 50%, 50% 50%;
-		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-		background-image: 
-    linear-gradient(#d8c94d, #d8c94d), 
-    linear-gradient(#adbe5f, #adbe5f), 
-    linear-gradient(#81b46d, #81b46d), 
-    linear-gradient(#51a97a, #51a97a);
-    animation: rotate 4s linear infinite; 
-    }
-    
-    &::after {
-		content: '';
-		position: absolute;
-		z-index: -1;
-		left: 6px;
-		top: 6px;
-		width: calc(100% - 12px);
-		height: calc(100% - 12px);
-		background: white;
-    border-radius: 5px;
-  } 
-}
 
   @media screen and (max-width: 780px) {
     min-height: 280px;
   }
 `;
 
+export const WorksImgCtn = styled.div`
+  background-color: #86c232;
+`;
+
 export const WorksIcon = styled.img`
    height: 160%;
    width: 160px;
    margin-bottom: 10px;
+   display: block;
+   margin: auto;
 `;
 
 export const WorksH1 = styled.h1`
@@ -166,6 +85,16 @@ export const WorksH2 = styled.h2`
 export const WorksP = styled.p`
   font-size: 1rem;
   text-align: center;
+`;
+
+
+
+export const WorksContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px;
 `;
 
 
