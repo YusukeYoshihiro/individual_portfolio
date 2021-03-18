@@ -53,7 +53,7 @@ export const HeroContent = styled.div`
   align-items: center;
 `;
 
-export const HeroH1 = styled.h1`
+export const HeroH1 = styled.h2`
   color: #fff;
   font-size: 48px;
   text-align: center;
