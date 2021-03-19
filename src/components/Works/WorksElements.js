@@ -8,7 +8,7 @@ export const WorksContainer = styled(Element)`
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background: #222629;
+   background: var(--color-dark);
 
    @media screen and (max-width: 768px){
     padding: 100px 0;

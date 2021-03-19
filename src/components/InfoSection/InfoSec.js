@@ -1,6 +1,4 @@
 import React from 'react'
-// import styled from 'styled-components';
-// import { Link } from 'react-router-dom'
 import { Button } from '../../Features/ButtonScrollStyles'
 import AboutMeImg from '../../assets/images/about_meImg.png';
 import {
@@ -78,28 +76,3 @@ const InfoSec = ({
 
 export default InfoSec;
 
-//        ***** Styles for LinkToExtraInfo(Button)
-// export const LinkToExtraInfo = styled(Link)`
-//   text-decoration: none;
-//   border-radius: 50px;
-//   background: #86c232;
-//   white-space: nowrap;
-//   padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-//   color: #fff;
-//   font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
-//   outline: none;
-//   border: none;
-//   cursor: pointer;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   transition: all 0.2s ease-in-out;
-//   margin-top: 15px;
-//   width: 200px;
-
-//   &:hover {
-//     transition: all 0.2s ease-in-out;
-//     background: #fff ;
-//     color: #222629;
-//   }
-// `;
