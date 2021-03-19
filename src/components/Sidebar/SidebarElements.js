@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
-import { Link as LinkR } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';// https://react-icons.github.io/react-icons/search?q=fatime
 
 export const SidebarContainer = styled.aside`
@@ -8,7 +7,7 @@ export const SidebarContainer = styled.aside`
    z-index: 999;
    width: 100%;
    height: 100%;
-   background: #222629; 
+   background: var(--color-dark); 
    display: grid;
    align-items: center;
    top: 0;
@@ -71,12 +70,12 @@ export const SideBtnWrap = styled.div`
   justify-content: center;
 `;
 
-export const SidebarRoute = styled(LinkR)`
+export const SidebarRoute = styled.button`
    border-radius: 50px;
    background: #86c232;
    white-space: nowrap;
    padding: 16px 64px;
-   color: #222629;
+   color: var(--color-dark);
    font-size: 16px;
    outline: none;
    border: none;
@@ -87,7 +86,7 @@ export const SidebarRoute = styled(LinkR)`
    &:hover {
     transition: all 0.2s ease-in-out;
     background-color:#fff;
-    color: #222629;
+    color: var(--color-dark);
   }
 `;
 

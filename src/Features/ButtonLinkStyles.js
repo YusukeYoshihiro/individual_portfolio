@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 export const ButtonLink = styled(Link)`
   text-decoration: none;
   border-radius: 50px;
-  background: ${({ primary }) => ( primary ? '#86c232' : '#222629' )};
+  background: ${({ primary }) => ( primary ? '#86c232' : 'var(--color-dark)' )};
   white-space: nowrap;
   padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-  /* color: ${({dark}) => (dark ? '#222629' : '#222629' )}; */
-  color: ${({dark}) => (dark ? '#222629' : '#fff' )}; 
+  /* color: ${({dark}) => (dark ? 'var(--color-dark)' : 'var(--color-dark)' )}; */
+  color: ${({dark}) => (dark ? 'var(--color-dark)' : '#fff' )}; 
   font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
   outline: none;
   border: none;
