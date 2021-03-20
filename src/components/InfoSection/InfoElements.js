@@ -198,4 +198,29 @@ export const Img = styled.img`
 `;
 
 
+export const SkillsList = styled.ul`
+  display:flex;
+  list-style: none;
+  margin-bottom:2rem;
+  flex-wrap: wrap;
+  li{
+    font-size:1rem;
+    padding:5px;
+    border:1px solid var(--color-dark);
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    :hover{
+      transform:scale(1.05);
+      border:2px solid var(--color-green);
+      background-color: var(--color-green);
+      color: #fff;
+    }
+   
 
+    @media (max-width:768px){
+    font-size:0.7rem;
+  }
+  }
+ 
+`;
