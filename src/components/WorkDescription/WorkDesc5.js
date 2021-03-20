@@ -18,6 +18,7 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
+  LanguageList,
 } from './WorkDescElements';
 
 const covidImg = workImg;
@@ -53,11 +54,26 @@ const WorkDesc5 = () => {
                 <Subtitle darkText={darkText}>
                   {description}
                   <br /><br />
-                  <h3>&lt; Languages /&gt;</h3><br />
-                  <p>Typescript, React.js, React-Hooks, Chart.js</p><br />
+                  <h3>&lt; Frameworks &amp;Libraries /&gt;</h3><br />
+                  <LanguageList>
+                    <li>Typescript</li>
+                    <li>React.js</li>
+                    <li>Redux-Toolkit</li>
+                    <li>Chart.js</li>
+                    <li>styled-components</li>
+                    <li>Material-UI</li>
+                  </LanguageList>
 
-                  <h3>&lt; Tools /&gt;</h3><br />
-                  <p>A free API for data on the Coronavirus,<br/> Redux-Toolkit, Material-UI</p>
+                  <h3>&lt; Others /&gt;</h3><br />
+                  <LanguageList>
+                    <li>
+                      <a href="https://covid19api.com">
+                        A free API for data on the Coronavirus
+                      </a>
+                    </li>
+                    <li>Git</li>
+                  </LanguageList>
+                  
                 </Subtitle>
                 <BtnWrap>
                   <Button

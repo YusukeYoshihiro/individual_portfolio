@@ -17,12 +17,13 @@ import {
   // BtnWrap,
   ImgWrap,
   Img,
+  LanguageList,
 } from './WorkDescElements';
 
 const ecommerceImg = workImg;
 
 const WorkDesc4 = () => {
-  
+
   const {
     lightBg,
     id,
@@ -50,12 +51,23 @@ const WorkDesc4 = () => {
                 <Subtitle darkText={darkText}>
                   {description}
                   <br /><br />
-                  <h3>&lt; Languages /&gt;</h3><br />
-                  <p> MERN stacks, Javascript(ES6) <br/>
-                  React, React-Redux,  Node.js/Express.js, </p><br />
-
-                  <h3>&lt; Database ＆ Tools /&gt;</h3><br />
-                  <p>Material-UI, MongoDB, stripe(payment),Git.</p>
+                  <h3>&lt; Front-End /&gt;</h3><br />
+                  <LanguageList>
+                    <li>React</li>
+                    <li>React-Redux</li>
+                    <li>Styled-Components</li>
+                    <li>Material-UI</li>
+                  </LanguageList>
+                  <h3>&lt; Backend ＆ Others /&gt;</h3><br />
+                  <LanguageList>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>stripe(payment)</li>
+                    <li>MongoDB</li>
+                    <li>Heroku</li>
+                    <li>Heroku</li>
+                    <li>Git</li>
+                  </LanguageList>
                 </Subtitle>
                 {/* <BtnWrap>
                   <Button

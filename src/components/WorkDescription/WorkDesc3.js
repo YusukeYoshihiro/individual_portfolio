@@ -18,6 +18,7 @@ import {
   BtnWrap, 
   ImgWrap, 
   Img,
+  LanguageList,
 } from  './WorkDescElements';
 
 const movieAppImg = workImg;
@@ -54,11 +55,20 @@ const WorkDesc3 = () => {
                 <Subtitle darkText={darkText}>
                   {description}
                   <br/><br/>
-                  <h3>&lt; Languages /&gt;</h3><br/>
-                   <p> React.js, Compound-Components, Styled-Components, Json/Data</p><br/>
-
-                   <h3>&lt; Database ＆ Tools /&gt;</h3><br/>
-                   <p> Firebase, Diagrams.net, XD</p>
+                  <h3>&lt; Front-End /&gt;</h3><br/>
+                  <LanguageList>
+                    <li> React</li>
+                    <li> Compound-Components</li>
+                    <li> Styled-Components</li>
+                    <li> Json</li>   
+                  </LanguageList>
+              
+                   <h3>&lt; Database ＆ Others /&gt;</h3><br/>
+                   <LanguageList>
+                    <li> Firebase</li>
+                    <li> Diagrams.net</li>
+                    <li> XD</li>
+                  </LanguageList>
                 </Subtitle>
                 <BtnWrap>
                   <Button 

@@ -57,12 +57,6 @@ const ExtraInfo = () => {
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>
                   {description}
-                  {/* <br/><br/>
-                  <h3>&lt; Languages /&gt;</h3><br/>
-                   <p> HTML, CSS, ES6, JQuery, JAVA</p><br/>
-
-                   <h3>&lt; Database ＆ Tools /&gt;</h3><br/>
-                   <p> mySQL, Figma, Google-Form</p> */}
                 </Subtitle>
               </TextWrapper>
             </Column1>
@@ -72,21 +66,6 @@ const ExtraInfo = () => {
                 <Img src={cricketImg} alt={alt} />
               </ImgWrap>
               <br/><br/>
-              {/* <Button
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-                primary={primary ? 1 : 0}
-                dark={dark ? 1 : 0}
-                dark2={dark2 ? 1 : 0}
-                onClick={backToWorks}
-                onMouseEnter={onHover}
-                onMouseLeave={onHover}
-              >
-                {hover ? <ArrowBack /> : <ArrowLeft />} &nbsp; Go Back
-              </Button> */}
             </Column2>
 
           </InfoRow>
