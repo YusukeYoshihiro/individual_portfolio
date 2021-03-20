@@ -3,6 +3,8 @@ import { Button } from '../../Features/ButtonScrollStyles';
 import  workImg from '../../assets/images/MockImgLacrosse.png';
 import { workDescTwo } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages';
+import { URL } from '../../Data/showRepository';
+
 import {
   InfoContainer, 
   InfoWrapper, 
@@ -17,10 +19,6 @@ import {
   ImgWrap, 
   Img,
 } from  './WorkDescElements';
-
-const visitWeb = () => {
-  window.open('https://yusukeyoshihiro.github.io/lacrosseproject', '_blank')
-}
 
 const showCertification = () => {
   window.open('https://drive.google.com/file/d/1tjpMVCE-7F7Lqho8FFHXVW2wSxfdRpS8/view?usp=sharing', '_blank')
@@ -74,7 +72,9 @@ const WorkDesc2 = () => {
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                    onClick={visitWeb}
+                    onClick={() => {
+                      window.open(URL[1].website.lacrosse, '_blank')
+                    }}
                   > 
                     {buttonLabel}
                   </Button>

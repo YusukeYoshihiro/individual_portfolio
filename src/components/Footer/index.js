@@ -1,6 +1,6 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import { FaFacebook, FaInstagram, FaGithub, FaTwitter, FaLinkedin, FaSpotify } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import {
      FooterContainer,
      FooterWrap,
@@ -38,15 +38,15 @@ const Footer = () => {
                                    <SocialIconLink href="https://github.com/YusukeYoshihiro" target="_blank" aria-label="Github">
                                         <FaGithub />
                                    </SocialIconLink>
-                                   <SocialIconLink href="https://twitter.com/TheManfromFNFa1" target="_blank" aria-label="Twitter">
+                                   {/* <SocialIconLink href="https://twitter.com/TheManfromFNFa1" target="_blank" aria-label="Twitter">
                                         <FaTwitter />
-                                   </SocialIconLink>
+                                   </SocialIconLink> */}
                                    <SocialIconLink href="https://www.linkedin.com/in/yusuke-yoshihiro-ab46491b2/" target="_blank" aria-label="Linkdin">
                                         <FaLinkedin />
                                    </ SocialIconLink>
-                                   <SocialIconLink href="https://open.spotify.com/user/0qibuxlh5wun8410w367fjush " target="_blank" aria-label="Spotify">
+                                   {/* <SocialIconLink href="https://open.spotify.com/user/0qibuxlh5wun8410w367fjush " target="_blank" aria-label="Spotify">
                                         <FaSpotify />
-                                   </ SocialIconLink>
+                                   </ SocialIconLink> */}
                               </ SocialIcons>
                          </ SocialMediaWrap>
                     </ SocialMedia>

@@ -3,7 +3,7 @@ import React from 'react'
 import { Button } from '../../Features/ButtonScrollStyles'
 import AboutMeImg from '../../assets/images/about_me.png';
 import { SocialIconLink, SocialIcons } from '../Footer/FooterElements';
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaSpotify, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 import {
   InfoContainer,
@@ -25,7 +25,7 @@ const myImg = AboutMeImg;
 const mailtoUrl = 'mailto:yusuke.10.25.61@gmail.com';
 
 const mailTo = () => {
-   window.location.href= mailtoUrl;
+  window.location.href = mailtoUrl;
 }
 
 const InfoSec_3 = ({
@@ -36,7 +36,7 @@ const InfoSec_3 = ({
   lightText,
   headline,
   darkText,
-  description,
+  email,
   buttonLabel,
   // img,
   alt,
@@ -49,11 +49,13 @@ const InfoSec_3 = ({
       <InfoContainer lightBg={lightBg} id={id} >
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
-            <ColumnContact data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="50">
+            <ColumnContact data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle3 darkText={darkText}>{description}</Subtitle3>
+                <Subtitle3
+                  darkText={darkText}
+                  onClick={mailTo}>{email}</Subtitle3>
                 <SocialIcons>
                   <SocialIconLink href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
                     <FaFacebook />
@@ -64,14 +66,8 @@ const InfoSec_3 = ({
                   <SocialIconLink href="https://github.com/YusukeYoshihiro" target="_blank" aria-label="Github">
                     <FaGithub />
                   </SocialIconLink>
-                  <SocialIconLink href="https://twitter.com/TheManfromFNFa1" target="_blank" aria-label="Twitter">
-                    <FaTwitter />
-                  </SocialIconLink>
                   <SocialIconLink href="https://www.linkedin.com/in/yusuke-yoshihiro-ab46491b2/" target="_blank" aria-label="Linkdin">
                     <FaLinkedin />
-                  </ SocialIconLink>
-                  <SocialIconLink href="https://open.spotify.com/user/0qibuxlh5wun8410w367fjush " target="_blank" aria-label="Spotify">
-                    <FaSpotify />
                   </ SocialIconLink>
 
                 </ SocialIcons><br />

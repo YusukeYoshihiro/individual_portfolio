@@ -3,7 +3,7 @@ import { Button } from '../../Features/ButtonScrollStyles';
 import  workImg from '../../assets/images/MovieApp.png';
 import { workDescThree, ButtonRepository } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages';
-import { repoURL } from '../../Data/showRepository';
+import { URL } from '../../Data/showRepository';
 
 import {
   InfoContainer, 
@@ -19,10 +19,6 @@ import {
   ImgWrap, 
   Img,
 } from  './WorkDescElements';
-
-const visitWeb = () => {
-  window.open('https://netfim-projects.yusukeyoshihiro.vercel.app', '_blank')
-}
 
 const movieAppImg = workImg;
 
@@ -75,7 +71,9 @@ const WorkDesc3 = () => {
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                    onClick={visitWeb}
+                    onClick={() => {
+                      window.open(URL[1].website.movieApp, '_blank')
+                    }}
                   > 
                     {buttonLabel}
                   </Button>
@@ -88,7 +86,7 @@ const WorkDesc3 = () => {
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                    onClick={() => window.open(repoURL[0].movieApp, '_blank')}
+                    onClick={() => window.open(URL[0].repository.movieApp, '_blank')}
                   > 
                     {buttonLabelRepo}
                   </Button>

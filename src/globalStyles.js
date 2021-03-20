@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
    }
    html {
     --color-dark: #222629;
-    --color-light: #86c232;
+    --color-green: #86c232;
     --color-white: #fff;
   }
 `;

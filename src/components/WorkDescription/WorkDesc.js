@@ -3,7 +3,7 @@ import { Button } from '../../Features/ButtonScrollStyles';
 import workImg from '../../assets/images/MockImgCricket.png';
 import { workDescOne,  ButtonRepository } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages';
-import { repoURL } from '../../Data/showRepository';
+import { URL } from '../../Data/showRepository';
 
 import {
   InfoContainer,
@@ -19,14 +19,6 @@ import {
   ImgWrap,
   Img,
 } from './WorkDescElements';
-
-const visitWeb = () => {
-  window.open('https://yusukeyoshihiro.github.io/Cricket_Club_Website/index.html', '_blank')
-}
-
-// const showRepository = () => {
-//   window.open('https://github.com/YusukeYoshihiro/Cricket_Club_Website', '_blank')
-// }
 
 const cricketImg = workImg;
 
@@ -78,7 +70,9 @@ const WorkDesc = () => {
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                    onClick={visitWeb}
+                    onClick={() => {
+                      window.open(URL[1].website.cricket, '_blank')
+                    }}
                   >
                     {buttonLabel}
                   </Button>
@@ -92,7 +86,7 @@ const WorkDesc = () => {
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                    onClick={() => window.open(repoURL[0].cricket, '_blank')}
+                    onClick={() => window.open(URL[0].repository.cricket, '_blank')}
                   >
                     {buttonLabelRepo}
                   </Button>

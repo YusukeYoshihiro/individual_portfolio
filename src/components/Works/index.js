@@ -150,7 +150,7 @@ const Works = () => {
             <WorksH2>E-commerce App Project</WorksH2>
             <WorksP>Coming Soon ! <br /><br /></WorksP>
             <ButtonLink
-              to=""
+              to={'/ecommerce'}
               duration={500}
               exact="true"
               offset={-80}

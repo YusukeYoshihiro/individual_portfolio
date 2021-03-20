@@ -3,7 +3,7 @@ import React from 'react';
 import workImg from '../../assets/images/portfolioImg.png';
 import { workDescSix, ButtonRepository} from '../../Data/data';
 import BackToPages from '../../Features/BackToPages';
-import { repoURL } from '../../Data/showRepository';
+import { URL } from '../../Data/showRepository';
 import { Button } from '../../Features/ButtonScrollStyles';
 
 import {
@@ -38,7 +38,8 @@ const WorkDesc4 = () => {
     alt,
     primary,
     dark,
-    dark2
+    dark2,
+    buttonLabel
   } = workDescSix;
 
   const { buttonLabelRepo } =  ButtonRepository;
@@ -61,6 +62,19 @@ const WorkDesc4 = () => {
                   <p>AOS, Material-UI, Styled Icon</p>
                 </Subtitle>
                 <BtnWrap>
+                <Button
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                    onClick={() => window.open(URL[1].website.portfolio, '_blank')}
+                  > 
+                    {buttonLabel}
+                  </Button>
                   <Button
                     smooth={true}
                     duration={500}
@@ -70,7 +84,7 @@ const WorkDesc4 = () => {
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                    onClick={() => window.open(repoURL[0].portfolio, '_blank')}
+                    onClick={() => window.open(URL[0].repository.portfolio, '_blank')}
                   > 
                     {buttonLabelRepo}
                   </Button>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../../Features/ButtonScrollStyles';
+// import { Button } from '../../Features/ButtonScrollStyles';
 import workImg from '../../assets/images/FABE_LOGO.png';
 import { workDescFour } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages'
@@ -14,14 +14,10 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
+  // BtnWrap,
   ImgWrap,
   Img,
 } from './WorkDescElements';
-
-const visitWeb = () => {
-  window.open('', '_blank')
-}
 
 const ecommerceImg = workImg;
 
@@ -36,11 +32,11 @@ const WorkDesc4 = () => {
     headline,
     darkText,
     description,
-    buttonLabel,
+    // buttonLabel,
     alt,
-    primary,
-    dark,
-    dark2,
+    // primary,
+    // dark,
+    // dark2,
   } = workDescFour;
   return (
     <>
@@ -55,12 +51,13 @@ const WorkDesc4 = () => {
                   {description}
                   <br /><br />
                   <h3>&lt; Languages /&gt;</h3><br />
-                  <p> React, React-Redux, Styled-Components, compound components</p><br />
+                  <p> MERN stacks, Javascript(ES6) <br/>
+                  React, React-Redux,  Node.js/Express.js, </p><br />
 
                   <h3>&lt; Database ＆ Tools /&gt;</h3><br />
-                  <p> Firebase, Apple-Pay system, Figma</p>
+                  <p>Material-UI, MongoDB, stripe(payment),Git.</p>
                 </Subtitle>
-                <BtnWrap>
+                {/* <BtnWrap>
                   <Button
                     to='home'
                     smooth={true}
@@ -71,11 +68,14 @@ const WorkDesc4 = () => {
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                    onClick={visitWeb}
+                    onClick={() => {
+                      // window.open(URL[1].website.ecommerce, '_blank')
+                    }}
                   >
                     {buttonLabel}
                   </Button>
-                </BtnWrap>
+                  
+                </BtnWrap> */}
               </TextWrapper>
             </Column1>
 

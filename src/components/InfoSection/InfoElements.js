@@ -110,12 +110,34 @@ export const Subtitle = styled.div`
   color: ${({darkText})=> (darkText ? 'var(--color-dark)': '#fff')};
 `;
 
+// for contact part
 export const Subtitle3 = styled.div`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
-  line-height: 24px;
+  /* line-height: 24px; */
   color: ${({darkText})=> (darkText ? '#fff': 'var(--color-dark)')};
+  font-size: 20px;
+  text-decoration: none;
+  color: var( --color-green);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+
+  ::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color:var(--color-dark);
+    transform: translate(-100%, 0);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+    }
+  
+    :hover::after {
+    transform: translate(0, 0);
+  }
 `;
 
 // For infoSec_2.js

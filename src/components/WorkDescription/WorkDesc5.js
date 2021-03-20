@@ -3,7 +3,7 @@ import { Button } from '../../Features/ButtonScrollStyles';
 import workImg from '../../assets/images/Covid19_mockup.png';
 import { workDescFive, ButtonRepository } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages';
-import { repoURL } from '../../Data/showRepository';
+import { URL } from '../../Data/showRepository';
 
 import {
   InfoContainer,
@@ -19,11 +19,6 @@ import {
   ImgWrap,
   Img,
 } from './WorkDescElements';
-
-const visitWeb = () => {
-  window.open('https://covid-19-api-dash-board-yusukeyoshihiro.vercel.app/', '_blank')
-}
-
 
 const covidImg = workImg;
 
@@ -75,7 +70,7 @@ const WorkDesc5 = () => {
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                    onClick={visitWeb}
+                    onClick={() => window.open(URL[1].website.covid19, '_blank')}
                   >
                     {buttonLabel}
                   </Button>
@@ -88,7 +83,7 @@ const WorkDesc5 = () => {
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                    onClick={() => window.open(repoURL[0].covid19, '_blank')}
+                    onClick={() => window.open(URL[0].repository.covid19, '_blank')}
                   > 
                     {buttonLabelRepo}
                   </Button>

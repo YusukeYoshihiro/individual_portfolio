@@ -38,7 +38,7 @@ export const homeObjThree = {
   lightTextDesc: true,
   topLine: 'Let\'s start',
   headline: 'Get In Touch With Me!',
-  description: 'yusuke.10.25.61@gmail.com',
+  email: 'yusuke.10.25.61@gmail.com',
   buttonLabel: 'Contact Me!',
   imgStart: true,
   alt: 'AboutMe',
