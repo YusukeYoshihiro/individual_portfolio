@@ -56,7 +56,7 @@ export const WorksCard = styled.div`
 `;
 
 export const WorksImgCtn = styled.div`
-  background-color: #86c232;
+  background-color:var(--color-green);
 `;
 
 export const WorksIcon = styled.img`
