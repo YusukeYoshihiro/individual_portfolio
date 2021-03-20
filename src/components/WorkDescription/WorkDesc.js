@@ -1,8 +1,9 @@
 import React from 'react'
 import { Button } from '../../Features/ButtonScrollStyles';
 import workImg from '../../assets/images/MockImgCricket.png';
-import { workDescOne } from '../../Data/data';
-import BackToPages from '../../Features/BackToPages'
+import { workDescOne,  ButtonRepository } from '../../Data/data';
+import BackToPages from '../../Features/BackToPages';
+import { repoURL } from '../../Data/showRepository';
 
 import {
   InfoContainer,
@@ -23,9 +24,9 @@ const visitWeb = () => {
   window.open('https://yusukeyoshihiro.github.io/Cricket_Club_Website/index.html', '_blank')
 }
 
-const showCertification = () => {
-  window.open('https://drive.google.com/file/d/1HcZlGWoMhLvcl0cKtIVffq-RMd_1pEqY/view?usp=sharing', '_blank')
-}
+// const showRepository = () => {
+//   window.open('https://github.com/YusukeYoshihiro/Cricket_Club_Website', '_blank')
+// }
 
 const cricketImg = workImg;
 
@@ -40,12 +41,14 @@ const WorkDesc = () => {
     darkText,
     description,
     buttonLabel,
-    buttonLabel2,
     alt,
     primary,
     dark,
     dark2,
   } = workDescOne;
+  
+  const { buttonLabelRepo } =  ButtonRepository;
+
 
   return (
     <>
@@ -89,9 +92,9 @@ const WorkDesc = () => {
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                    onClick={showCertification}
+                    onClick={() => window.open(repoURL[0].cricket, '_blank')}
                   >
-                    {buttonLabel2}
+                    {buttonLabelRepo}
                   </Button>
                 </BtnWrap>
               </TextWrapper>

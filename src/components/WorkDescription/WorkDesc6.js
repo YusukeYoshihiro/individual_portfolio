@@ -1,8 +1,10 @@
 import React from 'react';
 // import { Button } from '../ButtonScrollStyles';
 import workImg from '../../assets/images/portfolioImg.png';
-import { workDescSix } from '../../Data/data';
-import BackToPages from '../../Features/BackToPages'
+import { workDescSix, ButtonRepository} from '../../Data/data';
+import BackToPages from '../../Features/BackToPages';
+import { repoURL } from '../../Data/showRepository';
+import { Button } from '../../Features/ButtonScrollStyles';
 
 import {
   InfoContainer,
@@ -14,10 +16,11 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  // BtnWrap,
   ImgWrap,
   Img,
+  BtnWrap,
 } from './WorkDescElements';
+
 
 const portfolioImg = workImg;
 
@@ -32,12 +35,13 @@ const WorkDesc4 = () => {
     headline,
     darkText,
     description,
-    // buttonLabel,
     alt,
-    // primary,
-    // dark,
-    // dark2,
+    primary,
+    dark,
+    dark2
   } = workDescSix;
+
+  const { buttonLabelRepo } =  ButtonRepository;
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id} >
@@ -55,7 +59,22 @@ const WorkDesc4 = () => {
 
                   <h3>&lt; Tools /&gt;</h3><br />
                   <p>AOS, Material-UI, Styled Icon</p>
-                </Subtitle> 
+                </Subtitle>
+                <BtnWrap>
+                  <Button
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                    onClick={() => window.open(repoURL[0].portfolio, '_blank')}
+                  > 
+                    {buttonLabelRepo}
+                  </Button>
+                </BtnWrap>
               </TextWrapper>
             </Column1>
 
