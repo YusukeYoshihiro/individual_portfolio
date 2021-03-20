@@ -6,7 +6,7 @@ import styled from 'styled-components';
 export const Button = styled.button`
   border-radius: 50px;
   margin-bottom: 15px;
-  background: ${({ primary }) => ( primary ? '#86c232' : 'var(--color-dark)' )};
+  background: ${({ primary }) => ( primary ?'var(--color-green)' : 'var(--color-dark)' )};
   white-space: nowrap;
   padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
   color: ${({dark}) => (dark ? '#fff' : '#fff' )}; 
@@ -23,7 +23,7 @@ export const Button = styled.button`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ primary }) => ( primary ? '#fff' : '#86c232' )};
+    background: ${({ primary }) => ( primary ? '#fff' :'var(--color-green)' )};
     color: ${({dark}) => (dark ? 'var(--color-dark)' : '#fff' )}; 
   }
 `;
