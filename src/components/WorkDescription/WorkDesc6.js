@@ -19,6 +19,7 @@ import {
   ImgWrap,
   Img,
   BtnWrap,
+  LanguageList,
 } from './WorkDescElements';
 
 
@@ -55,11 +56,20 @@ const WorkDesc4 = () => {
                 <Subtitle darkText={darkText}>
                   {description}
                   <br /><br />
-                  <h3>&lt; Languages /&gt;</h3><br />
-                  <p>ES6, React.js, React-Hooks, Styled-Components</p><br />
-
-                  <h3>&lt; Tools /&gt;</h3><br />
-                  <p>AOS, Material-UI, Styled Icon</p>
+                  <h3>&lt; Frameworks &amp; Libraries /&gt;</h3><br />
+                  <LanguageList>
+                    <li>React</li>
+                    <li>React-Hooks</li>
+                    <li>Styled-Components</li>
+                    <li>Material-UI</li>
+                    <li>AOS</li>
+                  </LanguageList>
+                  <h3>&lt; Others /&gt;</h3><br />
+                  <LanguageList>
+                    <li>XD</li>
+                    <li>Photoshop</li>
+                    <li>Git</li>
+                  </LanguageList>
                 </Subtitle>
                 <BtnWrap>
                 <Button

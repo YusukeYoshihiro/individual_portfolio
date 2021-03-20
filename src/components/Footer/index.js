@@ -21,7 +21,6 @@ const Footer = () => {
      return (
           <FooterContainer>
                <FooterWrap>
-
                     <SocialMedia>
                          <SocialMediaWrap>
                               <SocialLogo to="/" onClick={toggleHome}>
@@ -38,15 +37,9 @@ const Footer = () => {
                                    <SocialIconLink href="https://github.com/YusukeYoshihiro" target="_blank" aria-label="Github">
                                         <FaGithub />
                                    </SocialIconLink>
-                                   {/* <SocialIconLink href="https://twitter.com/TheManfromFNFa1" target="_blank" aria-label="Twitter">
-                                        <FaTwitter />
-                                   </SocialIconLink> */}
                                    <SocialIconLink href="https://www.linkedin.com/in/yusuke-yoshihiro-ab46491b2/" target="_blank" aria-label="Linkdin">
                                         <FaLinkedin />
                                    </ SocialIconLink>
-                                   {/* <SocialIconLink href="https://open.spotify.com/user/0qibuxlh5wun8410w367fjush " target="_blank" aria-label="Spotify">
-                                        <FaSpotify />
-                                   </ SocialIconLink> */}
                               </ SocialIcons>
                          </ SocialMediaWrap>
                     </ SocialMedia>

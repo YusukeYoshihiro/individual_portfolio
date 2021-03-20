@@ -18,6 +18,7 @@ import {
   BtnWrap, 
   ImgWrap, 
   Img,
+  LanguageList,
 } from  './WorkDescElements';
 
 const showCertification = () => {
@@ -57,10 +58,21 @@ const WorkDesc2 = () => {
                   {description}
                   <br/><br/>
                   <h3>&lt; Languages /&gt;</h3><br/>
-                   <p> HTML, CSS, ES6, JQuery, JAVA, PHP</p><br/>
-
+                  <LanguageList>
+                    <li> HTML5</li>
+                    <li> CSS3</li>
+                    <li> Javascript(ES6)</li>
+                    <li> JQuery</li>
+                    <li> php</li>
+                  </LanguageList>
+                   
                    <h3>&lt; Database ＆ Tools /&gt;</h3><br/>
-                   <p> mySQL, Figma, Google-Form</p>
+                   <LanguageList>
+                    <li> mySQL</li>
+                    <li> Bootstrap5</li>
+                    <li> Figma</li>
+                    <li> XD</li>
+                  </LanguageList>
                 </Subtitle>
                 <BtnWrap>
                   <Button

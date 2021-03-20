@@ -112,8 +112,29 @@ export const Img = styled.img`
   padding-right: 0;
 `;
 
+export const LanguageList = styled.ul`
+  display:flex;
+  list-style: none;
+  margin-bottom:2rem;
+  flex-wrap: wrap;
+  li{
+    font-size:1rem;
+    padding:5px;
+    border:1px solid #fff;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    a{
+      text-decoration: none;
+      color:#fff;
+    }
 
-
+    @media (max-width:768px){
+    font-size:1rem;
+  }
+  }
+ 
+`;
 
 
 

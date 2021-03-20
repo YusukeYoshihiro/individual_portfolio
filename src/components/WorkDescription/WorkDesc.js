@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../../Features/ButtonScrollStyles';
 import workImg from '../../assets/images/MockImgCricket.png';
-import { workDescOne,  ButtonRepository } from '../../Data/data';
+import { workDescOne, ButtonRepository } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages';
 import { URL } from '../../Data/showRepository';
 
@@ -18,11 +18,12 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
+  LanguageList
 } from './WorkDescElements';
 
 const cricketImg = workImg;
 
-const WorkDesc = () => { 
+const WorkDesc = () => {
   const {
     lightBg,
     id,
@@ -38,8 +39,8 @@ const WorkDesc = () => {
     dark,
     dark2,
   } = workDescOne;
-  
-  const { buttonLabelRepo } =  ButtonRepository;
+
+  const { buttonLabelRepo } = ButtonRepository;
 
 
   return (
@@ -55,10 +56,22 @@ const WorkDesc = () => {
                   {description}
                   <br /><br />
                   <h3>&lt; Languages /&gt;</h3><br />
-                  <p> HTML, CSS, ES6, JQuery, JAVA</p><br />
+                  <LanguageList>
+                    <li> HTML5</li>
+                    <li> CSS3</li>
+                    <li> Javascript(ES6)</li>
+                    <li> JQuery</li>
+                    <li> php</li>
+                  </LanguageList>
 
                   <h3>&lt; Database ＆ Tools /&gt;</h3><br />
-                  <p> mySQL, Figma, Google-Form</p>
+                  <LanguageList>
+                    <li> mySQL</li>
+                    <li> Bootstrap5</li>
+                    <li> Figma</li>
+                    <li> XD</li>
+                  </LanguageList>
+  
                 </Subtitle>
                 <BtnWrap>
                   <Button
