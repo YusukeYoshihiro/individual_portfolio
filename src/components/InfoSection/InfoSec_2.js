@@ -14,6 +14,7 @@ import {
   Subtitle,
   SkillsWrap,
   ImgWrapSkill,
+  SkillsList
 } from './InfoElements';
 
 const InfoSec2 = ({
@@ -30,7 +31,7 @@ const InfoSec2 = ({
       <InfoContainer lightBg={lightBg} id={id} >
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
-            
+
             <ColumnSkill data-aos="fade-right" data-aos-duration="1000">
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
@@ -39,21 +40,45 @@ const InfoSec2 = ({
                   <SkillsWrap darkText={darkText}>
                     <div data-aos="zoom-in">
                       <h3>&lt; Languages /&gt;</h3><br />
-                      <p> HTML5, CSS3, SCSS/SASS, <br />JavaScript(ES6), TypeScript</p><br />
+                      <SkillsList>
+                        <li> HTML5</li>
+                        <li> CSS3</li>
+                        <li> Javascript(ES6)</li>
+                        <li> Typescript</li>
+                        <li> SCSS/SASS</li>
+                        <li> PHP</li>
+                      </SkillsList>
                     </div>
 
                     <div data-aos="zoom-in" data-aos-delay="100">
                       <h3>&lt; Frameworks ＆ Libraries /&gt;</h3><br />
-                      <p> React, React-Redux, React-Hooks, <br />styled-components, Chart.js, JQuery, <br />Node.js, Express.js</p><br />
+                      <SkillsList>
+                        <li> React</li>
+                        <li> React-Redux</li>
+                        <li> React-Hooks</li>
+                        <li> jQuery</li>
+                        <li> styled-components</li>
+                        <li> Node.js/Express.js</li>
+                      </SkillsList>
                     </div>
 
                     <div data-aos="zoom-in" data-aos-delay="300" id="trigger-left">
                       <h3>&lt; Others ＆ Tools /&gt;</h3><br />
-                      <p> Git, Figma, XD, Photoshop, 
-                      <br/>RESTAPI, JSON, Webpack
-                      <br />MongoDB, Firebase, Heroku, Postman, Slack
-                      
-                      </p>
+                      <SkillsList>
+                        <li> RESTfulAPI</li>
+                        <li> mySQL</li>
+                        <li> JSON</li>
+                        <li> Webpack</li>
+                        <li> Photoshop</li>
+                        <li> Illustrator</li>
+                        <li> XD</li>
+                        <li> Figma</li>
+                        <li> MongoDB</li>
+                        <li> Firebase</li>
+                        <li> Heroku</li>
+                        <li> Slack</li>
+                        <li> Git</li>
+                      </SkillsList>
                     </div>
                   </SkillsWrap>
                 </Subtitle>
