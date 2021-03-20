@@ -32,11 +32,7 @@ const WorkDesc4 = () => {
     headline,
     darkText,
     description,
-    // buttonLabel,
     alt,
-    // primary,
-    // dark,
-    // dark2,
   } = workDescSix;
   return (
     <>

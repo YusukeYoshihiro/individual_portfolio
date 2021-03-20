@@ -175,6 +175,13 @@ export const ButtonLinkData = {
   darkText: true
 };
 
+export const ButtonRepository = {
+  id:'ButtonRepo',
+  dark: false,
+  primary: false,
+  darkText: true,
+  buttonLabelRepo: 'Repository',
+};
 
 
 

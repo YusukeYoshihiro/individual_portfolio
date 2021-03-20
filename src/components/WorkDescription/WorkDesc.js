@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../../Features/ButtonScrollStyles';
 import workImg from '../../assets/images/MockImgCricket.png';
-import { workDescOne } from '../../Data/data';
+import { workDescOne,  ButtonRepository } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages'
 
 import {
@@ -27,6 +27,10 @@ const showCertification = () => {
   window.open('https://drive.google.com/file/d/1HcZlGWoMhLvcl0cKtIVffq-RMd_1pEqY/view?usp=sharing', '_blank')
 }
 
+const showRepository = () => {
+  window.open('https://github.com/YusukeYoshihiro/Cricket_Club_Website', '_blank')
+}
+
 const cricketImg = workImg;
 
 const WorkDesc = () => { 
@@ -46,6 +50,9 @@ const WorkDesc = () => {
     dark,
     dark2,
   } = workDescOne;
+  
+  const { buttonLabelRepo } =  ButtonRepository;
+
 
   return (
     <>
@@ -89,9 +96,9 @@ const WorkDesc = () => {
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                    onClick={showCertification}
+                    onClick={showRepository}
                   >
-                    {buttonLabel2}
+                    {buttonLabelRepo}
                   </Button>
                 </BtnWrap>
               </TextWrapper>
