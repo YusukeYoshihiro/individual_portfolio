@@ -1,8 +1,9 @@
 import React from 'react'
 import { Button } from '../../Features/ButtonScrollStyles';
 import  workImg from '../../assets/images/MovieApp.png';
-import { workDescThree } from '../../Data/data';
+import { workDescThree, ButtonRepository } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages';
+import { repoURL } from '../../Data/showRepository';
 
 import {
   InfoContainer, 
@@ -42,6 +43,9 @@ const WorkDesc3 = () => {
     dark,
     dark2,
     } = workDescThree;
+
+    const { buttonLabelRepo } =  ButtonRepository;
+
   return (
     <>
        <InfoContainer lightBg={lightBg} id={id} >
@@ -74,6 +78,19 @@ const WorkDesc3 = () => {
                     onClick={visitWeb}
                   > 
                     {buttonLabel}
+                  </Button>
+                  <Button 
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                    onClick={() => window.open(repoURL[0].movieApp, '_blank')}
+                  > 
+                    {buttonLabelRepo}
                   </Button>
                 </BtnWrap>
               </TextWrapper>

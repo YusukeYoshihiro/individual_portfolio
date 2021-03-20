@@ -1,8 +1,9 @@
 import React from 'react';
 import { Button } from '../../Features/ButtonScrollStyles';
 import workImg from '../../assets/images/Covid19_mockup.png';
-import { workDescFive } from '../../Data/data';
-import BackToPages from '../../Features/BackToPages'
+import { workDescFive, ButtonRepository } from '../../Data/data';
+import BackToPages from '../../Features/BackToPages';
+import { repoURL } from '../../Data/showRepository';
 
 import {
   InfoContainer,
@@ -43,6 +44,8 @@ const WorkDesc5 = () => {
     dark,
     dark2,
   } = workDescFive;
+
+  const { buttonLabelRepo } =  ButtonRepository;
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id} >
@@ -75,6 +78,19 @@ const WorkDesc5 = () => {
                     onClick={visitWeb}
                   >
                     {buttonLabel}
+                  </Button>
+                  <Button 
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                    onClick={() => window.open(repoURL[0].covid19, '_blank')}
+                  > 
+                    {buttonLabelRepo}
                   </Button>
                 </BtnWrap>
               </TextWrapper>
