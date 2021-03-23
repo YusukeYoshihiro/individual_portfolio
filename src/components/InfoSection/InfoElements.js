@@ -211,8 +211,8 @@ export const SkillsList = styled.ul`
     margin-right: 10px;
     margin-bottom: 10px;
     :hover{
-      transform:scale(1.05);
-      border:2px solid var(--color-green);
+      /* transform:scale(1.05); */
+      border:1px solid var(--color-green);
       background-color: var(--color-green);
       color: #fff;
     }

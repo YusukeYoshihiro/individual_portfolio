@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ProdBgImg from '../../assets/images/productBgImg.jpg';
 var Scroll = require('react-scroll');
 var Element = Scroll.Element;
 
@@ -56,11 +57,17 @@ export const WorksCard = styled.div`
 `;
 
 export const WorksImgCtn = styled.div`
-  background-color:var(--color-green);
+  /* background-color:var(--color-green); */
+  background-image:url(${ProdBgImg});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  /* width:100%;
+  height: 100%; */
 `;
 
 export const WorksIcon = styled.img`
-   height: 160%;
+   height: 160px;
    width: 160px;
    margin-bottom: 10px;
    display: block;
