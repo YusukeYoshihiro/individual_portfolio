@@ -14,4 +14,4 @@ I built my portfolio website using React.js
     -  XD
     -  unDraw
 
-![portfolioImg](https://user-images.githubusercontent.com/58486430/109973687-940d0600-7cad-11eb-98f0-11e2e8f4d6c4.png)
+![Component 38 – 1](https://user-images.githubusercontent.com/58486430/112153202-47c43000-8ba0-11eb-932a-63b0aaa1f5a4.png)
