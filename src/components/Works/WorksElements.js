@@ -59,9 +59,9 @@ export const WorksCard = styled.div`
 export const WorksImgCtn = styled.div`
   /* background-color:var(--color-green); */
   background-image:url(${ProdBgImg});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: cover;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: cover; */
   /* width:100%;
   height: 100%; */
 `;
