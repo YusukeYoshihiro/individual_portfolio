@@ -41,7 +41,7 @@ const Works = () => {
           <WorksContent>
             <WorksH2>Cricket Project</WorksH2>
             <WorksP>Built an actual website <br/>
-            for local cricket organization.
+            for local cricket organization.s
               </WorksP>
             <ButtonLink
               to={'/cricket'}

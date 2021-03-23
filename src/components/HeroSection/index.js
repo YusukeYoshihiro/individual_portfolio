@@ -15,7 +15,7 @@ import {
 import {
   ArrowForward,
   ArrowRight
-} from '../ArrowIcon/ArrowIconStyles';
+} from '../../Features/ArrowIconStyles';
 
 
 

@@ -5,7 +5,7 @@ import {ButtonData} from '../Data/data';
 import {
   ArrowBack,
   ArrowLeft,
-} from '../components/ArrowIcon/ArrowIconStyles';
+} from '../Features/ArrowIconStyles';
 
 const BackToPages = () => {
   const backToWorks = () => {

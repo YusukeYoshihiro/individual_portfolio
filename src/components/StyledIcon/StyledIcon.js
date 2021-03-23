@@ -111,7 +111,7 @@ export default StyledIcon;
 export const IconStyleWrapper = styled.div`
   ${StyledIconBase} {
     margin-right: 15px;
-    color:#86c232;
+    color: var(--color-green);
     width: 15%;
     /* icon styles go here */
   }
