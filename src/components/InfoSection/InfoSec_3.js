@@ -55,7 +55,10 @@ const InfoSec_3 = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle3
                   darkText={darkText}
-                  onClick={mailTo}>{email}</Subtitle3>
+                  onClick={mailTo}
+                >
+                  {email}
+                </Subtitle3>
                 <SocialIcons>
                   <SocialIconLink href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
                     <FaFacebook />
