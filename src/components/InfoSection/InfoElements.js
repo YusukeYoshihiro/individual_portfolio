@@ -111,7 +111,7 @@ export const Subtitle = styled.div`
 `;
 
 // for contact part
-export const Subtitle3 = styled.div`
+export const Subtitle3 = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   /* line-height: 24px; */
@@ -122,6 +122,9 @@ export const Subtitle3 = styled.div`
   display: inline-block;
   position: relative;
   overflow: hidden;
+  :hover{
+    color: rgb(53, 94, 180);
+  }
 
   ::after {
     content: "";
@@ -130,7 +133,7 @@ export const Subtitle3 = styled.div`
     left: 0;
     width: 100%;
     height: 2px;
-    background-color:var(--color-dark);
+    background-color:rgb(53, 94, 180);
     transform: translate(-100%, 0);
     transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
     }
