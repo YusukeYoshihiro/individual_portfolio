@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 // #86c232
 // var(--color-dark)
 export const FooterContainer = styled.footer`
+  margin-top: -1px;
   background-color: var(--color-dark);
 `;
 

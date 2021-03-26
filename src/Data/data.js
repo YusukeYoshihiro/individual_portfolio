@@ -34,7 +34,7 @@ export const homeObjTwo = {
 export const homeObjThree = {
   id:'contact',
   lightBg: true,
-  lightText: false,
+  lightText: true,
   lightTextDesc: true,
   topLine: 'Let\'s start',
   headline: 'Get In Touch With Me!',
