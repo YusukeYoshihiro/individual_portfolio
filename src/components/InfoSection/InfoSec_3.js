@@ -20,7 +20,7 @@ import {
   Subtitle3,
   BtnWrap,
   ContactImgWrap,
-  Img,
+  Img
 } from './InfoElements';
 
 const myImg = AboutMeImg;
@@ -49,7 +49,7 @@ const InfoSec_3 = ({
 }) => {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id} style={{background:` url(${BgImg}) no-repeat center center`, backgroundSize:"cover", }}>
+      <InfoContainer lightBg={lightBg} id={id} style={{background:` url(${BgImg}) no-repeat center center`, backgroundSize:"cover", paddingBottom:'0'}}>
         <InfoWrapper style={{backgroundImage: 'linear-gradient(180deg,transparent,rgba(65,65,65,.45),#222629)'}}>
           <InfoRow imgStart={imgStart}>
             <ColumnContact data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
@@ -99,10 +99,8 @@ const InfoSec_3 = ({
                 <Img src={myImg} alt={alt} />
               </ContactImgWrap>
             </ColumnContact2>
-
           </InfoRow>
         </InfoWrapper>
-
       </InfoContainer>
     </>
   )
