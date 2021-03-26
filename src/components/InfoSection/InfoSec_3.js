@@ -4,6 +4,9 @@ import { Button } from '../../Features/ButtonScrollStyles'
 import AboutMeImg from '../../assets/images/about_me.png';
 import { SocialIconLink, SocialIcons } from '../Footer/FooterElements';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import BgImg from '../../assets/images/mountain_bgImg.png';
+
+
 
 import {
   InfoContainer,
@@ -46,8 +49,8 @@ const InfoSec_3 = ({
 }) => {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id} >
-        <InfoWrapper>
+      <InfoContainer lightBg={lightBg} id={id} style={{background:` url(${BgImg}) no-repeat center center`, backgroundSize:"cover", }}>
+        <InfoWrapper style={{backgroundImage: 'linear-gradient(180deg,transparent,rgba(65,65,65,.45),#222629)'}}>
           <InfoRow imgStart={imgStart}>
             <ColumnContact data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
               <TextWrapper>
@@ -99,6 +102,7 @@ const InfoSec_3 = ({
 
           </InfoRow>
         </InfoWrapper>
+
       </InfoContainer>
     </>
   )

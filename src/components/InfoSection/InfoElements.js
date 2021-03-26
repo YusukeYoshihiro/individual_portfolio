@@ -15,7 +15,6 @@ export const InfoWrapper = styled.div`
    z-index: 1;
    height: 860px;
    width: 100%;
-   max-width: 1100px;
    margin-right: auto;
    margin-left: auto;
    padding: 0 24px;
@@ -115,7 +114,7 @@ export const Subtitle3 = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   /* line-height: 24px; */
-  color: ${({darkText})=> (darkText ? '#fff': 'var(--color-dark)')};
+  /* color: ${({darkText})=> (darkText ? '#fff': 'var(--color-dark)')}; */
   font-size: 20px;
   text-decoration: none;
   color: var( --color-green);
@@ -123,7 +122,7 @@ export const Subtitle3 = styled.p`
   position: relative;
   overflow: hidden;
   :hover{
-    color: rgb(53, 94, 180);
+    color: #fff;
   }
 
   ::after {
@@ -133,7 +132,7 @@ export const Subtitle3 = styled.p`
     left: 0;
     width: 100%;
     height: 2px;
-    background-color:rgb(53, 94, 180);
+    background-color:#fff;
     transform: translate(-100%, 0);
     transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
     }
@@ -227,3 +226,4 @@ export const SkillsList = styled.ul`
   }
  
 `;
+
