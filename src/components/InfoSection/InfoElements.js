@@ -117,7 +117,7 @@ export const Subtitle3 = styled.p`
   /* color: ${({darkText})=> (darkText ? '#fff': 'var(--color-dark)')}; */
   font-size: 20px;
   text-decoration: none;
-  color: var( --color-green);
+  color: #fff;
   display: inline-block;
   position: relative;
   overflow: hidden;
