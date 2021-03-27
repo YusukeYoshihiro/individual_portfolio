@@ -16,7 +16,7 @@ export const ButtonLink = styled(Link)`
   display:block;
   text-align: center;
   transition: all 0.2s ease-in-out;
-  margin-top: 15px;
+  margin: 15px 0 15px;
   width: 200px;
 
   &:hover {

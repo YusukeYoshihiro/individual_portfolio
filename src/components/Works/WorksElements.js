@@ -31,11 +31,15 @@ export const WorksWrapper = styled.div`
   grid-gap: 32px;
   padding: 0 50px;
 
+  @media screen and (max-width: 1024px){
+    padding: 0;
+   }
+
   @media screen and (max-width: 1000px){
     grid-template-columns: 1fr 1fr;
    }
 
-   @media screen and (max-width: 768px){
+   @media screen and (max-width: 767px){
      grid-template-columns: 1fr;
      padding: 0 20px;
    }
@@ -45,6 +49,7 @@ export const WorksCard = styled.div`
    background: #fff;
    align-items: center;
    border-radius: 10px;
+   min-width: 300px;
    min-height: 320px;
    transition: all 0.2s ease-in-out;
    opacity: 0; 

@@ -226,4 +226,3 @@ export const SkillsList = styled.ul`
   }
  
 `;
-
