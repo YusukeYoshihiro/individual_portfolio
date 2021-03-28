@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 // https://www.npmjs.com/package/react-icons
 import { IconContext } from 'react-icons/lib';
-import img from '../../assets/images/FABE_LOGO_2.png';
+import img from '../../assets/images/my_favicon.png';
 // https://www.npmjs.com/package/react-scroll
 import { animateScroll as scroll } from 'react-scroll';
 import {
