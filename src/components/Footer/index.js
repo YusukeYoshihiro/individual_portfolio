@@ -11,12 +11,11 @@ import {
      SocialIcons,
      SocialIconLink
 } from './FooterElements';
-
 const Footer = () => {
      // https://www.npmjs.com/package/react-scroll
-  const toggleHome = () => {
-     scroll.scrollToTop();
-   }
+     const toggleHome = () => {
+          scroll.scrollToTop();
+     }
 
      return (
           <FooterContainer>
@@ -24,7 +23,7 @@ const Footer = () => {
                     <SocialMedia>
                          <SocialMediaWrap>
                               <SocialLogo to="/" onClick={toggleHome}>
-                                   Yusuke Yoshihiro
+                                 Yusuke Yoshihiro
                               </SocialLogo>
                               <WebsiteRights>Yusuke Yoshihiro &copy; {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                               <SocialIcons>
