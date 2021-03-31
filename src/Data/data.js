@@ -39,7 +39,7 @@ export const homeObjThree = {
   topLine: 'Let\'s start',
   headline: 'Get In Touch With Me!',
   email: 'yusuke.10.25.61@gmail.com',
-  buttonLabel: 'Contact Me!',
+  buttonLabel: 'Contact Me',
   imgStart: true,
   alt: 'AboutMe',
   dark: false,
