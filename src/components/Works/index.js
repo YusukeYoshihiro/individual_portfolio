@@ -62,7 +62,7 @@ const Works = () => {
           </WorksImgCtn>
           <WorksContent>
             <WorksH2>Lacrosse Project</WorksH2>
-            <WorksP>Built an actual website <br/>
+            <WorksP>Built an official website <br/>
             for Pro Lacrosse Caliber.
             </WorksP>
             <ButtonLink
