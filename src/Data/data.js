@@ -54,7 +54,7 @@ export const workDescOne = {
   lightTextDesc: true,
   topLine: 'Overview',
   headline: 'Cricket Project',
-  description: ' Built actual website for local cricket organization in college program.',
+  description: ' Built actual website for local cricket organization.',
   buttonLabel: 'Visit Website',
   buttonLabel2: 'Reference',
   imgStart: true,
