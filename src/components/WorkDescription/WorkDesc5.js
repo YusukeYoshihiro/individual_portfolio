@@ -68,7 +68,7 @@ const WorkDesc5 = () => {
                   <LanguageList>
                     <li>
                       <a href="https://covid19api.com">
-                        A free API for data on the Coronavirus
+                        WEB API
                       </a>
                     </li>
                     <li>Git</li>

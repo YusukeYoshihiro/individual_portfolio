@@ -70,7 +70,7 @@ export const workDescTwo = {
   lightText: true,
   lightTextDesc: true,
   topLine: 'Overview',
-  headline: 'Pro Lacrosse Caliber Project',
+  headline: 'Lacrosse Project',
   description: ' Built actual website for Pro Lacrosse Caliber with real client.',
   buttonLabel: 'Visit Website',
   buttonLabel2: 'Reference',
