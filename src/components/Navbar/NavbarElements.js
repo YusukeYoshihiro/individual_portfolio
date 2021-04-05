@@ -39,6 +39,13 @@ export const NavLogo = styled(LinkR)`
    margin-left: 24px;
    font-weight: bold;
    text-decoration: none; 
+
+   @media screen and (max-width: 769px){
+    h2{
+        display:none;
+     }   
+   }
+  
 `; 
 
 export const Img = styled.img`
