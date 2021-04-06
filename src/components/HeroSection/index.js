@@ -16,6 +16,7 @@ import {
   ArrowForward,
   ArrowRight
 } from '../../Features/ArrowIconStyles';
+import Ityped from '../../Features/Ityped';
 
 
 
@@ -38,7 +39,9 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent >
         <HeroH1 data-aos="zoom-in" data-aos-delay="500"> I'm <span>Yusuke</span> Yoshihiro, <br/>Front-End-Developer,<br/>based in Vancouver. </HeroH1>
-        <HeroP data-aos="zoom-in" data-aos-delay="700"> Love Code, Cook and Hockey</HeroP>
+        <HeroP data-aos="zoom-in" data-aos-delay="700"> 
+          <Ityped />
+        </HeroP>
         <HeroBtnWrapper>
           <Button
           onClick={showResume}
