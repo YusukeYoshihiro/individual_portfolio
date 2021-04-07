@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Video from '../../videos/video.mp4';
+import Ityped from '../../Features/Ityped';
 import { Button } from '../../Features/ButtonScrollStyles';
-
 import {
   HeroContainer,
   HeroBg,
@@ -16,8 +16,6 @@ import {
   ArrowForward,
   ArrowRight
 } from '../../Features/ArrowIconStyles';
-import Ityped from '../../Features/Ityped';
-
 
 
 const showResume = () => {
