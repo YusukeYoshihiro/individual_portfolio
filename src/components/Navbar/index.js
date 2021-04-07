@@ -46,7 +46,6 @@ const Navbar = ({ toggle }) => {
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
               <Img src={img} alt="main_logo" />
-              <h2 style={{fontSize:'1.5rem'}}>&nbsp; Yusuke.Y</h2>
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
