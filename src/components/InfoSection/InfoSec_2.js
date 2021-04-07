@@ -63,7 +63,7 @@ const InfoSec2 = ({
                     </div>
 
                     <div data-aos="zoom-in" data-aos-delay="300" id="trigger-left">
-                      <h3>&lt; Others ＆ Tools /&gt;</h3><br />
+                      <h3>&lt; Others /&gt;</h3><br />
                       <SkillsList>
                         <li> RESTfulAPI</li>
                         <li> mySQL</li>
@@ -76,6 +76,7 @@ const InfoSec2 = ({
                         <li> MongoDB</li>
                         <li> Firebase</li>
                         <li> Heroku</li>
+                        <li> AWS</li>
                         <li> Slack</li>
                         <li> Git</li>
                       </SkillsList>
