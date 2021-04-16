@@ -46,7 +46,8 @@ const InfoSec2 = ({
                         <li> Javascript(ES6)</li>
                         <li> Typescript</li>
                         <li> SCSS/SASS</li>
-                        <li> PHP</li>
+                        <li> Python</li>
+                        
                       </SkillsList>
                     </div>
 
@@ -67,8 +68,6 @@ const InfoSec2 = ({
                       <SkillsList>
                         <li> RESTfulAPI</li>
                         <li> mySQL</li>
-                        <li> JSON</li>
-                        <li> Webpack</li>
                         <li> Photoshop</li>
                         <li> Illustrator</li>
                         <li> XD</li>
@@ -77,7 +76,6 @@ const InfoSec2 = ({
                         <li> Firebase</li>
                         <li> Heroku</li>
                         <li> AWS</li>
-                        <li> Slack</li>
                         <li> Git</li>
                       </SkillsList>
                     </div>

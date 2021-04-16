@@ -6,8 +6,6 @@ import { SocialIconLink, SocialIcons } from '../Footer/FooterElements';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import BgImg from '../../assets/images/mountain_bgImg.png';
 
-
-
 import {
   InfoContainer,
   InfoWrapper,
