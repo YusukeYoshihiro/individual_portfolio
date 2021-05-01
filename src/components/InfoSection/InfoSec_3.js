@@ -61,12 +61,12 @@ const InfoSec_3 = ({
                   {email}
                 </Subtitle3>
                 <SocialIcons>
-                  <SocialIconLink href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                  {/* <SocialIconLink href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
                     <FaFacebook />
-                  </SocialIconLink>
-                  <SocialIconLink href="https://www.instagram.com/?hl=ja" target="_blank" aria-label="Instagram">
+                  </SocialIconLink> */}
+                  {/* <SocialIconLink href="https://www.instagram.com/?hl=ja" target="_blank" aria-label="Instagram">
                     <FaInstagram />
-                  </SocialIconLink>
+                  </SocialIconLink> */}
                   <SocialIconLink href="https://github.com/YusukeYoshihiro" target="_blank" aria-label="Github">
                     <FaGithub />
                   </SocialIconLink>
