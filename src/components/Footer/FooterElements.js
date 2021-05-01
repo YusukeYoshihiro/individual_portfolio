@@ -56,12 +56,12 @@ export const WebsiteRights = styled.small`
 
 export const SocialIcons = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 240px;
 `;
 
 export const SocialIconLink= styled.a`
+ margin-right:15px;
  color:var(--color-green);
  font-size: 2.5rem;
  transition: all 0.2s ease-in-out;

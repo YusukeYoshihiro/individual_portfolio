@@ -3,7 +3,7 @@ import React from 'react'
 import { Button } from '../../Features/ButtonScrollStyles'
 import AboutMeImg from '../../assets/images/about_me.png';
 import { SocialIconLink, SocialIcons } from '../Footer/FooterElements';
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import {FaGithub, FaLinkedin } from 'react-icons/fa';
 import BgImg from '../../assets/images/mountain_bgImg.png';
 
 import {
@@ -61,12 +61,6 @@ const InfoSec_3 = ({
                   {email}
                 </Subtitle3>
                 <SocialIcons>
-                  <SocialIconLink href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-                    <FaFacebook />
-                  </SocialIconLink>
-                  <SocialIconLink href="https://www.instagram.com/?hl=ja" target="_blank" aria-label="Instagram">
-                    <FaInstagram />
-                  </SocialIconLink>
                   <SocialIconLink href="https://github.com/YusukeYoshihiro" target="_blank" aria-label="Github">
                     <FaGithub />
                   </SocialIconLink>
