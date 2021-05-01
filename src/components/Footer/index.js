@@ -1,6 +1,6 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import { FaFacebook, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import {
      FooterContainer,
      FooterWrap,
@@ -27,12 +27,6 @@ const Footer = () => {
                               </SocialLogo>
                               <WebsiteRights>Yusuke Yoshihiro &copy; {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                               <SocialIcons>
-                                   <SocialIconLink href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-                                        <FaFacebook />
-                                   </SocialIconLink>
-                                   <SocialIconLink href="https://www.instagram.com/?hl=ja" target="_blank" aria-label="Instagram">
-                                        <FaInstagram />
-                                   </SocialIconLink>
                                    <SocialIconLink href="https://github.com/YusukeYoshihiro" target="_blank" aria-label="Github">
                                         <FaGithub />
                                    </SocialIconLink>
