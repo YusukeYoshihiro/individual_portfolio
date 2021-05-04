@@ -58,7 +58,7 @@ export const HeroH1 = styled.h2`
   font-size: 48px;
   text-align: center;
 
-  span{
+  strong{
     color:#86c232;
   }
   
