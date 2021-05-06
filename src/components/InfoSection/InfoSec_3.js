@@ -1,10 +1,9 @@
 // Contact Pert
-import React from 'react'
+import React, { useState } from 'react'
 import { Button } from '../../Features/ButtonScrollStyles'
 import AboutMeImg from '../../assets/images/about_me.png';
 import { SocialIconLink, SocialIcons } from '../Footer/FooterElements';
-import {FaGithub, FaLinkedin } from 'react-icons/fa';
-import BgImg from '../../assets/images/mountain_bgImg.png';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import {
   InfoContainer,
@@ -21,6 +20,12 @@ import {
   Img
 } from './InfoElements';
 
+
+import {
+  ArrowForward,
+  ArrowRight
+} from '../../Features/ArrowIconStyles';
+
 const myImg = AboutMeImg;
 
 const mailtoUrl = 'mailto:yusuke.10.25.61@gmail.com';
@@ -28,6 +33,7 @@ const mailtoUrl = 'mailto:yusuke.10.25.61@gmail.com';
 const mailTo = () => {
   window.location.href = mailtoUrl;
 }
+
 
 const InfoSec_3 = ({
   lightBg,
@@ -38,17 +44,20 @@ const InfoSec_3 = ({
   headline,
   darkText,
   email,
-  buttonLabel,
   // img,
   alt,
-  primary,
-  dark,
-  dark2
+ 
 }) => {
+  const [hover, setHover] = useState(false);
+
+  const onHover = () => {
+    setHover(!hover)
+  }
+
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id} style={{background:` url(${BgImg}) no-repeat center center`, backgroundSize:"cover", paddingBottom:'0'}}>
-        <InfoWrapper style={{backgroundImage: 'linear-gradient(180deg,transparent,rgba(65,65,65,.45),#222629)'}}>
+      <InfoContainer lightBg={lightBg} id={id}>
+        <InfoWrapper >
           <InfoRow imgStart={imgStart}>
             <ColumnContact data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
               <TextWrapper>
@@ -72,15 +81,12 @@ const InfoSec_3 = ({
                 <BtnWrap>
                   <Button
                     onClick={mailTo}
-                    duration={500}
-                    spy={true}
-                    exact="true"
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
+                    onMouseEnter={onHover}
+                    onMouseLeave={onHover}
+                    primary='true'
+                    dark='true'
                   >
-                    {buttonLabel}
+                    Contact Me! {hover ? <ArrowForward /> : <ArrowRight />}
                   </Button>
                 </BtnWrap>
               </TextWrapper>

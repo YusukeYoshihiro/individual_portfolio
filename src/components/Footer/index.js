@@ -36,7 +36,6 @@ const Footer = () => {
                               </ SocialIcons>
                          </ SocialMediaWrap>
                     </ SocialMedia>
-
                </ FooterWrap>
           </FooterContainer>
      )

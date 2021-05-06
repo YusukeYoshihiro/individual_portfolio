@@ -1,8 +1,8 @@
 export const homeObjOne = {
   id:'about',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  // lightTextDesc: true,
   topLine: 'About me',
   headline: 'Who am I ?',
   description: 'I\'m Yusuke Yoshihiro, Front-End Developer, based in Vancouver. I\'m passionate about cooking, travel, hockey, watching films. As well as Coding and Programming. Specifically, expert in React, React-Redux, SCSS/SASS, styled-components. Constantly, learning up-to-date technologies, especially Typescript and MERN stacks. Feel free to reach out to me.',
@@ -11,7 +11,7 @@ export const homeObjOne = {
   alt: 'AboutMe',
   dark: true,
   primary: true,
-  darkText: false,
+  darkText: true,
 };
 
 
@@ -34,8 +34,8 @@ export const homeObjTwo = {
 export const homeObjThree = {
   id:'contact',
   lightBg: true,
-  lightText: true,
-  lightTextDesc: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: 'Let\'s start',
   headline: 'Get In Touch With Me!',
   email: 'yusuke.10.25.61@gmail.com',
@@ -44,14 +44,13 @@ export const homeObjThree = {
   alt: 'AboutMe',
   dark: false,
   primary: false,
-  darkText: false
+  darkText: true
 };
 
 export const workDescOne = {
   id:'cricket',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
   topLine: 'Overview',
   headline: 'Cricket Project',
   description: ' Built actual website for local cricket organization.',
@@ -61,14 +60,13 @@ export const workDescOne = {
   alt: 'Cricket_img',
   dark: true,
   primary: true,
-  darkText: false
+  darkText: true
 };
 
 export const workDescTwo = {
   id:'lacrosse',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
   topLine: 'Overview',
   headline: 'Lacrosse Project',
   description: ' Built actual website for Pro Lacrosse Caliber with real client.',
@@ -78,14 +76,13 @@ export const workDescTwo = {
   alt: 'Lacrosse_img',
   dark: true,
   primary: true,
-  darkText: false
+  darkText: true
 };
 
 export const workDescThree = {
   id:'movieApp',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
   topLine: 'Overview',
   headline: 'Movie App Project',
   description: 'Built Movie App with React.js',
@@ -94,7 +91,7 @@ export const workDescThree = {
   alt: 'movieApp_img',
   dark: true,
   primary: true,
-  darkText: false
+  darkText: true
 };
 
 export const workDescFour = {
@@ -115,9 +112,8 @@ export const workDescFour = {
 
 export const workDescFive = {
   id:'covid',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
   topLine: 'Overview',
   headline: 'COVID-19 Live Dashboard',
   description: 'Built COVID-19 Live Dashboard with Typescript with React-Hooks, Redux-Toolkit',
@@ -126,7 +122,7 @@ export const workDescFive = {
   alt: 'covid_img',
   dark: true,
   primary: true,
-  darkText: false
+  darkText: true
 };
 
 export const workDescSix = {
@@ -145,6 +141,22 @@ export const workDescSix = {
   darkText: false
 };
 
+export const videoApp = {
+  id:'videoApp',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Overview',
+  headline: 'React YouTube App',
+  description: 'Built a YouTube Video App with React Custom Hooks',
+  buttonLabel: 'Visit WebSite',
+  imgStart: true,
+  alt: 'video_App',
+  dark: true,
+  primary: true,
+  darkText: true
+};
+
 export const extraInfo = {
   id:'extraInfo',
   lightBg: false,
@@ -159,7 +171,6 @@ export const extraInfo = {
   primary: true,
   darkText: false
 };
-
 
 export const ButtonData = {
   id:'ButtonGoBack',

@@ -1,10 +1,11 @@
 import React from 'react';
 import Icon1 from '../../assets/images/Cricket_Logo.png';
 import Icon2 from '../../assets/images/Lacrosse_works.png';
-import Icon3 from '../../assets/images/Y\'sFilm_logo.png';
+import Icon3 from '../../assets/images/MovieApp.png';
 import Icon4 from '../../assets/images/workDescFour.png';
 import Icon5 from '../../assets/images/covidDash_logo.png';
 import Icon6 from '../../assets/images/FABE_LOGO_3.png';
+import Icon7 from '../../assets/images/videoApp_mockUp.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {
@@ -32,7 +33,7 @@ const Works = () => {
 
   return (
     <WorksContainer name="works" basename="works">
-      <WorksH1>My Projects</WorksH1>
+      <WorksH1>Portfolio</WorksH1>
       <WorksWrapper>
         <WorksCard data-aos="zoom-in" data-aos-duration="1000">
           <WorksImgCtn >
@@ -41,7 +42,7 @@ const Works = () => {
           <WorksContent>
             <WorksH2>Cricket Project</WorksH2>
             <WorksP>Built an actual website <br/>
-            for local cricket organization.s
+            for local cricket organization
               </WorksP>
             <ButtonLink
               to={'/cricket'}
@@ -63,7 +64,7 @@ const Works = () => {
           <WorksContent>
             <WorksH2>Lacrosse Project</WorksH2>
             <WorksP>Built an official website <br/>
-            for Pro Lacrosse Caliber.
+            for Pro Lacrosse Caliber
             </WorksP>
             <ButtonLink
               to={'/lacrosse'}
@@ -74,6 +75,26 @@ const Works = () => {
               dark={dark ? 1 : 0}
             > Learn More
             </ButtonLink>
+          </WorksContent>
+        </WorksCard>
+
+        <WorksCard data-aos="zoom-in" data-aos-duration="1000"  >
+          <WorksImgCtn>
+            <WorksIcon src={Icon7} />
+          </WorksImgCtn>
+          <WorksContent>
+            <WorksH2>React YouTube App</WorksH2>
+            <WorksP>Built a video app <br/>
+            with React Hooks</WorksP>
+            <ButtonLink
+              to={'/videoApp'}
+              duration={500}
+              exact="true"
+              offset={-80}
+              primary={primary ? 1 : 0}
+              dark={dark ? 1 : 0}
+            > Learn More
+              </ButtonLink>
           </WorksContent>
         </WorksCard>
 

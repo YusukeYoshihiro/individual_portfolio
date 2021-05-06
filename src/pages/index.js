@@ -40,9 +40,9 @@ const Home = () =>{
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle} />
       <HeroSection />
+      <Works />
       <InfoSec {...homeObjOne} scroll={scrollNav}/>
       <InfoSec_2 {...homeObjTwo} />
-      <Works />
       <InfoSec_3 {...homeObjThree}/> 
       <Footer />
     </>

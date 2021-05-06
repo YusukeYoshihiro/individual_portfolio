@@ -7,7 +7,7 @@ export const SidebarContainer = styled.aside`
    z-index: 999;
    width: 100%;
    height: 100%;
-   background: var(--color-dark); 
+   background: var(--color-white); 
    display: grid;
    align-items: center;
    top: 0;
@@ -19,10 +19,10 @@ export const SidebarContainer = styled.aside`
 
 // https://react-icons.github.io/react-icons/search?q=fatime
 export const CloseIcon = styled(FaTimes)`
-  color:#fff;
+  color:var(--color-green);
 `;
 
-export const Icon  = styled.div`
+export const Icon = styled.div`
    position: absolute;
    top: 1.2rem;
    right: 1.5rem;
@@ -33,7 +33,7 @@ export const Icon  = styled.div`
 `;
 
 export const SidebarWrapper = styled.div`
-   color:#fff;
+   color:var(--color-dark);
 `;
 
 export const SidebarMenu = styled.ul`
@@ -56,13 +56,36 @@ export const SidebarLink = styled(LinkS)`
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
-  color: #fff;
+  color: var(--color-green);
   cursor: pointer;
   
-  &:hover {
-    color:var(--color-green);
+  p {
+    position: relative;
+    overflow: hidden;
+
+    :hover {
+    text-shadow: 0px 15px 5px rgba(0,0,0,0.7),
+                 10px 20px 5px rgba(0,0,0,0.3),
+                 -10px 20px 5px rgba(0,0,0,0.5);
     transition: 0.2s ease-in-out;
+   }
+   ::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color:var(--color-green);
+    transform: translate(-100%, 0);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+    }
+  
+    :hover::after {
+    transform: translate(0, 0);
+    }
   }
+ 
 `;
 
 export const SideBtnWrap = styled.div`
@@ -75,7 +98,7 @@ export const SidebarRoute = styled.button`
    background:var(--color-green);
    white-space: nowrap;
    padding: 16px 64px;
-   color: var(--color-dark);
+   color: var(--color-white);
    font-size: 16px;
    outline: none;
    border: none;
@@ -85,6 +108,7 @@ export const SidebarRoute = styled.button`
 
    &:hover {
     transition: all 0.2s ease-in-out;
+    border:solid 2px var(--color-green);
     background-color:#fff;
     color: var(--color-dark);
   }

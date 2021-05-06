@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '../../Features/ButtonScrollStyles';
-import  workImg from '../../assets/images/MockImgLacrosse.png';
+import  workImg from '../../assets/images/Lacrosse_works.png';
 import { workDescTwo } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages';
 import { URL } from '../../Data/showRepository';
@@ -104,6 +104,7 @@ const WorkDesc2 = () => {
                     {buttonLabel2}
                   </Button>
                 </BtnWrap>
+                  <BackToPages />
               </TextWrapper>
             </Column1>
 
@@ -111,8 +112,6 @@ const WorkDesc2 = () => {
               <ImgWrap>
                 <Img src={lacrosseImg} alt={alt} />
               </ImgWrap>
-              <br/><br/>
-              <BackToPages />
             </Column2>
            
           </InfoRow>

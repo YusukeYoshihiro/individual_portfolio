@@ -92,6 +92,10 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
    margin-bottom: 24px;
    font-size: 48px;
+   text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
    line-height: 1.1;
    font-weight: 600;
    color: ${({lightText})=> (lightText ? '#f7f8fa' : 'var(--color-dark)')};
@@ -107,6 +111,10 @@ export const Subtitle = styled.div`
   font-size: 18px;
   line-height: 24px;
   color: ${({darkText})=> (darkText ? 'var(--color-dark)': '#fff')};
+
+  @media screen and (max-width:375px){
+    font-size: 13px;
+  }
 `;
 
 // for contact part
@@ -114,15 +122,14 @@ export const Subtitle3 = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   /* line-height: 24px; */
-  /* color: ${({darkText})=> (darkText ? '#fff': 'var(--color-dark)')}; */
-  font-size: 20px;
+  color: ${({darkText})=> (darkText ? 'var(--color-green)': 'var(--color-dark)')};
+  font-size: 2rem;
   text-decoration: none;
-  color: #fff;
   display: inline-block;
   position: relative;
   overflow: hidden;
   :hover{
-    color: #fff;
+    color: var(--color-green);
   }
 
   ::after {
@@ -132,13 +139,16 @@ export const Subtitle3 = styled.p`
     left: 0;
     width: 100%;
     height: 2px;
-    background-color:#fff;
+    background-color:var(--color-green);
     transform: translate(-100%, 0);
     transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
     }
   
     :hover::after {
     transform: translate(0, 0);
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
   }
 `;
 
