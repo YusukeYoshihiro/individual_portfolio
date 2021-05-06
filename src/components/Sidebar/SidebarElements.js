@@ -55,7 +55,7 @@ export const SidebarLink = styled(LinkS)`
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
-  transition: 0.2s ease-in-out;
+  transition: 1s ease-in-out;
   color: var(--color-green);
   cursor: pointer;
   
@@ -64,10 +64,8 @@ export const SidebarLink = styled(LinkS)`
     overflow: hidden;
 
     :hover {
-    text-shadow: 0px 15px 5px rgba(0,0,0,0.7),
-                 10px 20px 5px rgba(0,0,0,0.3),
-                 -10px 20px 5px rgba(0,0,0,0.5);
-    transition: 0.2s ease-in-out;
+    font-size: 1.7rem;
+    color: #4a196d;
    }
    ::after {
     content: "";
@@ -78,7 +76,7 @@ export const SidebarLink = styled(LinkS)`
     height: 2px;
     background-color:var(--color-green);
     transform: translate(-100%, 0);
-    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
     }
   
     :hover::after {
