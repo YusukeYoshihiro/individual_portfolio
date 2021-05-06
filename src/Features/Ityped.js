@@ -10,10 +10,10 @@ const Ityped = () => {
         <ITyped className='container ityped-cursor'
         showCursor={false}
         strings={strings}
-        typeSpeed={80}
-        backSpeed={50}
-        startDelay={100}
-        backDelay={250}
+        typeSpeed={100}
+        backSpeed={80}
+        startDelay={120}
+        backDelay={450}
     />
     </ItypedCtn>
   )

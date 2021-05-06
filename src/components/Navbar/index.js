@@ -1,7 +1,5 @@
 /* eslint-disable react/jsx-no-undef */
 import React, { useState, useEffect } from 'react';
-// import {use} from 'react-router-dom';
-
 // we can refer "react-icon" page to choose hamburger menu.
 import { FaBars } from 'react-icons/fa';
 // https://www.npmjs.com/package/react-icons
@@ -40,7 +38,7 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       <IconContext.Provider
-        value={{ color: '#fff' }}
+        value={{ color: 'var(--color-green)' }}
       >
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
@@ -51,7 +49,17 @@ const Navbar = ({ toggle }) => {
               <FaBars />
             </MobileIcon>
             <NavMenu> {/* ul element */}
-              <NavItem>  {/* li element */}
+              <NavItem> {/* li element */}
+                <NavLinks
+                  to='works'
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact='true'
+                  offset={-80}
+                >Portfolio</NavLinks>
+              </NavItem>
+              <NavItem>
                 <NavLinks
                   to="about"
                   smooth={true}
@@ -70,16 +78,6 @@ const Navbar = ({ toggle }) => {
                   exact='true'
                   offset={-80}
                 >Skills</NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to='works'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                >Projects</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks

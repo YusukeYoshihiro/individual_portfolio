@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Video from '../../videos/video.mp4';
+// import Video from '../../videos/video.mp4';
 import Ityped from '../../Features/Ityped';
 import { Button } from '../../Features/ButtonScrollStyles';
 import {
   HeroContainer,
   HeroBg,
-  VideoBg,
+  // VideoBg,
   HeroContent,
   HeroH1,
   HeroP,
@@ -33,7 +33,7 @@ const HeroSection = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        {/* <VideoBg autoPlay loop muted src={Video} type="video/mp4" /> */}
       </HeroBg>
       <HeroContent >
         <HeroH1 data-aos="zoom-in" data-aos-delay="500"> 

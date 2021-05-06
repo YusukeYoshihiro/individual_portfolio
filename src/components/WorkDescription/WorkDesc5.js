@@ -67,7 +67,7 @@ const WorkDesc5 = () => {
                   <h3>&lt; Others /&gt;</h3><br />
                   <LanguageList>
                     <li>
-                      <a href="https://covid19api.com">
+                      <a href="https://covid19api.com" >
                         WEB API
                       </a>
                     </li>
@@ -104,6 +104,7 @@ const WorkDesc5 = () => {
                     {buttonLabelRepo}
                   </Button>
                 </BtnWrap>
+                <BackToPages />
               </TextWrapper>
             </Column1>
 
@@ -111,8 +112,6 @@ const WorkDesc5 = () => {
               <ImgWrap>
                 <Img src={covidImg} alt={alt} />
               </ImgWrap>
-              <br /><br />
-              <BackToPages />
             </Column2>
 
           </InfoRow>

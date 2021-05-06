@@ -11,7 +11,7 @@ import {
 } from './SidebarElements';
 
 const showResume = () => {
-  window.open('https://drive.google.com/file/d/1Op4PlybKeO4Ua02NUODwH0zWBiQts-Tx/view?usp=sharing', '_blank')
+  window.open('', '_blank')
 }
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -23,11 +23,11 @@ const Sidebar = ({ isOpen, toggle }) => {
       
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="home" onClick={toggle} >Home</SidebarLink>
-          <SidebarLink to="about" onClick={toggle} >About</SidebarLink>
-          <SidebarLink to="skills" onClick={toggle} >Skills</SidebarLink>
-          <SidebarLink to="works" onClick={toggle} >Projects</SidebarLink>
-          <SidebarLink to="contact" onClick={toggle} >Contact</SidebarLink>
+          <SidebarLink to="home" onClick={toggle} ><p>Home</p></SidebarLink>
+          <SidebarLink to="works" onClick={toggle} ><p>Portfolio</p></SidebarLink>
+          <SidebarLink to="about" onClick={toggle} ><p>About</p></SidebarLink>
+          <SidebarLink to="skills" onClick={toggle} ><p>Skills</p></SidebarLink>
+          <SidebarLink to="contact" onClick={toggle} ><p>Contact</p></SidebarLink>
           </SidebarMenu>
       </SidebarWrapper>
 

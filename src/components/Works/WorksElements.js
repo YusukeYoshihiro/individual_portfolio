@@ -4,12 +4,11 @@ var Scroll = require('react-scroll');
 var Element = Scroll.Element;
 
 export const WorksContainer = styled(Element)`
-   height: 1100px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background: var(--color-dark);
+   background: var(--color-white);
 
    @media screen and (max-width: 768px){
     padding: 100px 0;
@@ -23,8 +22,8 @@ export const WorksContainer = styled(Element)`
 `;
 
 export const WorksWrapper = styled.div`
-  max-width: 1100px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 60px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -46,6 +45,7 @@ export const WorksWrapper = styled.div`
 `;
 
 export const WorksCard = styled.div`
+   box-shadow: -1px 5px 16px 4px rgb(0 0 0 / 8%);
    background: #fff;
    align-items: center;
    border-radius: 10px;
@@ -81,8 +81,12 @@ export const WorksIcon = styled.img`
 
 export const WorksH1 = styled.h1`
    font-size: 2.5rem;
-   color: #fff;
-   margin-bottom: 64px;
+   color: var(--color-green);
+   margin-top: 64px;
+   text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
 
    @media screen and (max-width: 480px){
      font-size: 2rem;

@@ -28,12 +28,11 @@ export const InfoRow = styled.div`
   grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2' `)};
 
   @media screen and (max-width: 768px) {
-     grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+     grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2' 'col1'` : `'col1 col1' 'col2 col2'`)};
   }
 `;
 
 export const Column1 = styled.div`
- background: ${({ objStyle }) => (objStyle)};
  margin-bottom: 15px;
  padding: 0 15px;
  grid-area: col1;
@@ -53,7 +52,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
   color:var(--color-green);
-  font-size: 16px;
+  font-size: 20px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
@@ -63,7 +62,7 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
    margin-bottom: 24px;
-   font-size: 48px;
+   font-size: 2rem;
    line-height: 1.1;
    font-weight: 600;
    color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'var(--color-dark)')};
@@ -76,7 +75,7 @@ export const Heading = styled.h1`
 export const Subtitle = styled.div`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? 'var(--color-dark)' : '#fff')};
 `;
@@ -110,6 +109,10 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+
+  @media screen and (max-width:376px){
+    width: 300px;
+  }
 `;
 
 export const LanguageList = styled.ul`
@@ -120,17 +123,17 @@ export const LanguageList = styled.ul`
   li{
     font-size:1rem;
     padding:5px;
-    border:1px solid #fff;
+    border:1px solid var(--color-green);
     border-radius: 8px;
     margin-right: 10px;
     margin-bottom: 10px;
     a{
       text-decoration: none;
-      color:#fff;
+      color:var(--color-dark);
     }
 
     @media (max-width:768px){
-    font-size:1rem;
+    font-size:13px;
   }
   }
  

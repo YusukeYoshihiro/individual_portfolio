@@ -101,6 +101,7 @@ const WorkDesc3 = () => {
                     {buttonLabelRepo}
                   </Button>
                 </BtnWrap>
+                <BackToPages />
               </TextWrapper>
             </Column1>
 
@@ -109,7 +110,7 @@ const WorkDesc3 = () => {
                 <Img src={movieAppImg} alt={alt} />
               </ImgWrap>
               <br/><br/>
-             <BackToPages />
+              
             </Column2>
               
           </InfoRow>

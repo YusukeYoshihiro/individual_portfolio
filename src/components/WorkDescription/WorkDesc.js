@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '../../Features/ButtonScrollStyles';
-import workImg from '../../assets/images/MockImgCricket.png';
+import workImg from '../../assets/images/Cricket_Logo.png';
 import { workDescOne, ButtonRepository } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages';
 import { URL } from '../../Data/showRepository';
@@ -103,6 +103,7 @@ const WorkDesc = () => {
                   >
                     {buttonLabelRepo}
                   </Button>
+                  <BackToPages />
                 </BtnWrap>
               </TextWrapper>
             </Column1>
@@ -111,8 +112,6 @@ const WorkDesc = () => {
               <ImgWrap>
                 <Img src={cricketImg} alt={alt} />
               </ImgWrap>
-              <br /><br />
-              <BackToPages />
             </Column2>
           </InfoRow>
         </InfoWrapper>
