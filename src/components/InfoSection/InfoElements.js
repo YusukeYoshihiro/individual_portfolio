@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // var(--color-dark)
 export const InfoContainer = styled.div`
    color : #fff;
-   background-color: ${({lightBg}) => (lightBg ? '#fff' : 'var(--color-dark)')};
+   background-color: ${({ lightBg }) => (lightBg ? '#fff' : 'var(--color-dark)')};
 
    @media screen and (max-width: 768px) {
      padding: 100px 0;
@@ -25,15 +25,15 @@ export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'`:`'col1 col2' `)};
+  grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2' `)};
 
   @media screen and (max-width: 768px) {
-     grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'`: `'col1 col1' 'col2 col2'`)};
+     grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
   }
 `;
 
 export const Column1 = styled.div`
- background: ${({objStyle}) => (objStyle)};
+ background: ${({ objStyle }) => (objStyle)};
  margin-bottom: 15px;
  padding: 0 15px;
  grid-area: col1;
@@ -47,7 +47,7 @@ export const Column2 = styled.div`
 `;
 
 export const ColumnSkill = styled.div`
- background: ${({objStyle}) => (objStyle)};
+ background: ${({ objStyle }) => (objStyle)};
  margin-bottom: 15px;
  grid-area: col1;
 `;
@@ -59,7 +59,7 @@ export const ColumnSkill2 = styled.div`
 `;
 
 export const ColumnContact = styled.div`
- background: ${({objStyle}) => (objStyle)};
+ background: ${({ objStyle }) => (objStyle)};
  margin-bottom: 15px;
  padding: 0 15px;
  grid-area: col1;
@@ -98,7 +98,7 @@ export const Heading = styled.h1`
                  0px 34px 30px rgba(0,0,0,0.1);
    line-height: 1.1;
    font-weight: 600;
-   color: ${({lightText})=> (lightText ? '#f7f8fa' : 'var(--color-dark)')};
+   color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'var(--color-dark)')};
 
    @media screen and (max-width: 480px) {
      font-size: 32px;
@@ -110,7 +110,7 @@ export const Subtitle = styled.div`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({darkText})=> (darkText ? 'var(--color-dark)': '#fff')};
+  color: ${({ darkText }) => (darkText ? 'var(--color-dark)' : '#fff')};
 
   @media screen and (max-width:375px){
     font-size: 13px;
@@ -122,7 +122,7 @@ export const Subtitle3 = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   /* line-height: 24px; */
-  color: ${({darkText})=> (darkText ? 'var(--color-green)': 'var(--color-dark)')};
+  color: ${({ darkText }) => (darkText ? 'var(--color-green)' : 'var(--color-dark)')};
   font-size: 2rem;
   text-decoration: none;
   display: inline-block;
@@ -153,8 +153,26 @@ export const Subtitle3 = styled.p`
 `;
 
 // For infoSec_2.js
+export const InfoSkillCtn = styled.div`
+  max-width:1100px;
+  margin: auto;
+  padding: 0 20px;
+`;
+
+export const SkillTitleCtn = styled.div`
+  text-align:center;
+`;
+
 export const SkillsWrap = styled.div`
-  color: ${({darkText})=> (darkText ? 'var(--color-dark)': '#fff')};
+  color: ${({ darkText }) => (darkText ? 'var(--color-dark)' : '#fff')};
+  margin: 50px auto 0;
+  padding: 0 20px;
+
+  @media screen and (min-width:1024px){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
 
   @media screen and (max-width: 378px){
     h3{
@@ -192,8 +210,8 @@ export const ContactImgWrap = styled.div`
 `;
 
 export const ImgWrapSkill = styled.div`
-   max-width: 555px;
-   height: 100%;
+   /* max-width: 555px; */
+   /* height: 100%; */
 
    @media screen and (max-width: 376px) {
     width: 300px;
