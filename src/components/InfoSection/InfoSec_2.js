@@ -4,17 +4,15 @@ import StyledIcon from '../StyledIcon/StyledIcon'
 
 import {
   InfoContainer,
-  InfoWrapper,
-  InfoRow,
   ColumnSkill,
   ColumnSkill2,
-  TextWrapper,
   TopLine,
   Heading,
-  Subtitle,
   SkillsWrap,
   ImgWrapSkill,
-  SkillsList
+  SkillsList,
+  InfoSkillCtn,
+  SkillTitleCtn
 } from './InfoElements';
 
 const InfoSec2 = ({
@@ -29,21 +27,20 @@ const InfoSec2 = ({
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id} >
-        <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
-
+        <InfoSkillCtn >
+          <div imgStart={imgStart}>
             <ColumnSkill data-aos="fade-right" data-aos-duration="1000">
-              <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>
+               <SkillTitleCtn>
+                  <TopLine>{topLine}</TopLine>
+                  <Heading lightText={lightText}>{headline}</Heading>
+               </SkillTitleCtn>
+                <div darkText={darkText}>
                   <SkillsWrap darkText={darkText}>
                     <div data-aos="zoom-in">
                       <h3>&lt; Proficiency /&gt;</h3><br />
                       <SkillsList>
                         <li> React.js</li>
                         <li> Javascript(ES6)</li>
-                        <li> HTML5/CSS3</li>
                         <li> SCSS/SASS</li>
                         <li> styled-components</li>
                       </SkillsList>
@@ -59,6 +56,7 @@ const InfoSec2 = ({
                         <li> React.js</li>
                         <li> React-Redux</li>
                         <li> Typescript</li>
+                        <li> Responsible Design</li>
                       </SkillsList>
                     </div>
 
@@ -80,10 +78,9 @@ const InfoSec2 = ({
                         <li> AWS</li>
                         <li> Git/CLI</li>
                       </SkillsList>
-                    </div>
+                     </div>
                   </SkillsWrap>
-                </Subtitle>
-              </TextWrapper>
+                </div>
             </ColumnSkill>
 
             <ColumnSkill2 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="50">
@@ -93,8 +90,8 @@ const InfoSec2 = ({
               </ImgWrapSkill>
             </ColumnSkill2>
 
-          </InfoRow>
-        </InfoWrapper>
+          </div>
+        </InfoSkillCtn>
       </InfoContainer>
     </>
   )
