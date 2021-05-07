@@ -60,20 +60,14 @@ export const ColumnSkill2 = styled.div`
 
 export const ColumnContact = styled.div`
  background: ${({ objStyle }) => (objStyle)};
- margin-bottom: 15px;
- padding: 0 15px;
- grid-area: col1;
+ padding: 15px;
+ height: 70vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 `;
-
-export const ColumnContact2 = styled.div`
- margin-bottom: 15px;
- padding: 0 15px;
- grid-area: col2;
-`;
-
 
 export const TextWrapper = styled.div`
- max-width: 540px;
  padding-top: 0;
  padding-bottom: 60px;
  padding: 0px 30px;
@@ -155,6 +149,7 @@ export const Subtitle3 = styled.p`
 // For infoSec_2.js
 export const InfoSkillCtn = styled.div`
   max-width:1100px;
+  height:80vh;
   margin: auto;
   padding: 0 20px;
 `;
@@ -203,22 +198,14 @@ export const ImgWrap = styled.div`
 export const ContactImgWrap = styled.div`
    max-width: 555px;
    height: 100%;
-
-   @media screen and (max-width: 376px) {
-    /* width: 380px; */
-   }
 `;
 
 export const ImgWrapSkill = styled.div`
-   /* max-width: 555px; */
-   /* height: 100%; */
-
    @media screen and (max-width: 376px) {
     width: 300px;
     height: 350px;
    }
 `;
-
 
 export const Img = styled.img`
   display: block;
@@ -249,8 +236,30 @@ export const SkillsList = styled.ul`
    
 
     @media (max-width:768px){
-    font-size:0.7rem;
-  }
+      font-size:0.7rem;
+    }
   }
  
+`;
+
+export const SocialIcons = styled.div`
+  display: flex;
+  align-items: center;
+  width: 240px;
+  @media screen and (max-width:376px){
+  justify-content: center;
+  }
+`;
+
+export const SocialIconLink= styled.a`
+ margin-right:15px;
+ color:var(--color-green);
+ font-size: 2.5rem;
+ transition: all 0.2s ease-in-out;
+
+ &:hover {
+    transform: scale(1.5);
+    transition: all 0.2s ease-in-out;
+    color: #36af9a;
+  }
 `;

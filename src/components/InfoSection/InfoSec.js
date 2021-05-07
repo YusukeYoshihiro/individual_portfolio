@@ -1,6 +1,8 @@
 import React from 'react'
 import { Button } from '../../Features/ButtonScrollStyles'
 import AboutMeImg from '../../assets/images/about_meImg.png';
+import { FaGithub, FaLinkedin} from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai';
 import {
   InfoContainer,
   InfoWrapper,
@@ -13,12 +15,19 @@ import {
   Subtitle,
   ImgWrap,
   Img,
+  SocialIcons,
+  SocialIconLink,
 } from './InfoElements';
 
 const myImg = AboutMeImg;
 
 const showResume = () => {
   window.open('https://drive.google.com/file/d/1Op4PlybKeO4Ua02NUODwH0zWBiQts-Tx/view?usp=sharing', '_blank')
+}
+
+const mailtoUrl = 'mailto:yusuke.10.25.61@gmail.com';
+const mailTo = () => {
+  window.location.href = mailtoUrl;
 }
 
 const InfoSec = ({
@@ -50,6 +59,19 @@ const InfoSec = ({
                     {description}
                   </p>
                 </Subtitle>
+                <SocialIcons>
+                  <SocialIconLink href="https://github.com/YusukeYoshihiro" target="_blank" aria-label="Github">
+                    <FaGithub />
+                  </SocialIconLink>
+                  <SocialIconLink href="https://www.linkedin.com/in/yusuke-yoshihiro-ab46491b2/" target="_blank" aria-label="Linkdin">
+                    <FaLinkedin />
+                  </ SocialIconLink>
+                  <SocialIconLink onClick={mailTo} aria-label="Mail">
+                    <AiOutlineMail />
+                  </ SocialIconLink>
+
+
+                </ SocialIcons>
                 <Button
                   onClick={showResume}
                   smooth={true}
