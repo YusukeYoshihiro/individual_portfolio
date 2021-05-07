@@ -79,3 +79,4 @@ export const HeroImgCtn= styled.div`
     width:35%;
   }
 `;
+
