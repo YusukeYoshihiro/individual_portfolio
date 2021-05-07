@@ -39,44 +39,46 @@ const InfoSec2 = ({
                 <Subtitle darkText={darkText}>
                   <SkillsWrap darkText={darkText}>
                     <div data-aos="zoom-in">
-                      <h3>&lt; Languages /&gt;</h3><br />
+                      <h3>&lt; Proficiency /&gt;</h3><br />
                       <SkillsList>
-                        <li> HTML5</li>
-                        <li> CSS3</li>
+                        <li> React.js</li>
                         <li> Javascript(ES6)</li>
-                        <li> Typescript</li>
+                        <li> HTML5/CSS3</li>
                         <li> SCSS/SASS</li>
-                        <li> Python</li>
-                        
+                        <li> styled-components</li>
                       </SkillsList>
                     </div>
 
                     <div data-aos="zoom-in" data-aos-delay="100">
-                      <h3>&lt; Frameworks ＆ Libraries /&gt;</h3><br />
+                      <h3>&lt; Front-End ＆ Libraries /&gt;</h3><br />
                       <SkillsList>
-                        <li> React</li>
-                        <li> React-Redux</li>
-                        <li> React-Hooks</li>
+                        <li> HTML5/CSS3</li>
+                        <li> Javascript(ES6)</li>
                         <li> jQuery</li>
-                        <li> styled-components</li>
-                        <li> Node.js/Express.js</li>
+                        <li> Chart.js/D3.js</li>
+                        <li> React.js</li>
+                        <li> React-Redux</li>
+                        <li> Typescript</li>
                       </SkillsList>
                     </div>
 
                     <div data-aos="zoom-in" data-aos-delay="300" id="trigger-left">
                       <h3>&lt; Others /&gt;</h3><br />
                       <SkillsList>
-                        <li> RESTfulAPI</li>
-                        <li> mySQL</li>
-                        <li> Photoshop</li>
-                        <li> Illustrator</li>
+                        <li>Java</li>
+                        <li> Python/Django</li>
+                        <li> Node.js/Express.js</li>
                         <li> XD</li>
                         <li> Figma</li>
+                        <li> Photoshop</li>
+                        <li> Illustrator</li>
+                        <li> RESTfulAPI</li>
+                        <li>GraphQL</li>
+                        <li> mySQL</li>
                         <li> MongoDB</li>
                         <li> Firebase</li>
-                        <li> Heroku</li>
                         <li> AWS</li>
-                        <li> Git</li>
+                        <li> Git/CLI</li>
                       </SkillsList>
                     </div>
                   </SkillsWrap>

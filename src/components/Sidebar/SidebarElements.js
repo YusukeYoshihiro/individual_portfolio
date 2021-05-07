@@ -76,7 +76,7 @@ export const SidebarLink = styled(LinkS)`
     height: 2px;
     background-color:var(--color-green);
     transform: translate(-100%, 0);
-    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s;
     }
   
     :hover::after {
