@@ -70,6 +70,7 @@ const WorkDesc = () => {
                     <li> Bootstrap5</li>
                     <li> Figma</li>
                     <li> XD</li>
+                    <li> Git</li>
                   </LanguageList>
   
                 </Subtitle>
