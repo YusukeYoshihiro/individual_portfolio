@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterWrap = styled.div`
-  padding: 48px 24px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +23,6 @@ export const FooterTextWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px auto 0 auto;
 `;
 
 export const AuthorName = styled(Link)`
