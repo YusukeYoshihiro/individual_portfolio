@@ -5,7 +5,8 @@ export const homeObjOne = {
   // lightTextDesc: true,
   topLine: 'About me',
   headline: 'Who am I ?',
-  description: 'I\'m Yusuke Yoshihiro, Front-End Developer, based in Vancouver. I\'m passionate about cooking, travel, hockey, watching films. As well as Coding and Programming. Specifically, expert in React, React-Redux, SCSS/SASS, styled-components. Constantly, learning up-to-date technologies, especially Typescript and MERN stacks. Feel free to reach out to me.',
+  description1: 'I\'m Yusuke Yoshihiro, Front-End Developer, based in Vancouver. I\'m passionate about cooking, travel, hockey, watching films. As well as Coding and Programming. Specifically, expert in React, React-Redux, SCSS/SASS, styled-components. Constantly, learning up-to-date technologies, especially Typescript and MERN stacks. Feel free to reach out to me.',
+  description:'I am driven by developing intuitive user-friendly applications and websites, always striving to successfully manage development projects with a positive impact. Enthusiasm, openness, and team spirit with the capacity to adapt and know how to implement all stages of web development. Proficiency in Frontend coding such as Javascript, ReactJS, Redux, Typescript, SASS/SCSS, HTML5/CSS3.',
   buttonLabel: 'Resume',
   imgStart: true,
   alt: 'AboutMe',
@@ -127,9 +128,8 @@ export const workDescFive = {
 
 export const workDescSix = {
   id:'portfolio',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
   topLine: 'Overview',
   headline: 'Portfolio',
   description: 'Built a portfolio website with React, React-Hooks, Styled-Components, AOS, Material-UI',
@@ -138,7 +138,7 @@ export const workDescSix = {
   alt: 'portfolio_img',
   dark: true,
   primary: true,
-  darkText: false
+  darkText: true
 };
 
 export const videoApp = {

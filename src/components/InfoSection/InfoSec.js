@@ -45,7 +45,11 @@ const InfoSec = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <Subtitle darkText={darkText}>
+                  <p>
+                    {description}
+                  </p>
+                </Subtitle>
                   <Button
                     onClick={showResume}
                     smooth={true}
