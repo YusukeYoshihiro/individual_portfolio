@@ -1,23 +1,17 @@
 // Contact Pert
 import React, { useState } from 'react'
 import { Button } from '../../Features/ButtonScrollStyles'
-import AboutMeImg from '../../assets/images/about_me.png';
-import { SocialIconLink, SocialIcons } from '../Footer/FooterElements';
+import { SocialIconLink, SocialIcons } from './InfoElements';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import {
   InfoContainer,
-  InfoWrapper,
-  InfoRow,
   ColumnContact,
-  ColumnContact2,
   TextWrapper,
   TopLine,
   Heading,
   Subtitle3,
   BtnWrap,
-  ContactImgWrap,
-  Img
 } from './InfoElements';
 
 
@@ -25,8 +19,6 @@ import {
   ArrowForward,
   ArrowRight
 } from '../../Features/ArrowIconStyles';
-
-const myImg = AboutMeImg;
 
 const mailtoUrl = 'mailto:yusuke.10.25.61@gmail.com';
 
@@ -57,8 +49,6 @@ const InfoSec_3 = ({
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
-        <InfoWrapper >
-          <InfoRow imgStart={imgStart}>
             <ColumnContact data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50">
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
@@ -91,14 +81,6 @@ const InfoSec_3 = ({
                 </BtnWrap>
               </TextWrapper>
             </ColumnContact >
-
-            <ColumnContact2 data-aos="fade-down" data-aos-duration="1000">
-              <ContactImgWrap>
-                <Img src={myImg} alt={alt} />
-              </ContactImgWrap>
-            </ColumnContact2>
-          </InfoRow>
-        </InfoWrapper>
       </InfoContainer>
     </>
   )

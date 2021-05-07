@@ -13,6 +13,11 @@ const GlobalStyle = createGlobalStyle`
     --color-green:#144C70;
     --color-white: #fff;
   }
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 `;
 
 export default GlobalStyle;

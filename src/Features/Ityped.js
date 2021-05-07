@@ -23,6 +23,7 @@ export default Ityped;
 
 const ItypedCtn = styled.div`
   min-height: 30px;
+  margin-left: 15px;
 `
 
 

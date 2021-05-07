@@ -5,7 +5,7 @@ export const InfoContainer = styled.div`
    background-color: ${({ lightBg }) => (lightBg ? '#fff' : 'var(--color-dark)')};
 
    @media screen and (max-width: 780px) {
-     padding: 100px 150px 0;
+     padding: 10px;
    }
 `;
 

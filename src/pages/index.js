@@ -41,8 +41,8 @@ const Home = () =>{
       <Navbar toggle={toggle} />
       <HeroSection />
       <Works />
-      <InfoSec {...homeObjOne} scroll={scrollNav}/>
       <InfoSec_2 {...homeObjTwo} />
+      <InfoSec {...homeObjOne} scroll={scrollNav}/>
       <InfoSec_3 {...homeObjThree}/> 
       <Footer />
     </>
