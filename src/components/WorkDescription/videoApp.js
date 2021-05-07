@@ -60,9 +60,10 @@ const WorkDesc4 = () => {
                     <li>Styled-Components</li>
                     <li>Semantic-UI</li>
                   </LanguageList>
-                  <h3>&lt;UI/UX & others /&gt;</h3><br />
+                  <h3>&lt;UI/UX & Tools /&gt;</h3><br />
                   <LanguageList>
                     <li>XD</li>
+                    <li>WEB API</li>
                     <li>Vercel</li>
                     <li>Git</li>
                   </LanguageList>

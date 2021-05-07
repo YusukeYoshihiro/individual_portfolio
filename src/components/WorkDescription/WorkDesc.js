@@ -68,8 +68,10 @@ const WorkDesc = () => {
                   <LanguageList>
                     <li> mySQL</li>
                     <li> Bootstrap5</li>
+                    <li> WEB API</li>
                     <li> Figma</li>
                     <li> XD</li>
+                    <li> Git</li>
                   </LanguageList>
   
                 </Subtitle>
