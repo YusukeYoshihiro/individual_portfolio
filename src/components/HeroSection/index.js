@@ -38,8 +38,8 @@ const HeroSection = () => {
       <HeroContent >
         <HeroH1 data-aos="zoom-in" data-aos-delay="500"> 
         I'm <strong>Yusuke Yoshihiro</strong>, 
-        <br/>Front-End-Developer,<br/>
-        based in Vancouver. 
+        <br/>Front-End Developer,<br/>
+        based in Vancouver.
         </HeroH1>
         <HeroP data-aos="zoom-in" data-aos-delay="700"> 
           Love 
