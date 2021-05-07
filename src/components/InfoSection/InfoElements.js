@@ -6,7 +6,7 @@ export const InfoContainer = styled.div`
    background-color: ${({ lightBg }) => (lightBg ? '#fff' : 'var(--color-dark)')};
 
    @media screen and (max-width: 768px) {
-     padding: 100px 0;
+     padding: 60px 0;
    }
 `;
 
@@ -61,7 +61,7 @@ export const ColumnSkill2 = styled.div`
 export const ColumnContact = styled.div`
  background: ${({ objStyle }) => (objStyle)};
  padding: 15px;
- height: 70vh;
+ height: 85vh;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -149,7 +149,7 @@ export const Subtitle3 = styled.p`
 // For infoSec_2.js
 export const InfoSkillCtn = styled.div`
   max-width:1100px;
-  height:80vh;
+  min-height:80vh;
   margin: auto;
   padding: 0 20px;
 `;
