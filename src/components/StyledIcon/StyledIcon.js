@@ -111,19 +111,18 @@ const StyledIcon = () => {
 export default StyledIcon;
 
 // Styles for icons
+// Mobile First Structure
 const IconStyleWrapper = styled.ul`
     list-style: none;
     display: grid;
     grid-template-columns:repeat(4, 1fr);
     color: var(--color-green);
-    @media screen and (min-width:1024px){
-      display: flex;
-    }
-
     @media screen and (min-width:768px){
       grid-template-columns:repeat(6, 1fr);
     }
-   
+    @media screen and (min-width:1024px){
+      display: flex;
+    }
 `
 const SkillItem = styled.li`
   width: 60px;
