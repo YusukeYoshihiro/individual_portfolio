@@ -91,10 +91,14 @@ export const NavLinks = styled(LinkS)`
    padding: 0 1rem;
    height: 100%;
    cursor: pointer;
-  
+
   &.active{
     border-bottom: 3px solid var(--color-green);
   }
+    :hover {
+    font-size: 1.05rem;
+    color: #4a196d;
+   }
 `;
 
 export const NavBtn = styled.nav`
