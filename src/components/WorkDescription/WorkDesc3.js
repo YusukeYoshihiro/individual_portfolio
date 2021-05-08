@@ -1,25 +1,25 @@
 import React from 'react'
 import { Button } from '../../Features/ButtonScrollStyles';
-import  workImg from '../../assets/images/MovieApp.png';
+import workImg from '../../assets/images/MovieApp.png';
 import { workDescThree, ButtonRepository } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages';
 import { URL } from '../../Data/showRepository';
 
 import {
-  InfoContainer, 
-  InfoWrapper, 
-  InfoRow, 
-  Column1, 
-  Column2, 
-  TextWrapper, 
-  TopLine, 
-  Heading, 
-  Subtitle, 
-  BtnWrap, 
-  ImgWrap, 
+  InfoContainer,
+  InfoWrapper,
+  InfoRow,
+  Column1,
+  Column2,
+  TextWrapper,
+  TopLine,
+  Heading,
+  Subtitle,
+  BtnWrap,
+  ImgWrap,
   Img,
   LanguageList,
-} from  './WorkDescElements';
+} from './WorkDescElements';
 
 const movieAppImg = workImg;
 
@@ -39,39 +39,45 @@ const WorkDesc3 = () => {
     primary,
     dark,
     dark2,
-    } = workDescThree;
+  } = workDescThree;
 
-    const { buttonLabelRepo } =  ButtonRepository;
+  const { buttonLabelRepo } = ButtonRepository;
 
   return (
     <>
-       <InfoContainer lightBg={lightBg} id={id} >
+      <InfoContainer lightBg={lightBg} id={id} >
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1 >
+              <ImgWrap>
+                <Img src={movieAppImg} alt={alt} />
+              </ImgWrap>
+            </Column1>
+
+            <Column2 >
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>
                   {description}
-                  <br/><br/>
-                  <h3>&lt; Front-End /&gt;</h3><br/>
+                  <br /><br />
+                  <h3>&lt; Front-End /&gt;</h3><br />
                   <LanguageList>
                     <li> React</li>
                     <li> Compound-Components</li>
                     <li> Styled-Components</li>
-                    <li> Json</li>   
+                    <li> Json</li>
                   </LanguageList>
-              
-                   <h3>&lt; Database ＆ Others /&gt;</h3><br/>
-                   <LanguageList>
+
+                  <h3>&lt; Database ＆ Others /&gt;</h3><br />
+                  <LanguageList>
                     <li> Firebase</li>
                     <li> Diagrams.net</li>
                     <li> XD</li>
                   </LanguageList>
                 </Subtitle>
                 <BtnWrap>
-                  <Button 
+                  <Button
                     to='home'
                     smooth={true}
                     duration={500}
@@ -84,10 +90,10 @@ const WorkDesc3 = () => {
                     onClick={() => {
                       window.open(URL[1].website.movieApp, '_blank')
                     }}
-                  > 
+                  >
                     {buttonLabel}
                   </Button>
-                  <Button 
+                  <Button
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -97,22 +103,14 @@ const WorkDesc3 = () => {
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
                     onClick={() => window.open(URL[0].repository.movieApp, '_blank')}
-                  > 
+                  >
                     {buttonLabelRepo}
                   </Button>
                 </BtnWrap>
                 <BackToPages />
               </TextWrapper>
-            </Column1>
-
-            <Column2 >
-              <ImgWrap>
-                <Img src={movieAppImg} alt={alt} />
-              </ImgWrap>
-              <br/><br/>
-              
             </Column2>
-              
+
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>

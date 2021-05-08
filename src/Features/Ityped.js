@@ -3,7 +3,7 @@ import ITyped from 'react-ityped';
 import styled from 'styled-components';
 
 const Ityped = () => {
-  const strings = ['Front-End Coding', 'Hockey', 'Cooking', 'Watching Films', 'Traveling']
+  const strings = ['Front-End Coding', 'React','Hockey', 'Cooking', 'Watching Films', 'Traveling']
 
   return (
     <ItypedCtn>

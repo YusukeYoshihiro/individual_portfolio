@@ -51,6 +51,12 @@ const WorkDesc2 = () => {
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1 >
+            <ImgWrap>
+                <Img src={lacrosseImg} alt={alt} />
+              </ImgWrap>
+            </Column1>
+
+            <Column2 >
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
@@ -108,12 +114,6 @@ const WorkDesc2 = () => {
                 </BtnWrap>
                   <BackToPages />
               </TextWrapper>
-            </Column1>
-
-            <Column2 >
-              <ImgWrap>
-                <Img src={lacrosseImg} alt={alt} />
-              </ImgWrap>
             </Column2>
            
           </InfoRow>
