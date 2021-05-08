@@ -61,7 +61,7 @@ export const ColumnSkill2 = styled.div`
 export const ColumnContact = styled.div`
  background: ${({ objStyle }) => (objStyle)};
  padding: 15px;
- height: 85vh;
+ height: 70vh;
  display: flex;
  justify-content: center;
  align-items: center;

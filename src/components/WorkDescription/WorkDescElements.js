@@ -10,14 +10,14 @@ export const InfoContainer = styled.div`
 `;
 
 export const InfoWrapper = styled.div`
-   display: grid;
+   /* display: grid; */
    z-index: 1;
    min-height: 100vh;
    width: 100%;
    max-width: 1100px;
    margin-right: auto;
    margin-left: auto;
-   padding: 0 24px;
+   padding: 100px 24px;
    justify-content: center;
 `;
 
@@ -25,21 +25,21 @@ export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2' `)};
+  grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1 col2'` : `'col1 col2' `)};
 
   @media screen and (max-width: 768px) {
      grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
   }
 `;
-
+// img
 export const Column1 = styled.div`
  margin-bottom: 15px;
  padding: 0 15px;
  grid-area: col1;
 `;
-
+// text
 export const Column2 = styled.div`
- margin-bottom: 15px;
+ margin-bottom: 15px 0;
  padding: 0 15px;
  grid-area: col2;
 `;
@@ -111,7 +111,7 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   width: 100%;
-  margin: 0 0 10px 0;
+  margin: 20px 0 10px 0;
   padding-right: 0;
 
   @media screen and (max-width:376px){

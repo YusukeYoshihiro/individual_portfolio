@@ -39,15 +39,14 @@ const HeroSection = () => {
           Love
           <Ityped />
         </HeroP>
-        <HeroBtnWrapper>
+        <HeroBtnWrapper data-aos="zoom-in" data-aos-delay="900">
           <Button
             // onClick={showResume}
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'
             dark='true'
-            data-aos="zoom-in" data-aos-delay="900"
-          >
+          >  
             <Link
               to="about"
               smooth={true}

@@ -20,11 +20,7 @@ const Home = () =>{
 
    const [scrollNav, setScrollNav] = useState(false);
 
-   useEffect(() => {
-    window.addEventListener('scroll', changeNav)
-  }, [])
-  
-  const changeNav = () => {
+   const changeNav = () => {
     // console.log(window.scrollY)
     if (window.scrollY >= 280) {
       setScrollNav(true)
@@ -33,6 +29,11 @@ const Home = () =>{
     }
   };
 
+   useEffect(() => {
+    window.addEventListener('scroll', changeNav)
+  }, [])
+  
+ 
   // console.log(scrollNav);
 
   return (

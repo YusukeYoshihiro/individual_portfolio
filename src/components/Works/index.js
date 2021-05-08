@@ -48,7 +48,7 @@ const Works = () => {
               to={'/cricket'}
               duration={500}
               exact="true"
-              offset={-80}
+              offset={0}
               primary={primary ? 1 : 0}
               dark={dark ? 1 : 0}
             > Learn More

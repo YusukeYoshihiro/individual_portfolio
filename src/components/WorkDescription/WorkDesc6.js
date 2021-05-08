@@ -48,6 +48,11 @@ const WorkDesc4 = () => {
     <>
       <InfoContainer lightBg={lightBg} id={id} >
         <InfoWrapper>
+        <div >
+          <TopLine>{topLine}</TopLine>
+          <Heading lightText={lightText}>{headline}</Heading>
+          <p style={{color:'var(--color-dark)'}}>{description}</p>
+          </div>
           <InfoRow imgStart={imgStart}>
             <Column1 >
             <ImgWrap>
@@ -59,11 +64,7 @@ const WorkDesc4 = () => {
 
             <Column2 >
             <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>
-                  {description}
-                  <br /><br />
                   <h3>&lt; Frameworks &amp; Libraries /&gt;</h3><br />
                   <LanguageList>
                     <li>React</li>
