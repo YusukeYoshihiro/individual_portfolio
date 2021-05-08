@@ -24,7 +24,7 @@ import {
 const covidImg = workImg;
 
 const WorkDesc5 = () => {
-  
+
   const {
     lightBg,
     id,
@@ -41,13 +41,19 @@ const WorkDesc5 = () => {
     dark2,
   } = workDescFive;
 
-  const { buttonLabelRepo } =  ButtonRepository;
+  const { buttonLabelRepo } = ButtonRepository;
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id} >
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1 >
+              <ImgWrap>
+                <Img src={covidImg} alt={alt} />
+              </ImgWrap>
+            </Column1>
+
+            <Column2 >
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
@@ -73,7 +79,7 @@ const WorkDesc5 = () => {
                     </li>
                     <li>Git</li>
                   </LanguageList>
-                  
+
                 </Subtitle>
                 <BtnWrap>
                   <Button
@@ -90,7 +96,7 @@ const WorkDesc5 = () => {
                   >
                     {buttonLabel}
                   </Button>
-                  <Button 
+                  <Button
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -100,18 +106,12 @@ const WorkDesc5 = () => {
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
                     onClick={() => window.open(URL[0].repository.covid19, '_blank')}
-                  > 
+                  >
                     {buttonLabelRepo}
                   </Button>
                 </BtnWrap>
                 <BackToPages />
               </TextWrapper>
-            </Column1>
-
-            <Column2 >
-              <ImgWrap>
-                <Img src={covidImg} alt={alt} />
-              </ImgWrap>
             </Column2>
 
           </InfoRow>

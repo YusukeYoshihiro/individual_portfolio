@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: 'About me',
   headline: 'Who am I ?',
   description1: 'I\'m Yusuke Yoshihiro, Front-End Developer, based in Vancouver. I\'m passionate about cooking, travel, hockey, watching films. As well as Coding and Programming. Specifically, expert in React, React-Redux, SCSS/SASS, styled-components. Constantly, learning up-to-date technologies, especially Typescript and MERN stacks. Feel free to reach out to me.',
-  description:'I am driven by developing intuitive user-friendly applications and websites, always striving to successfully manage development projects with a positive impact. Enthusiasm, openness, and team spirit with the capacity to adapt and know how to implement all stages of web development. Proficiency in Frontend coding such as Javascript, ReactJS, Redux, Typescript, SASS/SCSS, HTML5/CSS3.',
+  description:'I\'m Yusuke Yoshihiro, Front-End WEB Developer, based in Vancouver. As a web developer, I am motivated by delivering intuitive user-friendly applications and websites, always striving to ensure positive outcomes from development projects. Exhibit proficiency with all forms of frontend development, such as Javascript, ReactJS, Redux, Typescript, SASS/SCSS, HTML5/CSS3.',
   buttonLabel: 'Resume',
   imgStart: true,
   alt: 'AboutMe',

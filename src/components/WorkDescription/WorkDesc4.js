@@ -2,7 +2,7 @@ import React from 'react';
 // import { Button } from '../../Features/ButtonScrollStyles';
 import workImg from '../../assets/images/FABE_LOGO.png';
 import { workDescFour } from '../../Data/data';
-import BackToPages from '../../Features/BackToPages'
+// import BackToPages from '../../Features/BackToPages'
 
 import {
   InfoContainer,
@@ -45,6 +45,12 @@ const WorkDesc4 = () => {
         <InfoWrapper>
           <InfoRow imgStart={imgStart}>
             <Column1 >
+            <ImgWrap>
+                <Img src={ecommerceImg} alt={alt} />
+              </ImgWrap>
+            </Column1>
+
+            <Column2 >
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
@@ -86,17 +92,9 @@ const WorkDesc4 = () => {
                   >
                     {buttonLabel}
                   </Button>
-                  
+                  <BackToPages />
                 </BtnWrap> */}
               </TextWrapper>
-            </Column1>
-
-            <Column2 >
-              <ImgWrap>
-                <Img src={ecommerceImg} alt={alt} />
-              </ImgWrap>
-              <br /><br />
-              <BackToPages />
             </Column2>
 
           </InfoRow>
