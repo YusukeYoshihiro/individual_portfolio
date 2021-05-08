@@ -20,7 +20,6 @@ import {
   Img,
   LanguageList
 } from './WorkDescElements';
-
 const cricketImg = workImg;
 
 const WorkDesc = () => {
@@ -47,20 +46,24 @@ const WorkDesc = () => {
     <>
       <InfoContainer lightBg={lightBg} id={id} >
         <InfoWrapper>
+        <div >
+          <TopLine>{topLine}</TopLine>
+          <Heading lightText={lightText}>{headline}</Heading>
+          <p style={{color:'var(--color-dark)'}}>{description}</p>
+          </div>
           <InfoRow imgStart={imgStart}>
             <Column1 >
-            <ImgWrap>
+              <ImgWrap>
                 <Img src={cricketImg} alt={alt} />
               </ImgWrap>
             </Column1>
 
             <Column2 >
-            <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
+              <TextWrapper>
+                {/* <TopLine>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headline}</Heading> */}
                 <Subtitle darkText={darkText}>
-                  {description}
-                  <br /><br />
+                  {/* {description} */}
                   <h3>&lt; Languages /&gt;</h3><br />
                   <LanguageList>
                     <li> HTML5</li>
@@ -78,7 +81,7 @@ const WorkDesc = () => {
                     <li> XD</li>
                     <li> Git</li>
                   </LanguageList>
-  
+
                 </Subtitle>
                 <BtnWrap>
                   <Button

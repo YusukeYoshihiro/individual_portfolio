@@ -46,20 +46,21 @@ const WorkDesc4 = () => {
     <>
       <InfoContainer lightBg={lightBg} id={id} >
         <InfoWrapper>
+        <div >
+          <TopLine>{topLine}</TopLine>
+          <Heading lightText={lightText}>{headline}</Heading>
+          <p style={{color:'var(--color-dark)'}}>{description}</p>
+          </div>
           <InfoRow imgStart={imgStart}>
             <Column1 >
-            <ImgWrap>
+              <ImgWrap>
                 <Img src={videoAppImg} alt={alt} />
               </ImgWrap>
             </Column1>
 
             <Column2 >
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>
-                  {description}
-                  <br /><br />
                   <h3>&lt; Front-End /&gt;</h3><br />
                   <LanguageList>
                     <li>React</li>
