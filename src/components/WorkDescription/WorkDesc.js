@@ -99,8 +99,7 @@ const WorkDesc = () => {
                   >
                     {buttonLabel}
                   </Button>
-                  <div></div>
-                  <Button
+                  {/* <Button
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -112,7 +111,7 @@ const WorkDesc = () => {
                     onClick={() => window.open(URL[0].repository.cricket, '_blank')}
                   >
                     {buttonLabelRepo}
-                  </Button>
+                  </Button> */}
                   <BackToPages />
                 </BtnWrap>
               </TextWrapper>
