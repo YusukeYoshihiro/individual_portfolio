@@ -9,7 +9,8 @@ import {
   HeroBtnWrapper,
   HeroImgCtn,
   HeroUl,
-  HeroAnimateCtn
+  HeroAnimateCtn,
+  ScrollLink
 } from './HeroElements';
 
 import {
@@ -74,6 +75,16 @@ const HeroSection = () => {
       >
         <img alt="topImage" src={TopImg} />
       </HeroImgCtn>
+      <ScrollLink
+       to='works'
+       smooth={true}
+       duration={500}
+       spy={true}
+       exact='true'
+       offset={-80}
+      >
+        <span></span><span></span>Scroll To See More
+      </ScrollLink>
     </HeroContainer>
   )
 }
