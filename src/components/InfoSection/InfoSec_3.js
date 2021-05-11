@@ -30,15 +30,12 @@ const mailTo = () => {
 const InfoSec_3 = ({
   lightBg,
   id,
-  imgStart,
   topLine,
   lightText,
   headline,
   darkText,
   email,
   // img,
-  alt,
- 
 }) => {
   const [hover, setHover] = useState(false);
 

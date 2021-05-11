@@ -131,7 +131,7 @@ const Works = () => {
             </WorksImgCtn>
             <WorksContent>
               <TextCtn>
-                <WorksH2>Movie App Project</WorksH2>
+                <WorksH2>React Movie App</WorksH2>
                 <WorksP>Built a movie app <br />
                 with React and Firebase</WorksP>
                 <LinkMore

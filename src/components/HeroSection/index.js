@@ -70,9 +70,7 @@ const HeroSection = () => {
         </HeroBtnWrapper>
       </HeroContent>
       <HeroImgCtn
-        data-aos="flip-up"
-        data-aos-delay="1000"
-        data-aos-duration="1000"
+        data-aos="zoom-in" data-aos-delay="1000"
       >
         <img alt="topImage" src={TopImg} />
       </HeroImgCtn>
