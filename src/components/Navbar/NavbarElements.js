@@ -98,7 +98,8 @@ export const NavLinks = styled(LinkS)`
   } */
     :hover {
     /* font-size: 1.05rem; */
-    color: #4a196d;
+    color: #36af9a;
+    /* color: #4a196d; */
     text-shadow: 0px 1px 0px #b2a98f,         
                  0px 5px 10px rgba(0,0,0,0.15),
                  0px 10px 2px rgba(0,0,0,0.1),

@@ -18,168 +18,199 @@ import {
   WorksH2,
   WorksP,
   WorksImgCtn,
+  TextCtn
 } from './WorksElements'
-import { ButtonLink } from '../../Features/ButtonLinkStyles';
-import { ButtonLinkData } from '../../Data/data';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
+const LinkMore = styled(Link)`
+  border: 2px solid  var(--color-green);
+  border-radius: 50px;
+  margin-bottom: 15px;
+  background: ${({ primary }) => ( primary ?'var(--color-green)' : 'var(--color-dark)' )};
+  white-space: nowrap;
+  padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+  color: ${({dark}) => (dark ? '#fff' : '#fff' )}; 
+  font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  margin-top: 15px;
+  width: 200px;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${({ primary }) => ( primary ? '#fff' :'var(--color-green)' )};
+    color: ${({dark}) => (dark ? 'var(--color-dark)' : '#fff' )}; 
+  }
+`
 
 AOS.init();
 
-const Works = () => {
-  const {
-    primary,
-    dark,
-  } = ButtonLinkData;
 
+const Works = () => {
   return (
     <WorksContainer name="works" basename="works">
       <WorksH1>Portfolio</WorksH1>
       <WorksWrapper>
-        <WorksCard data-aos="zoom-in" data-aos-duration="1000">
-          <WorksImgCtn >
-            <WorksIcon src={Icon1} />
-          </WorksImgCtn>
-          <WorksContent>
-            <WorksH2>Cricket Project</WorksH2>
-            <WorksP>Built an actual website <br/>
-            for local cricket organization
-              </WorksP>
-            <ButtonLink
-              to={'/cricket'}
-              duration={500}
-              exact="true"
-              offset={0}
-              primary={primary ? 1 : 0}
-              dark={dark ? 1 : 0}
-            > Learn More
-              </ButtonLink>
-          </WorksContent>
-        </WorksCard>
+          <WorksCard data-aos="zoom-in" data-aos-duration="1000">
+            <WorksImgCtn >
+              <WorksIcon src={Icon1} />
+            </WorksImgCtn>
+            <WorksContent>
+              <TextCtn >
+                <WorksH2>Cricket Project</WorksH2>
+                <WorksP>Built an actual website <br />
+                for local cricket organization.
+                  </WorksP>
+                <LinkMore
+                  to={'/cricket'}
+                  duration={500}
+                  exact="true"
+                  offset={0}
+                  primary='true'
+                  dark='true'
+                > Learn More
+                </LinkMore>
+              </TextCtn>s
+            </WorksContent>
+          </WorksCard>
+       
+          <WorksCard data-aos="zoom-in" data-aos-duration="1000">
+            <WorksImgCtn>
+              <WorksIcon src={Icon2} />
+            </WorksImgCtn>
+            <WorksContent>
+              <TextCtn>
+                <WorksH2>Lacrosse Project</WorksH2>
+                <WorksP>Built an official website <br />
+                for Pro Lacrosse Caliber
+                </WorksP>
+                <LinkMore
+                  to={'/lacrosse'}
+                  duration={500}
+                  exact="true"
+                  offset={0}
+                  primary='true'
+                  dark='true'
+                > Learn More
+                </LinkMore>
+              </TextCtn>
+            </WorksContent>
+          </WorksCard>
+      
+          <WorksCard data-aos="zoom-in" data-aos-duration="1000"  >
+            <WorksImgCtn>
+              <WorksIcon src={Icon7} />
+            </WorksImgCtn>
+            <WorksContent>
+              <TextCtn>
+                <WorksH2>React YouTube App</WorksH2>
+                <WorksP>Built a video app <br />
+                with React Hooks
+                </WorksP>
+                <LinkMore
+                  to={'/videoApp'}
+                  duration={500}
+                  exact="true"
+                  offset={0}
+                  primary='true'
+                  dark='true'
+                > Learn More
+                </LinkMore>
+              </TextCtn>
+            </WorksContent>
+          </WorksCard>
 
+          <WorksCard data-aos="zoom-in" data-aos-duration="1000" >
+            <WorksImgCtn>
+              <WorksIcon src={Icon3} />
+            </WorksImgCtn>
+            <WorksContent>
+              <TextCtn>
+                <WorksH2>Movie App Project</WorksH2>
+                <WorksP>Built a movie app <br />
+                with React and Firebase</WorksP>
+                <LinkMore
+                  to={'/movieApp'}
+                  duration={500}
+                  exact="true"
+                  offset={0}
+                  primary='true'
+                  dark='true'
+                > Learn More
+                </LinkMore>
+              </TextCtn>
+            </WorksContent>
+          </WorksCard>
 
-        <WorksCard data-aos="zoom-in" data-aos-duration="1000">
-          <WorksImgCtn>
-            <WorksIcon src={Icon2} />
-          </WorksImgCtn>
-          <WorksContent>
-            <WorksH2>Lacrosse Project</WorksH2>
-            <WorksP>Built an official website <br/>
-            for Pro Lacrosse Caliber
-            </WorksP>
-            <ButtonLink
-              to={'/lacrosse'}
-              duration={500}
-              exact="true"
-              offset={-80}
-              primary={primary ? 1 : 0}
-              dark={dark ? 1 : 0}
-            > Learn More
-            </ButtonLink>
-          </WorksContent>
-        </WorksCard>
+          <WorksCard data-aos="zoom-in" data-aos-duration="1000" >
+            <WorksImgCtn>
+              <WorksIcon src={Icon5} />
+            </WorksImgCtn>
+            <WorksContent>
+             <TextCtn>
+                <WorksH2>COVID-19 <br />Dashboard</WorksH2>
+                <WorksP>Built COVID-19 Dashboard<br />
+                  with Typescript, React.js and Chart.js</WorksP>
+                  <LinkMore
+                  to={'/covid'}
+                  duration={500}
+                  exact="true"
+                  offset={0}
+                  primary='true'
+                  dark='true'
+                > Learn More
+                </LinkMore>
+             </TextCtn>
+            </WorksContent>
+          </WorksCard>
 
-        <WorksCard data-aos="zoom-in" data-aos-duration="1000"  >
-          <WorksImgCtn>
-            <WorksIcon src={Icon7} />
-          </WorksImgCtn>
-          <WorksContent>
-            <WorksH2>React YouTube App</WorksH2>
-            <WorksP>Built a video app <br/>
-            with React Hooks</WorksP>
-            <ButtonLink
-              to={'/videoApp'}
-              duration={500}
-              exact="true"
-              offset={-80}
-              primary={primary ? 1 : 0}
-              dark={dark ? 1 : 0}
-            > Learn More
-              </ButtonLink>
-          </WorksContent>
-        </WorksCard>
-
-
-        <WorksCard data-aos="zoom-in" data-aos-duration="1000" >
-          <WorksImgCtn>
-            <WorksIcon src={Icon3} />
-          </WorksImgCtn>
-          <WorksContent>
-            <WorksH2>Movie App Project</WorksH2>
-            <WorksP>Built a movie app <br/>
-            with React and Firebase</WorksP>
-            <ButtonLink
-              to={'/movieApp'}
-              duration={500}
-              exact="true"
-              offset={-80}
-              primary={primary ? 1 : 0}
-              dark={dark ? 1 : 0}
-            > Learn More
-              </ButtonLink>
-          </WorksContent>
-        </WorksCard>
-
-
-
-        <WorksCard data-aos="zoom-in" data-aos-duration="1000" >
-          <WorksImgCtn>
-            <WorksIcon src={Icon5} />
-          </WorksImgCtn>
-          <WorksContent>
-            <WorksH2>COVID-19 Dashboard</WorksH2>
-            <WorksP>Built COVID-19 Dashboard<br/>
-              with Typescript  React</WorksP>
-            <ButtonLink
-              to={'/covid'}
-              duration={500}
-              exact="true"
-              offset={-80}
-              primary={primary ? 1 : 0}
-              dark={dark ? 1 : 0}
-            > Learn More
-              </ButtonLink>
-          </WorksContent>
-        </WorksCard>
-
-        <WorksCard data-aos="zoom-in" data-aos-duration="1000"  >
-          <WorksImgCtn>
-            <WorksIcon src={Icon6} />
-          </WorksImgCtn>
-          <WorksContent>
-            <WorksH2>Portfolio</WorksH2>
-            <WorksP>Built my portfolio with <br/>
-            React, Styled-Components</WorksP>
-            <ButtonLink
-              to={'/portfolio'}
-              duration={500}
-              exact="true"
-              offset={-80}
-              primary={primary ? 1 : 0}
-              dark={dark ? 1 : 0}
-            > Learn More
-              </ButtonLink>
-          </WorksContent>
-        </WorksCard>
-
-
-
-        <WorksCard data-aos="zoom-in" data-aos-duration="1000"  >
-          <WorksImgCtn>
-            <WorksIcon src={Icon4} />
-          </WorksImgCtn>
-          <WorksContent>
-            <WorksH2>E-commerce App Project</WorksH2>
-            <WorksP>Coming Soon ! <br /><br /></WorksP>
-            <ButtonLink
-              duration={500}
-              exact="true"
-              offset={-80}
-              primary={primary ? 1 : 0}
-              dark={dark ? 1 : 0}
-            > Learn More
-              </ButtonLink>
-          </WorksContent>
-        </WorksCard>
+          <WorksCard data-aos="zoom-in" data-aos-duration="1000"  >
+            <WorksImgCtn>
+              <WorksIcon src={Icon6} />
+            </WorksImgCtn>
+            <WorksContent>
+             <TextCtn>
+                <WorksH2>Portfolio</WorksH2>
+                <WorksP>Built my portfolio with <br />
+                React, Styled-Components</WorksP>
+                <LinkMore
+                  to={'/portfolio'}
+                  duration={500}
+                  exact="true"
+                  offset={0}
+                  primary='true'
+                  dark='true'
+                > Learn More
+                </LinkMore>
+             </TextCtn>
+            </WorksContent>
+          </WorksCard>
+        
+          <WorksCard data-aos="zoom-in" data-aos-duration="1000"  >
+            <WorksImgCtn>
+              <WorksIcon src={Icon4} />
+            </WorksImgCtn>
+            <WorksContent>
+              <TextCtn>
+                <WorksH2>E-commerce App</WorksH2>
+                <WorksP>Coming Soon ! <br /><br /></WorksP>
+                  {/* <LinkMore
+                  to={'/ecommerce'}
+                  duration={500}
+                  exact="true"
+                  offset={0}
+                  primary='true'
+                  dark='true'
+                > Learn More
+                </LinkMore> */}
+              </TextCtn>
+            </WorksContent>
+          </WorksCard>
 
       </WorksWrapper>
     </WorksContainer>
