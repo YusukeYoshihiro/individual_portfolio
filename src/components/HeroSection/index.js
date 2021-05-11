@@ -82,6 +82,9 @@ const HeroSection = () => {
        spy={true}
        exact='true'
        offset={-80}
+       data-aos="fade-down"
+       data-aos-easing="linear"
+       data-aos-duration="1500"
       >
         <span></span><span></span>Scroll To See More
       </ScrollLink>
