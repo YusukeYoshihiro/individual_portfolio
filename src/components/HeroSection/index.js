@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from '../../Features/ButtonScrollStyles';
 import AboutMeImg from '../../assets/images/about_me.png'
-import { Link } from 'react-scroll';
 import {
   HeroContainer,
   HeroContent,
@@ -10,7 +8,8 @@ import {
   HeroImgCtn,
   HeroUl,
   HeroAnimateCtn,
-  ScrollLink
+  ScrollLink,
+  LinkToAbout
 } from './HeroElements';
 
 import {
@@ -26,7 +25,6 @@ const HeroSection = () => {
   const onHover = () => {
     setHover(!hover)
   }
-
 
   return (
     <HeroContainer id="home">
@@ -50,14 +48,9 @@ const HeroSection = () => {
         </p>
 
         <HeroBtnWrapper data-aos="zoom-in" data-aos-delay="900">
-          <Button
-            // onClick={showResume}
-            onMouseEnter={onHover}
-            onMouseLeave={onHover}
-            primary='true'
-            dark='true'
-          >
-            <Link
+            <LinkToAbout
+              onMouseEnter={onHover}
+              onMouseLeave={onHover}
               to="about"
               smooth={true}
               duration={500}
@@ -66,8 +59,7 @@ const HeroSection = () => {
               offset={-80}
             >
               Check it Out ! {hover ? <ArrowForward /> : <ArrowRight />}
-            </Link>
-          </Button>
+            </LinkToAbout>
         </HeroBtnWrapper>
       </HeroContent>
       <HeroImgCtn
@@ -82,9 +74,9 @@ const HeroSection = () => {
        spy={true}
        exact='true'
        offset={-80}
-       data-aos="fade-down"
-       data-aos-easing="linear"
-       data-aos-duration="1500"
+        data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
       >
         <span></span><span></span>Scroll To See More
       </ScrollLink>

@@ -242,3 +242,27 @@ export const ScrollLink = styled(Link)`
     }
   }
 `;
+
+export const LinkToAbout = styled(Link)`
+  border: 2px solid  var(--color-green);
+  border-radius: 50px;
+  margin-bottom: 15px;
+  background: var(--color-green);
+  white-space: nowrap;
+  padding: 12px 30px;
+  color: var(--color-white); 
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  margin-top: 15px;
+  width: 200px;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background:var(--color-white);
+    color: var(--color-green); 
+  }
+`;
