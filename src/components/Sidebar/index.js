@@ -11,7 +11,7 @@ import {
 } from './SidebarElements';
 
 const showResume = () => {
-  window.open('', '_blank')
+  window.open('https://drive.google.com/file/d/1Op4PlybKeO4Ua02NUODwH0zWBiQts-Tx/view?usp=sharing', '_blank')
 }
 
 const Sidebar = ({ isOpen, toggle }) => {

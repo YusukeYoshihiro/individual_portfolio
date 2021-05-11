@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '../../Features/ButtonScrollStyles';
-import workImg from '../../assets/images/Covid19_mockup.png';
+import workImg from '../../assets/images/covidDash_logo.png';
 import { workDescFive, ButtonRepository } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages';
 import { URL } from '../../Data/showRepository';

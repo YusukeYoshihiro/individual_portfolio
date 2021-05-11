@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Ityped from '../../Features/Ityped';
 import { Button } from '../../Features/ButtonScrollStyles';
 import AboutMeImg from '../../assets/images/about_me.png'
 import { Link } from 'react-scroll';
@@ -7,9 +6,10 @@ import {
   HeroContainer,
   HeroContent,
   HeroH1,
-  HeroP,
   HeroBtnWrapper,
   HeroImgCtn,
+  HeroUl,
+  HeroAnimateCtn
 } from './HeroElements';
 
 import {
@@ -31,14 +31,23 @@ const HeroSection = () => {
     <HeroContainer id="home">
       <HeroContent >
         <HeroH1 data-aos="zoom-in" data-aos-delay="500">
-          I'm <strong>Yusuke Yoshihiro</strong>,
-        <br />Front-End Developer,<br />
-        based in Vancouver.
+          Hi, I'm <br/><strong>Yusuke Yoshihiro</strong>,
+          <HeroAnimateCtn>
+            <HeroUl >
+              <li><h2>Front-End Developer,</h2></li>
+              <li><h2>React Developer,</h2></li>
+              <li><h2>Team Player,</h2></li>
+              <li><h2>Motivated Learner,</h2></li>
+              <li><h2>Entrepreneurship,</h2></li>
+              <li><h2>Hockey Lover,</h2></li>
+            </HeroUl>
+          </HeroAnimateCtn>
+          based in Vancouver.
         </HeroH1>
-        <HeroP data-aos="zoom-in" data-aos-delay="700">
-          Love
-          <Ityped />
-        </HeroP>
+        <p data-aos="zoom-in" data-aos-delay="750">
+          Front-end | React | Typescript | Responsible Design 
+        </p>
+
         <HeroBtnWrapper data-aos="zoom-in" data-aos-delay="900">
           <Button
             // onClick={showResume}
@@ -46,7 +55,7 @@ const HeroSection = () => {
             onMouseLeave={onHover}
             primary='true'
             dark='true'
-          >  
+          >
             <Link
               to="about"
               smooth={true}
@@ -60,8 +69,8 @@ const HeroSection = () => {
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
-      <HeroImgCtn 
-        data-aos="flip-up" 
+      <HeroImgCtn
+        data-aos="flip-up"
         data-aos-delay="1000"
         data-aos-duration="1000"
       >

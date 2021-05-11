@@ -85,11 +85,7 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
    margin-bottom: 24px;
-   font-size: 48px;
-   text-shadow: 0px 3px 0px #b2a98f,
-                 0px 14px 10px rgba(0,0,0,0.15),
-                 0px 24px 2px rgba(0,0,0,0.1),
-                 0px 34px 30px rgba(0,0,0,0.1);
+   font-size: 48px;  
    line-height: 1.1;
    font-weight: 600;
    color: ${({ lightText }) => (lightText ? '#f7f8fa' : 'var(--color-dark)')};
@@ -123,7 +119,9 @@ export const Subtitle3 = styled.p`
   position: relative;
   overflow: hidden;
   :hover{
-    color: var(--color-green);
+    color: #36af9a;
+    /* color: #4a196d; */
+    /* color: var(--color-green); */
   }
 
   ::after {
@@ -152,6 +150,9 @@ export const InfoSkillCtn = styled.div`
   min-height:80vh;
   margin: auto;
   padding: 0 20px;
+  display: flex;
+  align-items: center;
+
 `;
 
 export const SkillTitleCtn = styled.div`

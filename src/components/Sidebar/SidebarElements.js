@@ -65,7 +65,7 @@ export const SidebarLink = styled(LinkS)`
 
     :hover {
     font-size: 1.7rem;
-    color: #4a196d;
+    color: #36af9a;
    }
    ::after {
     content: "";
