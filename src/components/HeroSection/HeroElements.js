@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 export const HeroContainer = styled.div`
    background: #fff;
@@ -175,6 +176,69 @@ export const HeroUl = styled.ul`
       /* webkit-animation: fadeUpAnimation ease 2s;
       webkit-animation-iteration-count: 1;
       webkit-animation-fill-mode: both; */
+    }
+  }
+`;
+export const ScrollLink = styled(Link)`
+  cursor: pointer;
+  position: absolute;
+  bottom: 15%;
+  left: 47%;
+  z-index: 2;
+  display: none;
+  -webkit-transform: translate(0, -47%);
+  transform: translate(0, -47%);
+  text-decoration: none;
+  color: rgba(54, 175, 155, 0.679);
+  font-size: 10px;
+  @media screen and (min-width: 1024px) {
+    display: inline-block;
+  }
+  span {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid var(--color-green);
+  border-bottom: 1px solid #36af9a;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+   :nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+   }
+   :nth-of-type(2) {
+    top: 32px;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+   }
+  }
+  @-webkit-keyframes sdb {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 `;
