@@ -102,14 +102,21 @@ export const Subtitle = styled.div`
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? 'var(--color-dark)' : '#fff')};
   h2{
+    display: inline;
     font-size: 18px;
     font-weight:lighter;
+  }
+  p{
+    display: inline;
   }
 
   @media screen and (max-width:375px){
     h2{
       font-size: 13px;
     }
+    p{
+      font-size: 13px;
+  }
   }
 `;
 
@@ -117,7 +124,6 @@ export const Subtitle = styled.div`
 export const Subtitle3 = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  /* line-height: 24px; */
   color: ${({ darkText }) => (darkText ? 'var(--color-green)' : 'var(--color-dark)')};
   font-size: 2rem;
   text-decoration: none;

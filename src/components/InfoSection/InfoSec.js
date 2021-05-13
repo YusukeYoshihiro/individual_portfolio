@@ -43,6 +43,7 @@ const InfoSec = ({
   primary,
   dark,
   buttonLabel,
+  name
 }) => {
 
   return (
@@ -56,8 +57,9 @@ const InfoSec = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>
                   <h2>
-                    {description}
+                    {name}
                   </h2>
+                  <p>{description}</p>
                 </Subtitle>
                 <SocialIcons>
                   <SocialIconLink href="https://github.com/YusukeYoshihiro" target="_blank" aria-label="Github">
