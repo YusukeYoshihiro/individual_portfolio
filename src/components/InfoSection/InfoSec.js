@@ -55,9 +55,9 @@ const InfoSec = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>
-                  <p>
+                  <h2>
                     {description}
-                  </p>
+                  </h2>
                 </Subtitle>
                 <SocialIcons>
                   <SocialIconLink href="https://github.com/YusukeYoshihiro" target="_blank" aria-label="Github">

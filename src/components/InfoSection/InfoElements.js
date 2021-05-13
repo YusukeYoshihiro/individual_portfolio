@@ -101,9 +101,15 @@ export const Subtitle = styled.div`
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? 'var(--color-dark)' : '#fff')};
+  h2{
+    font-size: 18px;
+    font-weight:lighter;
+  }
 
   @media screen and (max-width:375px){
-    font-size: 13px;
+    h2{
+      font-size: 13px;
+    }
   }
 `;
 
