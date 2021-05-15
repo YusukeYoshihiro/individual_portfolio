@@ -6,6 +6,7 @@ import Icon4 from '../../assets/images/workDescFour.png';
 import Icon5 from '../../assets/images/covidDash_logo.png';
 import Icon6 from '../../assets/images/portfolioImg.png';
 import Icon7 from '../../assets/images/videoApp_mockUp.png';
+import Icon8 from '../../assets/images/crudApp.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {
@@ -198,7 +199,28 @@ const Works = () => {
             <WorksContent>
               <TextCtn>
                 <WorksH2>E-commerce App</WorksH2>
-                <WorksP>Coming Soon ! <br /><br /></WorksP>
+                <WorksP>wih MERN stacks Coming Soon ! <br /><br /></WorksP>
+                  {/* <LinkMore
+                  to={'/ecommerce'}
+                  duration={500}
+                  exact="true"
+                  offset={0}
+                  primary='true'
+                  dark='true'
+                > Learn More
+                </LinkMore> */}
+              </TextCtn>
+            </WorksContent>
+          </WorksCard>
+
+          <WorksCard data-aos="zoom-in" data-aos-duration="1000"  >
+            <WorksImgCtn>
+              <WorksIcon src={Icon8} />
+            </WorksImgCtn>
+            <WorksContent>
+              <TextCtn>
+                <WorksH2>CRUD System App</WorksH2>
+                <WorksP>with React.js,Typescript and Django Coming Soon!</WorksP>
                   {/* <LinkMore
                   to={'/ecommerce'}
                   duration={500}
