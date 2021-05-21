@@ -56,7 +56,7 @@ const WorkDesc4 = () => {
               <ImgWrap>
                 <Img src={videoAppImg} alt={alt} />
               </ImgWrap>
-            </Column1>
+           </Column1>
 
             <Column2 >
               <TextWrapper>
