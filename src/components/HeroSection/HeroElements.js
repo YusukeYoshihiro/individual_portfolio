@@ -21,7 +21,7 @@ export const HeroContainer = styled.div`
 
 export const HeroContent = styled.div`
   margin-top:80px;
-  padding: 8px 24px;
+  padding: 8px;
   display: flex;
   align-items:center;
   flex-direction: column;
