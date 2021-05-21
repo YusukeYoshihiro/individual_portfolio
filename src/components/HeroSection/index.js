@@ -37,7 +37,7 @@ const HeroSection = () => {
               <li><h2>React Developer,</h2></li>
               <li><h2>Team Player,</h2></li>
               <li><h2>Motivated Learner,</h2></li>
-              <li><h2>Entrepreneurship,</h2></li>
+              <li><h2>Have Entrepreneurship,</h2></li>
               <li><h2>Hockey Lover,</h2></li>
             </HeroUl>
           </HeroAnimateCtn>
