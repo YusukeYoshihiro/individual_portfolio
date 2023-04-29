@@ -42,7 +42,7 @@ const HeroSection = () => {
               <li><h2>Hockey Lover,</h2></li>
             </HeroUl>
           </HeroAnimateCtn>
-          based in Vancouver.
+          <h4>based in Tokyo.</h4>
         </HeroH1>
         <p data-aos="zoom-in" data-aos-delay="750">
           Front-end | Back-end | React | Typescript | Laravel
