@@ -49,30 +49,23 @@ const InfoSec2 = ({
                     <div data-aos="zoom-in" data-aos-delay="100">
                       <h3>&lt; Front-End ＆ Libraries /&gt;</h3><br />
                       <SkillsList>
-                        <li> HTML5/CSS3</li>
-                        <li> Javascript(ES6)</li>
+                        <li> HTML/CSS</li>
+                        <li> Javascript</li>
                         <li> jQuery</li>
-                        <li> Chart.js/D3.js</li>
                         <li> React.js</li>
                         <li> React-Redux</li>
                         <li> Typescript</li>
-                        <li> Responsible Design</li>
+                        <li> PHP</li>
+                        <li> Laravel</li>
                       </SkillsList>
                     </div>
 
                     <div data-aos="zoom-in" data-aos-delay="300" id="trigger-left">
                       <h3>&lt; Others /&gt;</h3><br />
                       <SkillsList>
-                        <li>Java</li>
-                        <li> Python/Django</li>
                         <li> Node.js/Express.js</li>
-                        <li> XD</li>
-                        <li> Figma</li>
-                        <li> Photoshop</li>
-                        <li> Illustrator</li>
                         <li> RESTfulAPI</li>
-                        <li>GraphQL</li>
-                        <li> mySQL</li>
+                        <li> MySQL</li>
                         <li> MongoDB</li>
                         <li> Firebase</li>
                         <li> AWS</li>
