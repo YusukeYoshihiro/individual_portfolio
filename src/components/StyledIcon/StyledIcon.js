@@ -8,12 +8,13 @@ import { Html5 } from '@styled-icons/fa-brands/Html5';
 import { Css3Alt } from '@styled-icons/fa-brands/Css3Alt';
 import { Sass } from '@styled-icons/fa-brands/Sass';
 import { Javascript } from '@styled-icons/simple-icons/Javascript';
-import { StyledComponents } from '@styled-icons/simple-icons/StyledComponents';
-import { GitAlt } from '@styled-icons/fa-brands/GitAlt'
-import { Adobexd } from '@styled-icons/simple-icons/Adobexd';
-import { Figma } from '@styled-icons/simple-icons/Figma'
-import { Adobephotoshop } from '@styled-icons/simple-icons/Adobephotoshop';
-
+import { Styledcomponents } from '@styled-icons/simple-icons/Styledcomponents';
+import { GitAlt } from '@styled-icons/fa-brands/GitAlt';
+import { Laravel} from '@styled-icons/fa-brands/Laravel';
+import { Vuejs } from '@styled-icons/boxicons-logos/Vuejs';
+import { Nextdotjs } from '@styled-icons/simple-icons/Nextdotjs';
+import { Mysql } from '@styled-icons/simple-icons/Mysql';
+import { Mongodb } from '@styled-icons/simple-icons/Mongodb';
 
 
 const StyledIcon = () => {
@@ -41,65 +42,79 @@ const StyledIcon = () => {
           />
         </SkillItem>
         <SkillItem>
-          <Javascript
+          <Styledcomponents
             data-aos="zoom-in"
             data-aos-delay="450"
             data-aos-anchor="#trigger-left"
           />
         </SkillItem>
         <SkillItem>
-          <Typescript
+          <Javascript
             data-aos="zoom-in"
             data-aos-delay="650"
             data-aos-anchor="#trigger-left"
           />
         </SkillItem>
         <SkillItem>
-          <ReactLogo
+          <Typescript
             data-aos="zoom-in"
             data-aos-delay="850"
             data-aos-anchor="#trigger-left"
           />
         </SkillItem>
         <SkillItem>
-          <Redux
+          <ReactLogo
             data-aos="zoom-in"
             data-aos-delay="1050"
             data-aos-anchor="#trigger-left"
           />
         </SkillItem>
         <SkillItem>
-          <StyledComponents
+          <Redux
             data-aos="zoom-in"
             data-aos-delay="1250"
             data-aos-anchor="#trigger-left"
           />
         </SkillItem>
         <SkillItem>
-          <Adobexd
+          <Nextdotjs
             data-aos="zoom-in"
             data-aos-delay="1450"
             data-aos-anchor="#trigger-left"
           />
         </SkillItem>
         <SkillItem>
-          <Adobephotoshop
+          <Vuejs
             data-aos="zoom-in"
             data-aos-delay="1650"
             data-aos-anchor="#trigger-left"
           />
         </SkillItem>
         <SkillItem>
-          <Figma
+          <Laravel
             data-aos="zoom-in"
             data-aos-delay="1850"
             data-aos-anchor="#trigger-left"
           />
         </SkillItem>
         <SkillItem>
-          <GitAlt
+          <Mysql
             data-aos="zoom-in"
             data-aos-delay="2050"
+            data-aos-anchor="#trigger-left"
+          />
+        </SkillItem>
+        <SkillItem>
+          <Mongodb
+            data-aos="zoom-in"
+            data-aos-delay="2250"
+            data-aos-anchor="#trigger-left"
+          />
+        </SkillItem>
+        <SkillItem>
+          <GitAlt
+            data-aos="zoom-in"
+            data-aos-delay="2450"
             data-aos-anchor="#trigger-left"
           />
         </SkillItem>
