@@ -45,7 +45,7 @@ const HeroSection = () => {
           based in Vancouver.
         </HeroH1>
         <p data-aos="zoom-in" data-aos-delay="750">
-          Front-end | React | Typescript | Responsible Design 
+          Front-end | Back-end | React | Typescript | Laravel
         </p>
 
         <HeroBtnWrapper data-aos="zoom-in" data-aos-delay="900">
