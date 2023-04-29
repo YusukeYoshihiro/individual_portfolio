@@ -37,7 +37,7 @@ const InfoSec2 = ({
                 <div darkText={darkText}>
                   <SkillsWrap darkText={darkText}>
                     <div data-aos="zoom-in">
-                      <h3>&lt; Programming PrLanguages /&gt;</h3><br />
+                      <h3>&lt; Programming Languages /&gt;</h3><br />
                       <SkillsList>
                         <li> HTML</li>
                         <li> CSS</li>
