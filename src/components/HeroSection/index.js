@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import AboutMeImg from '../../assets/images/about_me.png'
+import AboutMeImg from '../../assets/images/yusuke_hero_section_logo.png'
 import {
   HeroContainer,
   HeroContent,
