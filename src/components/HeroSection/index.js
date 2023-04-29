@@ -33,8 +33,9 @@ const HeroSection = () => {
           Hi, I'm <br/><strong>Yusuke Yoshihiro</strong>,
           <HeroAnimateCtn>
             <HeroUl >
-              <li><h2>Front-End Developer,</h2></li>
+              <li><h2>WEB Application Developer,</h2></li>
               <li><h2>React Developer,</h2></li>
+              <li><h2>Laravel Developer,</h2></li>
               <li><h2>Team Player,</h2></li>
               <li><h2>Motivated Learner,</h2></li>
               <li><h2>Have Entrepreneurship,</h2></li>
