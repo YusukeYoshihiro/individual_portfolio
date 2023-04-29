@@ -37,26 +37,28 @@ const InfoSec2 = ({
                 <div darkText={darkText}>
                   <SkillsWrap darkText={darkText}>
                     <div data-aos="zoom-in">
-                      <h3>&lt; Proficiency /&gt;</h3><br />
+                      <h3>&lt; Programming PrLanguages /&gt;</h3><br />
                       <SkillsList>
-                        <li> React.js</li>
-                        <li> Javascript(ES6)</li>
-                        <li> SCSS/SASS</li>
-                        <li> styled-components</li>
+                        <li> HTML</li>
+                        <li> CSS</li>
+                        <li> Javascript</li>
+                        <li> Typescript</li>
+                        <li> PHP</li>
                       </SkillsList>
                     </div>
 
                     <div data-aos="zoom-in" data-aos-delay="100">
-                      <h3>&lt; Front-End ＆ Libraries /&gt;</h3><br />
+                      <h3>&lt; Frameworks ＆ Libraries /&gt;</h3><br />
                       <SkillsList>
-                        <li> HTML/CSS</li>
-                        <li> Javascript</li>
                         <li> jQuery</li>
                         <li> React.js</li>
                         <li> React-Redux</li>
+                        <li> Vue.js</li>
                         <li> Typescript</li>
-                        <li> PHP</li>
                         <li> Laravel</li>
+                        <li> SCSS</li>
+                        <li> styled-components</li>
+                        <li> tailwindcss</li>
                       </SkillsList>
                     </div>
 
