@@ -1,8 +1,9 @@
-import React from 'react';
-// import { Button } from '../../Features/ButtonScrollStyles';
-import workImg from '../../assets/images/FABE_LOGO.png';
-import { workDescFour } from '../../Data/data';
-// import BackToPages from '../../Features/BackToPages'
+import React from 'react'
+import { Button } from '../../Features/ButtonScrollStyles';
+import workImg from '../../assets/images/ecommerse_mern_shop_app.png';
+import { workEcommerseApp, ButtonRepository } from '../../Data/data';
+import BackToPages from '../../Features/BackToPages';
+import { URL } from '../../Data/showRepository';
 
 import {
   InfoContainer,
@@ -14,15 +15,15 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  // BtnWrap,
+  BtnWrap,
   ImgWrap,
   Img,
   LanguageList,
 } from './WorkDescElements';
 
-const ecommerceImg = workImg;
+const ecommerseImg = workImg;
 
-const WorkDesc4 = () => {
+const WorkDesc3 = () => {
 
   const {
     lightBg,
@@ -33,25 +34,28 @@ const WorkDesc4 = () => {
     headline,
     darkText,
     description,
-    // buttonLabel,
+    buttonLabel,
     alt,
-    // primary,
-    // dark,
-    // dark2,
-  } = workDescFour;
+    primary,
+    dark,
+    dark2,
+  } = workEcommerseApp;
+
+  const { buttonLabelRepo } = ButtonRepository;
+
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id} >
         <InfoWrapper>
-        <div >
-          <TopLine>{topLine}</TopLine>
-          <Heading lightText={lightText}>{headline}</Heading>
-          <p style={{color:'var(--color-dark)'}}>{description}</p>
+          <div >
+            <TopLine>{topLine}</TopLine>
+            <Heading lightText={lightText}>{headline}</Heading>
+            <p style={{ color: 'var(--color-dark)' }}>{description}</p>
           </div>
           <InfoRow imgStart={imgStart}>
             <Column1 >
-            <ImgWrap>
-                <Img src={ecommerceImg} alt={alt} />
+              <ImgWrap>
+                <Img src={ecommerseImg} alt={alt} />
               </ImgWrap>
             </Column1>
 
@@ -60,23 +64,20 @@ const WorkDesc4 = () => {
                 <Subtitle darkText={darkText}>
                   <h3>&lt; Front-End /&gt;</h3><br />
                   <LanguageList>
-                    <li>React</li>
-                    <li>React-Redux</li>
-                    <li>Styled-Components</li>
-                    <li>Material-UI</li>
+                    <li> React</li>
+                    <li> Redux-toolkit</li>
+                    <li> React-bootstrap</li>
                   </LanguageList>
+
                   <h3>&lt; Backend ＆ Others /&gt;</h3><br />
                   <LanguageList>
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                    <li>stripe(payment)</li>
-                    <li>MongoDB</li>
-                    <li>Heroku</li>
-                    <li>Heroku</li>
-                    <li>Git</li>
+                    <li> Node.js/Express</li>
+                    <li> MongoDB</li>
+                    <li> Stripe</li>
+                    <li> PayPal</li>
                   </LanguageList>
                 </Subtitle>
-                {/* <BtnWrap>
+                <BtnWrap>
                   <Button
                     to='home'
                     smooth={true}
@@ -88,13 +89,26 @@ const WorkDesc4 = () => {
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
                     onClick={() => {
-                      // window.open(URL[1].website.ecommerce, '_blank')
+                      window.open(URL[1].website.ecommerceApp, '_blank')
                     }}
                   >
                     {buttonLabel}
                   </Button>
-                  <BackToPages />
-                </BtnWrap> */}
+                  <Button
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                    onClick={() => window.open(URL[0].repository.ecommerceApp, '_blank')}
+                  >
+                    {buttonLabelRepo}
+                  </Button>
+                </BtnWrap>
+                <BackToPages />
               </TextWrapper>
             </Column2>
 
@@ -105,4 +119,4 @@ const WorkDesc4 = () => {
   )
 }
 
-export default WorkDesc4;
+export default WorkDesc3;

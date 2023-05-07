@@ -95,20 +95,20 @@ export const workDescThree = {
   darkText: true
 };
 
-export const workDescFour = {
+export const workEcommerseApp = {
   id:'ecommerce',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  // lightTextDesc: true,
   topLine: 'Overview',
-  headline: 'Ecommerce MERN Stack Project Comming Soon!!',
-  description: 'Comming Soon !!!!',
+  headline: 'Ecommerce APP with MERN Stack Project',
+  description: 'Built a Movie App with Ecommerce APP with MERN Stack',
   buttonLabel: 'Visit App',
   imgStart: true,
   alt: 'ecommerce_img',
   dark: true,
   primary: true,
-  darkText: false
+  darkText: true,
 };
 
 export const workDescFive = {
