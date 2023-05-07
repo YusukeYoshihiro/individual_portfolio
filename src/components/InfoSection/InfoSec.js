@@ -74,7 +74,7 @@ const InfoSec = ({
 
 
                 </ SocialIcons>
-                <Button
+                {/* <Button
                   onClick={showResume}
                   smooth={true}
                   duration={500}
@@ -85,7 +85,7 @@ const InfoSec = ({
                   dark={dark ? 1 : 0}
                 >
                   {buttonLabel}
-                </Button>
+                </Button> */}
               </TextWrapper>
             </Column1>
 
