@@ -6,7 +6,7 @@ import Icon4 from '../../assets/images/ecommerse_mern_shop_app.png';
 import Icon5 from '../../assets/images/covidDash_logo.png';
 import Icon6 from '../../assets/images/portfolioImg.png';
 import Icon7 from '../../assets/images/videoApp_mockUp.png';
-import Icon8 from '../../assets/images/crudApp.png';
+import Icon8 from '../../assets/images/laravel_crm_app.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {
@@ -220,17 +220,18 @@ const Works = () => {
           </WorksImgCtn>
           <WorksContent>
             <TextCtn>
-              <WorksH2>CRUD System App</WorksH2>
-              <WorksP>with React.js,Typescript and Django Coming Soon!</WorksP>
-              {/* <LinkMore
-                  to={'/ecommerce'}
+              <WorksH2>CRM CRUD App</WorksH2>
+              <WorksP>Built CRM App with <br /> 
+              Laravel Vue.js Inertia.js</WorksP>
+              <LinkMore
+                  to={'/crmApp'}
                   duration={500}
                   exact="true"
                   offset={0}
                   primary='true'
                   dark='true'
                 > Learn More
-                </LinkMore> */}
+                </LinkMore>
             </TextCtn>
           </WorksContent>
         </WorksCard>
