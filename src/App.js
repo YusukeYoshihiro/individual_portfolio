@@ -9,6 +9,7 @@ import WorkDesc4 from './components/WorkDescription/WorkDesc4';
 import WorkDesc5 from './components/WorkDescription/WorkDesc5';
 import WorkDesc6 from './components/WorkDescription/WorkDesc6';
 import videoApp from './components/WorkDescription/videoApp';
+import WorkCrmApp from './components/WorkDescription/WorkCrmApp';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/movieApp" component={WorkDesc3} />
         <Route path="/covid" component={WorkDesc5} />
         <Route path="/ecommerce" component={WorkDesc4} />
+        <Route path="/crmApp" component={WorkCrmApp} />
         <Route path="/portfolio" component={WorkDesc6} />
       </Switch>
     </>

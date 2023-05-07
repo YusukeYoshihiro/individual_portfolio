@@ -7,6 +7,7 @@ export const URL = [
       'portfolio': 'https://github.com/YusukeYoshihiro/individual_portfolio/',
       'videoApp': 'https://github.com/YusukeYoshihiro/react_video_customHooks/',
       'ecommerceApp':'https://github.com/YusukeYoshihiro/e-commerce_app_mern',
+      'crmApp':'https://github.com/YusukeYoshihiro/laravel_crm_app',
     },
   },
   {

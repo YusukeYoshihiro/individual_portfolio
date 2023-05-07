@@ -111,6 +111,22 @@ export const workEcommerseApp = {
   darkText: true,
 };
 
+export const workCrmApp = {
+  id:'crmApp',
+  lightBg: true,
+  lightText: false,
+  // lightTextDesc: true,
+  topLine: 'Overview',
+  headline: 'CRUD CRM APP Project',
+  description: 'Built a CRM APP with Laravel, Vue.js, Inertia.js',
+  buttonLabel: 'Visit App',
+  imgStart: true,
+  alt: 'crmApp_img',
+  dark: true,
+  primary: true,
+  darkText: true,
+};
+
 export const workDescFive = {
   id:'covid',
   lightBg: true,
