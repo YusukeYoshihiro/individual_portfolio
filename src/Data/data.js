@@ -102,7 +102,7 @@ export const workEcommerseApp = {
   // lightTextDesc: true,
   topLine: 'Overview',
   headline: 'Ecommerce APP with MERN Stack Project',
-  description: 'Built a Movie App with Ecommerce APP with MERN Stack',
+  description: 'Built a Ecommerce APP with MERN Stack',
   buttonLabel: 'Visit App',
   imgStart: true,
   alt: 'ecommerce_img',
