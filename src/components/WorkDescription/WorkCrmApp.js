@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../../Features/ButtonScrollStyles';
 import workImg from '../../assets/images/laravel_crm_app.png';
-import { workEcommerseApp, ButtonRepository } from '../../Data/data';
+import { workCrmApp, ButtonRepository } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages';
 import { URL } from '../../Data/showRepository';
 
@@ -39,7 +39,7 @@ const WorkDesc3 = () => {
     primary,
     dark,
     dark2,
-  } = workEcommerseApp;
+  } = workCrmApp;
 
   const { buttonLabelRepo } = ButtonRepository;
 
