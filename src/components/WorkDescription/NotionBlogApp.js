@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../../Features/ButtonScrollStyles';
-import workImg from '../../assets/images/ecommerse_mern_shop_app.png';
-import { workEcommerseApp, ButtonRepository } from '../../Data/data';
+import workImg from '../../assets/images/notion_blog_app.png';
+import { notionBlogApp, ButtonRepository } from '../../Data/data';
 import BackToPages from '../../Features/BackToPages';
 import { URL } from '../../Data/showRepository';
 
@@ -21,9 +21,9 @@ import {
   LanguageList,
 } from './WorkDescElements';
 
-const ecommerseImg = workImg;
+const notionBlogAppImg = workImg;
 
-const WorkDesc4 = () => {
+const NotionBlogApp = () => {
 
   const {
     lightBg,
@@ -39,7 +39,7 @@ const WorkDesc4 = () => {
     primary,
     dark,
     dark2,
-  } = workEcommerseApp;
+  } = notionBlogApp;
 
   const { buttonLabelRepo } = ButtonRepository;
 
@@ -55,26 +55,26 @@ const WorkDesc4 = () => {
           <InfoRow imgStart={imgStart}>
             <Column1 >
               <ImgWrap>
-                <Img src={ecommerseImg} alt={alt} />
+                <Img src={notionBlogAppImg} alt={alt} />
               </ImgWrap>
             </Column1>
 
             <Column2 >
               <TextWrapper>
                 <Subtitle darkText={darkText}>
-                  <h3>&lt; Front-End /&gt;</h3><br />
+                  <h3>&lt; Tech Stack /&gt;</h3><br />
                   <LanguageList>
-                    <li> React</li>
-                    <li> Redux-toolkit</li>
-                    <li> React-bootstrap</li>
+                    <li> Next.js</li>
+                    <li> Typescript</li>
+                    <li> TailwindCSS</li>
                   </LanguageList>
 
-                  <h3>&lt; Backend ＆ Others /&gt;</h3><br />
+                  <h3>&lt; API ＆ Dev Environment /&gt;</h3><br />
                   <LanguageList>
-                    <li> Node.js/Express</li>
-                    <li> MongoDB</li>
-                    <li> Stripe</li>
-                    <li> PayPal</li>
+                    <li> Notion API</li>
+                    <li> Git/CLI</li>
+                    <li> GitHub</li>
+                    <li> Vercel</li>
                   </LanguageList>
                 </Subtitle>
                 <BtnWrap>
@@ -89,7 +89,7 @@ const WorkDesc4 = () => {
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
                     onClick={() => {
-                      window.open(URL[1].website.ecommerceApp, '_blank')
+                      window.open(URL[1].website.notionBlogApp, '_blank')
                     }}
                   >
                     {buttonLabel}
@@ -103,7 +103,7 @@ const WorkDesc4 = () => {
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}
                     dark2={dark2 ? 1 : 0}
-                    onClick={() => window.open(URL[0].repository.ecommerceApp, '_blank')}
+                    onClick={() => window.open(URL[0].repository.notionBlogApp, '_blank')}
                   >
                     {buttonLabelRepo}
                   </Button>
@@ -119,4 +119,4 @@ const WorkDesc4 = () => {
   )
 }
 
-export default WorkDesc4;
+export default NotionBlogApp;

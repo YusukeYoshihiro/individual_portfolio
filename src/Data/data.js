@@ -167,7 +167,23 @@ export const videoApp = {
   description: 'Built React YouTube App with React.js(Custom Hooks), styled-components, WEB API.',
   buttonLabel: 'Visit WebSite',
   imgStart: true,
-  alt: 'video_App',
+  alt: 'video_app',
+  dark: true,
+  primary: true,
+  darkText: true
+};
+
+export const notionBlogApp = {
+  id:'notionBlogApp',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Overview',
+  headline: 'Notion CMS Blog App',
+  description: 'Built Notion CMS Blog App with Next.js, Typescript, tailwindCSS, Notion API.',
+  buttonLabel: 'Visit WebSite',
+  imgStart: true,
+  alt: 'notion_blog_app',
   dark: true,
   primary: true,
   darkText: true

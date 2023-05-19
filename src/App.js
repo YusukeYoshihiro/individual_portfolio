@@ -12,6 +12,7 @@ import videoApp from './components/WorkDescription/videoApp';
 import WorkCrmApp from './components/WorkDescription/WorkCrmApp';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import NotionBlogApp from './components/WorkDescription/NotionBlogApp';
 
 AOS.init(
   {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/covid" component={WorkDesc5} />
         <Route path="/ecommerce" component={WorkDesc4} />
         <Route path="/crmApp" component={WorkCrmApp} />
+        <Route path="/notionBlogApp" component={NotionBlogApp} />
         <Route path="/portfolio" component={WorkDesc6} />
       </Switch>
     </>
