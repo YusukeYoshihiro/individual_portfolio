@@ -7,6 +7,7 @@ import Icon5 from '../../assets/images/covidDash_logo.png';
 import Icon6 from '../../assets/images/portfolioImg.png';
 import Icon7 from '../../assets/images/videoApp_mockUp.png';
 import Icon8 from '../../assets/images/laravel_crm_app.png';
+import Icon9 from '../../assets/images/notion_blog_app.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {
@@ -225,6 +226,28 @@ const Works = () => {
               Laravel Vue.js Inertia.js</WorksP>
               <LinkMore
                   to={'/crmApp'}
+                  duration={500}
+                  exact="true"
+                  offset={0}
+                  primary='true'
+                  dark='true'
+                > Learn More
+                </LinkMore>
+            </TextCtn>
+          </WorksContent>
+        </WorksCard>
+
+        <WorksCard data-aos="zoom-in" data-aos-duration="1000"  >
+          <WorksImgCtn>
+            <WorksIcon src={Icon9} />
+          </WorksImgCtn>
+          <WorksContent>
+            <TextCtn>
+              <WorksH2>Notion Blog App</WorksH2>
+              <WorksP>Built Notion Blog App with <br /> 
+              Next.js, Typescript, TailwindCSS, Notion API</WorksP>
+              <LinkMore
+                  to={'/notionBlogApp'}
                   duration={500}
                   exact="true"
                   offset={0}
